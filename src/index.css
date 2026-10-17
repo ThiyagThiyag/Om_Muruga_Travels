@@ -1,0 +1,284 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-deep: #0a2540;
+  --color-brand-navy: #0d3257;
+  --color-brand-dark: #061727;
+  --color-brand-gold: #c59b27;
+  --color-brand-gold-hover: #b0871a;
+  --color-brand-gold-light: #f4e8c1;
+  --color-brand-gold-subtle: #fdf6e2;
+  --color-brand-sand: #faf6f0;
+  --color-brand-sand-muted: #f2ebe0;
+  --color-brand-cream: #fdfbf7;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Outfit", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Outfit", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  
+  /* Fluid responsive typography tokens */
+  --fluid-hero: clamp(1.85rem, 1.25rem + 3.2vw, 4.25rem);
+  --fluid-h1: clamp(1.6rem, 1.15rem + 2.2vw, 3.2rem);
+  --fluid-h2: clamp(1.35rem, 1rem + 1.6vw, 2.35rem);
+  --fluid-h3: clamp(1.1rem, 0.95rem + 0.8vw, 1.6rem);
+  --fluid-h4: clamp(0.95rem, 0.88rem + 0.4vw, 1.25rem);
+  --fluid-body: clamp(0.85rem, 0.8rem + 0.25vw, 1.05rem);
+  --fluid-small: clamp(0.72rem, 0.7rem + 0.15vw, 0.85rem);
+
+  /* Fluid container spacing */
+  --fluid-section-py: clamp(2.5rem, 5vw, 5.5rem);
+  --fluid-gutter-px: clamp(1rem, 3.5vw, 2.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fluid-body);
+  line-height: 1.65;
+}
+
+/* Fluid Typography Utility Classes */
+.text-fluid-hero {
+  font-size: var(--fluid-hero);
+  line-height: 1.15;
+}
+
+.text-fluid-h1 {
+  font-size: var(--fluid-h1);
+  line-height: 1.2;
+}
+
+.text-fluid-h2 {
+  font-size: var(--fluid-h2);
+  line-height: 1.25;
+}
+
+.text-fluid-h3 {
+  font-size: var(--fluid-h3);
+  line-height: 1.35;
+}
+
+.text-fluid-h4 {
+  font-size: var(--fluid-h4);
+  line-height: 1.4;
+}
+
+.text-fluid-body {
+  font-size: var(--fluid-body);
+  line-height: 1.65;
+}
+
+.text-fluid-small {
+  font-size: var(--fluid-small);
+  line-height: 1.5;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Responsive Container & Section Utilities */
+.responsive-section-py {
+  padding-top: var(--fluid-section-py);
+  padding-bottom: var(--fluid-section-py);
+}
+
+.responsive-gutter-px {
+  padding-left: var(--fluid-gutter-px);
+  padding-right: var(--fluid-gutter-px);
+}
+
+/* Glassmorphism */
+.glass-header {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-header-scrolled {
+  background: rgba(10, 37, 64, 0.96) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(197, 155, 39, 0.25) !important;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-dark {
+  background: rgba(10, 37, 64, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Touch-friendly Buttons and Interactive Elements */
+.btn-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #c59b27 50%, #ad8218 100%);
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(197, 155, 39, 0.3);
+  min-height: 44px;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #dfbc46 0%, #cfa32e 50%, #bd901e 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(197, 155, 39, 0.45);
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+.btn-navy {
+  background: linear-gradient(135deg, #0a2540 0%, #0d3257 100%);
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(10, 37, 64, 0.25);
+  min-height: 44px;
+}
+
+.btn-navy:hover {
+  background: linear-gradient(135deg, #103b66 0%, #17487c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 37, 64, 0.35);
+}
+
+/* Smooth zoom on hover */
+.zoom-effect {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .zoom-effect {
+  transform: scale(1.06);
+}
+
+/* Custom Range Slider */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #c59b27;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin-top: -6px;
+  transition: transform 0.15s ease;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+/* Soft glow animation */
+@keyframes softPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(197, 155, 39, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(197, 155, 39, 0);
+  }
+}
+
+.pulse-glow-ring {
+  animation: softPulse 2.5s infinite;
+}
+
+/* Hide scrollbar for clean horizontal swipeable tabs on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Responsive adjustments across devices */
+@media (max-width: 640px) {
+  /* Mobile touch target minimums */
+  button, select, input[type="text"], input[type="date"], input[type="tel"], input[type="email"] {
+    font-size: 14px !important;
+  }
+  
+  /* Prevent excessive tracking that causes wrapping on small screens */
+  .tracking-widest {
+    letter-spacing: 0.12em !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Tablet optimizations */
+  .tablet-comfortable-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 3D Flip Card Animation for Room Image Cards */
+.flip-card {
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.75s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.group:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}

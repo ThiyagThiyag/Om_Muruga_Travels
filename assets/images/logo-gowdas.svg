@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800;900&amp;display=swap');
+      .group-of-text {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 800;
+        font-size: 26px;
+        letter-spacing: 6px;
+        fill: #222222;
+      }
+      .gowdas-text {
+        font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+        font-weight: 900;
+        font-size: 78px;
+        letter-spacing: -1px;
+        fill: #222222;
+      }
+      .orange-brand {
+        fill: #FF4500;
+      }
+      .orange-stroke {
+        stroke: #FF4500;
+        stroke-width: 14;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <!-- Umbrella Graphic -->
+    <g transform="translate(20, 0)">
+      <!-- Top finial/pin -->
+      <path d="M 115,22 L 115,5" stroke="#FF4500" stroke-width="10" stroke-linecap="round" />
+
+      <!-- Umbrella Canopy Outline -->
+      <path d="M 12,112 C 30,55 70,22 115,22 C 160,22 200,55 218,112 C 190,92 165,108 142,100 C 122,86 108,86 88,100 C 65,108 40,92 12,112 Z" 
+            fill="#FF4500" />
+      
+      <!-- Umbrella Canopy Bottom Cutouts / Ribs -->
+      <path d="M 18,108 Q 50,90 82,106 Q 115,88 148,106 Q 180,90 212,108" 
+            stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+      <!-- Umbrella Stick & Handle -->
+      <!-- Shaft -->
+      <path d="M 115,90 L 115,185" stroke="#FF4500" stroke-width="12" stroke-linecap="round" />
+      <!-- Left hook handle -->
+      <path d="M 115,185 C 115,215 78,215 78,190" stroke="#FF4500" stroke-width="12" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Typography: GROUP OF gowda's -->
+    <g transform="translate(145, 120)">
+      <!-- GROUP OF -->
+      <text x="0" y="30" class="group-of-text">GROUP OF</text>
+
+      <!-- gowda's -->
+      <g transform="translate(0, 95)">
+        <text x="0" y="0" class="gowdas-text">gowda's</text>
+        <!-- Orange accent hook on the 'g' -->
+        <circle cx="12" cy="5" r="7" fill="#FF4500" />
+      </g>
+    </g>
+  </g>
+</svg>

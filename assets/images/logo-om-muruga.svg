@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 240" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800;900&amp;display=swap');
+      .brush-red { fill: #E50914; font-family: 'Impact', 'Arial Black', sans-serif; font-weight: 900; }
+      .brush-dark { fill: #111111; font-family: 'Impact', 'Arial Black', sans-serif; font-weight: 900; }
+      .holidays-text { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; fill: #111111; letter-spacing: 7px; }
+    </style>
+    <!-- Subtle brush texture filter -->
+    <filter id="brushRoughness" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <g transform="translate(10, 20)">
+    <!-- OM (Bright Red Brush) -->
+    <g filter="url(#brushRoughness)">
+      <!-- O -->
+      <path d="M 35,130 C 20,110 18,50 38,32 C 58,16 88,18 96,36 C 104,54 104,112 90,132 C 78,148 48,146 35,130 Z M 52,118 C 58,124 72,124 76,114 C 82,98 84,52 74,42 C 68,36 56,38 52,48 C 46,62 46,104 52,118 Z" fill="#E50914" />
+      
+      <!-- M -->
+      <path d="M 108,140 L 118,28 L 138,26 L 158,84 L 178,26 L 198,28 L 190,140 L 168,140 L 172,70 L 156,116 L 140,116 L 126,70 L 128,140 Z" fill="#E50914" />
+    </g>
+
+    <!-- MURUGA -->
+    <g filter="url(#brushRoughness)" transform="translate(130, 0)">
+      <!-- M (Red) -->
+      <path d="M 120,140 L 132,26 L 154,24 L 174,86 L 194,24 L 216,26 L 208,140 L 186,140 L 190,70 L 172,118 L 156,118 L 142,70 L 144,140 Z" fill="#E50914" />
+
+      <!-- U (Black) -->
+      <path d="M 230,28 L 254,26 L 250,96 C 248,118 256,128 270,126 C 284,124 290,114 292,94 L 298,28 L 322,26 L 314,96 C 310,132 292,144 266,144 C 240,144 226,128 230,28 Z" fill="#111111" />
+
+      <!-- R (Black) -->
+      <path d="M 334,26 L 378,24 C 402,24 414,36 412,58 C 410,76 398,88 382,92 L 416,140 L 390,140 L 362,96 L 354,96 L 350,140 L 328,140 Z M 354,78 L 374,78 C 386,78 392,72 392,62 C 392,52 386,46 374,46 L 354,46 Z" fill="#111111" />
+
+      <!-- U (Black) -->
+      <path d="M 426,28 L 450,26 L 446,96 C 444,118 452,128 466,126 C 480,124 486,114 488,94 L 494,28 L 518,26 L 510,96 C 506,132 488,144 462,144 C 436,144 422,128 426,28 Z" fill="#111111" />
+
+      <!-- G (Black) -->
+      <path d="M 590,44 L 568,54 C 562,38 548,34 538,40 C 526,48 522,96 532,122 C 540,132 554,132 564,124 L 564,96 L 546,96 L 546,78 L 588,78 L 588,132 C 572,146 544,150 524,136 C 502,118 500,56 522,30 C 542,8 574,16 590,44 Z" fill="#111111" />
+
+      <!-- A (Black) -->
+      <path d="M 618,140 L 642,26 L 666,26 L 690,140 L 668,140 L 662,112 L 642,112 L 638,140 Z M 646,92 L 658,92 L 652,54 Z" fill="#111111" />
+    </g>
+
+    <!-- HOLIDAYS in geometric sans-serif -->
+    <text x="510" y="200" class="holidays-text" font-size="34">HOLIDAYS</text>
+  </g>
+</svg>
