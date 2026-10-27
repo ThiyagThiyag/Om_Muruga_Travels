@@ -11,9 +11,10 @@ export default function HeroSection({ onOpenBooking }) {
         <img
           src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1100&q=70"
           alt="Scenic Mountain Road Tour - Om Muruga Travels"
-          className="w-full h-full object-cover object-center scale-105"
+          className="w-full h-full object-cover object-center"
           fetchPriority="high"
-          decoding="async"
+          loading="eager"
+          decoding="sync"
           width="1400"
           height="800"
         />

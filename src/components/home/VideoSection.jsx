@@ -49,10 +49,11 @@ export default function VideoSection({ onOpenBooking }) {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black aspect-video flex items-center justify-center">
             <video 
               controls 
+              preload="none"
               poster="/assets/images/image-44.jpeg"
               className="w-full h-full object-cover"
             >
-              <source src="/video1.mp4" type="video/mp4" />
+              <source src="/assets/videos/video1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
