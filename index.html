@@ -39,41 +39,11 @@
     <meta name="twitter:site" content="@OmMurugaTravels" />
     <meta name="twitter:creator" content="@OmMurugaTravels" />
 
-    <!-- Google Analytics (gtag.js) - Loaded purely on user interaction to eliminate main-thread blocking and reduce initial payload -->
-    <script>
-      (function() {
-        var loaded = false;
-        function loadGA() {
-          if (loaded) return;
-          loaded = true;
-          window.removeEventListener('scroll', loadGA);
-          window.removeEventListener('touchstart', loadGA);
-          window.removeEventListener('click', loadGA);
-          window.removeEventListener('keydown', loadGA);
-          var s = document.createElement('script');
-          s.async = true;
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-OMMURUGA24';
-          document.head.appendChild(s);
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-OMMURUGA24', {
-            page_path: window.location.pathname,
-            anonymize_ip: true
-          });
-        }
-        window.addEventListener('scroll', loadGA, { passive: true, once: true });
-        window.addEventListener('touchstart', loadGA, { passive: true, once: true });
-        window.addEventListener('click', loadGA, { passive: true, once: true });
-        window.addEventListener('keydown', loadGA, { passive: true, once: true });
-      })();
-    </script>
-
-    <!-- Preload Critical LCP Hero Image -->
+    <!-- Preload Critical LCP Hero Image (Local asset, instant discovery, no third-party network wait) -->
     <link 
       rel="preload" 
       as="image" 
-      href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1100&q=70" 
+      href="/assets/images/image-45.jpeg" 
       fetchpriority="high"
     />
 

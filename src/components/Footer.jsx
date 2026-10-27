@@ -219,7 +219,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-[#25D366] text-xs font-semibold hover:bg-[#25D366] hover:text-white transition-all group"
               >
-                <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+                <span className="w-2 h-2 rounded-full bg-[#25D366]"></span>
                 <span>24/7 WhatsApp Assistance Available</span>
               </a>
             </div>
