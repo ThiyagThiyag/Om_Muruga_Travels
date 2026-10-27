@@ -18,7 +18,7 @@ export default function BrandLogo({
     return (
       <div className={`flex items-center gap-3 ${className}`}>
         {/* Umbrella Graphic */}
-        <svg viewBox="0 0 160 160" className="h-full w-auto shrink-0" fill="none">
+        <svg viewBox="0 0 160 160" width="40" height="40" className="h-full w-auto shrink-0" fill="none">
           <path d="M 80,18 L 80,4" stroke="#FF4500" strokeWidth="8" strokeLinecap="round" />
           <path 
             d="M 12,85 C 24,40 50,18 80,18 C 110,18 136,40 148,85 C 130,70 115,82 98,74 C 86,64 76,64 64,74 C 48,82 32,70 12,85 Z" 
@@ -77,7 +77,7 @@ export default function BrandLogo({
     <div className={`flex items-center gap-2 sm:gap-3.5 select-none ${className}`}>
       {/* Group of Gowda's Umbrella Emblem */}
       <div className="h-full flex items-center shrink-0">
-        <svg viewBox="0 0 150 160" className="h-8 xs:h-9 sm:h-11 md:h-12 w-auto" fill="none">
+        <svg viewBox="0 0 150 160" width="48" height="48" className="h-8 xs:h-9 sm:h-11 md:h-12 w-auto" fill="none">
           {/* Umbrella Top Finial */}
           <path d="M 75,16 L 75,3" stroke="#FF4500" strokeWidth="7" strokeLinecap="round" />
           

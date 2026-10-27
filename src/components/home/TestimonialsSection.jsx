@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
                   className="w-10 h-10 rounded-full object-cover border border-[#c59b27]" 
                 />
                 <div>
-                  <h4 className="text-xs font-bold text-slate-900">{t.name}</h4>
+                  <h3 className="text-xs font-bold text-slate-900">{t.name}</h3>
                   <span className="text-[10px] text-slate-500 block">{t.location}</span>
                   <span className="text-[10px] text-[#c59b27] font-medium block">{t.stay}</span>
                 </div>

@@ -1,14 +1,21 @@
 import { useState, useMemo, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useParams, useLocation } from 'react-router-dom';
 import { roomsData } from '../../data/travelData';
 
 export function useRoomFilters() {
   const [searchParams] = useSearchParams();
-  const initialType = searchParams.get('type') || 'all';
+  const { typeSlug } = useParams();
+  const location = useLocation();
+
+  const getInitialType = () => {
+    if (typeSlug) return typeSlug.toLowerCase();
+    return searchParams.get('type') || 'all';
+  };
+
   const initialCapacity = searchParams.get('capacity') || 'all';
 
   const [searchKeyword, setSearchKeyword] = useState('');
-  const [selectedType, setSelectedType] = useState(initialType);
+  const [selectedType, setSelectedType] = useState(getInitialType);
   const [selectedCapacity, setSelectedCapacity] = useState(initialCapacity);
   const [selectedRating, setSelectedRating] = useState('all');
   const [selectedAmenities, setSelectedAmenities] = useState([]);
@@ -16,15 +23,21 @@ export function useRoomFilters() {
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
 
   useEffect(() => {
+    if (typeSlug) {
+      setSelectedType(typeSlug.toLowerCase());
+      return;
+    }
     const typeParam = searchParams.get('type');
     const capParam = searchParams.get('capacity');
     if (typeParam) {
       setSelectedType(typeParam);
+    } else if (!typeSlug) {
+      setSelectedType('all');
     }
     if (capParam) {
       setSelectedCapacity(capParam);
     }
-  }, [searchParams]);
+  }, [searchParams, typeSlug, location.pathname]);
 
   const handleAmenityToggle = (amenity) => {
     setSelectedAmenities(prev =>

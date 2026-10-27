@@ -110,6 +110,10 @@ export default function FleetSection() {
                       alt={vehicle.name} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
                       draggable="false"
+                      loading="lazy"
+                      decoding="async"
+                      width="325"
+                      height="176"
                     />
                     <div className="absolute top-3 left-3">
                       <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#c59b27] text-white">

@@ -58,6 +58,10 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
                   src={tour.image} 
                   alt={tour.title}
                   className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500" 
+                  loading="lazy"
+                  decoding="async"
+                  width="400"
+                  height="240"
                 />
                 <div className="absolute top-3 left-3 flex items-center gap-2">
                   <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#0a2540]/90 text-white backdrop-blur-sm border border-white/20">
@@ -140,6 +144,10 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
                   src={room.mainImage} 
                   alt={room.title}
                   className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500" 
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="208"
                 />
                 <div className="absolute top-3 left-3">
                   <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#0a2540]/90 text-white backdrop-blur-sm border border-white/20">

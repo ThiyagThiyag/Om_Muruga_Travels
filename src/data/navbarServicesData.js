@@ -24,9 +24,9 @@ export const servicesMegaMenuData = [
     icon: 'compass',
     iconBg: 'bg-blue-50 text-[#0a2540] border-blue-200',
     subtopics: [
-      { title: 'Hill Station Packages', path: '/tours?category=Hill+Station+%26+Nature' },
-      { title: 'Temple & Spiritual Tours', path: '/tours?category=Spiritual+%26+Cultural' },
-      { title: 'Honeymoon Specials', path: '/tours?category=Hill+Station+%26+Nature' }
+      { title: 'Hill Station Packages', path: '/tours/hill-station' },
+      { title: 'Temple & Spiritual Tours', path: '/tours/spiritual' },
+      { title: 'Honeymoon Specials', path: '/tours/honeymoon' }
     ],
     footerAction: {
       text: 'View All Tours',
@@ -41,9 +41,9 @@ export const servicesMegaMenuData = [
     icon: 'home',
     iconBg: 'bg-emerald-50 text-emerald-700 border-emerald-200',
     subtopics: [
-      { title: 'Bamboo Cottages', path: '/rooms?type=cottage' },
-      { title: 'Treehouse Villas', path: '/rooms?type=treehouse' },
-      { title: 'Deluxe Manor Suites', path: '/rooms?type=suite' }
+      { title: 'Bamboo Cottages', path: '/rooms/cottage' },
+      { title: 'Treehouse Villas', path: '/rooms/treehouse' },
+      { title: 'Deluxe Manor Suites', path: '/rooms/suite' }
     ],
     footerAction: {
       text: 'View All Stays',

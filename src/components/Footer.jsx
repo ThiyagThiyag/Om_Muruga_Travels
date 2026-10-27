@@ -23,6 +23,21 @@ export default function Footer() {
               <BrandLogo variant="gowdas" isDarkBackground={true} className="h-9" />
             </div>
 
+            {/* Physical Office Address for Local SEO */}
+            <address className="not-italic text-xs text-slate-400 space-y-1 pt-1" itemScope itemType="https://schema.org/PostalAddress">
+              <div className="flex items-start gap-1.5">
+                <span className="text-[#c59b27] shrink-0 mt-0.5">📍</span>
+                <div>
+                  <span className="font-semibold text-slate-300">Office & Travel Desk: </span>
+                  <span itemProp="streetAddress">Group of Gowda's Estate, Valley Road</span>,{' '}
+                  <span itemProp="addressLocality">Kodaikanal</span> -{' '}
+                  <span itemProp="postalCode">624101</span>,{' '}
+                  <span itemProp="addressRegion">Tamil Nadu</span>,{' '}
+                  <span itemProp="addressCountry">India</span>.
+                </div>
+              </div>
+            </address>
+
             {/* Direct Hotline Numbers */}
             <div className="flex flex-wrap items-center gap-2 text-xs text-slate-300 pt-1">
               <span className="text-[#c59b27] font-bold flex items-center gap-1">
@@ -126,9 +141,9 @@ export default function Footer() {
 
           {/* Quick Links Column (3 cols) */}
           <div className="lg:col-span-3 space-y-3.5">
-            <h4 className="text-white text-xs font-bold tracking-widest uppercase border-l-2 border-[#c59b27] pl-3">
+            <h3 className="text-white text-xs font-bold tracking-widest uppercase border-l-2 border-[#c59b27] pl-3">
               Quick Links
-            </h4>
+            </h3>
             <ul className="space-y-2 text-xs sm:text-sm">
               <li>
                 <Link to="/" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
@@ -165,32 +180,32 @@ export default function Footer() {
 
           {/* Top Destinations Column (4 cols) */}
           <div className="lg:col-span-4 space-y-3.5">
-            <h4 className="text-white text-xs font-bold tracking-widest uppercase border-l-2 border-[#c59b27] pl-3">
+            <h3 className="text-white text-xs font-bold tracking-widest uppercase border-l-2 border-[#c59b27] pl-3">
               Top Destinations
-            </h4>
+            </h3>
             <ul className="space-y-2 text-xs sm:text-sm">
               <li>
-                <Link to="/tours?category=Hill+Station+%26+Nature" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
+                <Link to="/tours/hill-station" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
                   <span className="text-[#c59b27]">›</span> Kodaikanal Pine Hills & Lake
                 </Link>
               </li>
               <li>
-                <Link to="/tours?category=Hill+Station+%26+Nature" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
+                <Link to="/tours/hill-station" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
                   <span className="text-[#c59b27]">›</span> Munnar Tea Terraces & Gap Road
                 </Link>
               </li>
               <li>
-                <Link to="/tours?category=Hill+Station+%26+Nature" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
+                <Link to="/tours/hill-station" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
                   <span className="text-[#c59b27]">›</span> Ooty & Nilgiri Heritage Toy Train
                 </Link>
               </li>
               <li>
-                <Link to="/tours?category=Spiritual+%26+Cultural" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
+                <Link to="/tours/spiritual" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
                   <span className="text-[#c59b27]">›</span> Rameswaram & Dhanushkodi Coast
                 </Link>
               </li>
               <li>
-                <Link to="/tours?category=Hill+Station+%26+Nature" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
+                <Link to="/tours/hill-station" className="text-slate-400 hover:text-[#c59b27] transition-colors flex items-center gap-1.5">
                   <span className="text-[#c59b27]">›</span> Coorg & Wayanad Plantation Escapes
                 </Link>
               </li>

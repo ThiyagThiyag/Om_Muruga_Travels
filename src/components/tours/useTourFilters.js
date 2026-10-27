@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useParams, useLocation } from 'react-router-dom';
 import { toursData } from '../../data/travelData';
 
 export const tourCategories = [
@@ -9,23 +9,45 @@ export const tourCategories = [
   'International'
 ];
 
+const slugToCategory = {
+  'hill-station': 'Hill Station & Nature',
+  'spiritual': 'Spiritual & Cultural',
+  'honeymoon': 'Hill Station & Nature',
+  'nature': 'Hill Station & Nature',
+  'international': 'International'
+};
+
 export function useTourFilters() {
   const [searchParams] = useSearchParams();
-  const catParam = searchParams.get('category');
+  const { categorySlug } = useParams();
+  const location = useLocation();
 
-  const [selectedCategory, setSelectedCategory] = useState(
-    catParam && tourCategories.includes(catParam) ? catParam : 'All'
-  );
+  const getInitialCategory = () => {
+    if (categorySlug && slugToCategory[categorySlug]) {
+      return slugToCategory[categorySlug];
+    }
+    const catParam = searchParams.get('category');
+    if (catParam && tourCategories.includes(catParam)) {
+      return catParam;
+    }
+    return 'All';
+  };
+
+  const [selectedCategory, setSelectedCategory] = useState(getInitialCategory);
   const [selectedDuration, setSelectedDuration] = useState('all');
 
   useEffect(() => {
+    if (categorySlug && slugToCategory[categorySlug]) {
+      setSelectedCategory(slugToCategory[categorySlug]);
+      return;
+    }
     const currentParam = searchParams.get('category');
     if (currentParam && tourCategories.includes(currentParam)) {
       setSelectedCategory(currentParam);
-    } else if (!currentParam) {
+    } else if (!currentParam && !categorySlug) {
       setSelectedCategory('All');
     }
-  }, [searchParams]);
+  }, [searchParams, categorySlug, location.pathname]);
 
   const filteredTours = useMemo(() => {
     return toursData.filter((t) => {

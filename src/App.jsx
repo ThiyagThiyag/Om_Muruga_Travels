@@ -104,7 +104,25 @@ function App() {
                 }
               />
               <Route
+                path="/rooms/:typeSlug"
+                element={
+                  <RoomsPage
+                    onOpenBooking={handleOpenBooking}
+                    onOpenRoomModal={handleOpenRoomModal}
+                  />
+                }
+              />
+              <Route
                 path="/tours"
+                element={
+                  <ToursPage
+                    onOpenBooking={handleOpenBooking}
+                    onOpenTourModal={handleOpenTourModal}
+                  />
+                }
+              />
+              <Route
+                path="/tours/:categorySlug"
                 element={
                   <ToursPage
                     onOpenBooking={handleOpenBooking}
