@@ -102,7 +102,7 @@ export default function BrandLogo({
       <div className="flex flex-col justify-center">
         {/* Group Endorsement Line */}
         <div className="flex items-center gap-1 leading-none mb-0.5">
-          <span className="text-[8px] sm:text-[9.5px] font-black uppercase tracking-[0.16em] sm:tracking-[0.22em] text-[#FF4500]">
+          <span className="text-[8px] sm:text-[9.5px] font-black uppercase tracking-[0.16em] sm:tracking-[0.22em] text-[#C43200]">
             GROUP OF GOWDA'S
           </span>
         </div>
@@ -121,7 +121,7 @@ export default function BrandLogo({
         </div>
 
         {/* HOLIDAYS */}
-        <div className="flex items-center justify-between text-[8px] sm:text-[9.5px] font-black uppercase tracking-[0.2em] sm:tracking-[0.28em] mt-0.5" style={{ color: isDarkBackground ? '#f4e8c1' : '#c59b27' }}>
+        <div className="flex items-center justify-between text-[8px] sm:text-[9.5px] font-black uppercase tracking-[0.2em] sm:tracking-[0.28em] mt-0.5" style={{ color: isDarkBackground ? '#f4e8c1' : '#8A6805' }}>
           <span>HOLIDAYS</span>
         </div>
       </div>

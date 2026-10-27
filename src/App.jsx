@@ -1,18 +1,22 @@
 import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// Layout & Reusable Components
+// Layout & Core Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import BookingModal from './components/BookingModal';
-import RoomModal from './components/RoomModal';
-import ItineraryModal from './components/ItineraryModal';
 import FloatingContactWidget from './components/FloatingContactWidget';
 import Toast from './components/Toast';
 
-// Code-split / Lazy-loaded Pages for peak performance & minimal initial bundle
-const HomePage = lazy(() => import('./pages/HomePage'));
+// Lazy load Modals that import heavy animation libraries (framer-motion) so they don't block initial page load
+const RoomModal = lazy(() => import('./components/RoomModal'));
+const ItineraryModal = lazy(() => import('./components/ItineraryModal'));
+
+// Direct import for immediate synchronous render of HomePage (0 CLS, instant FCP/LCP)
+import HomePage from './pages/HomePage';
+
+// Lazy-loaded secondary pages (Rooms, Tours, About, Contact)
 const RoomsPage = lazy(() => import('./pages/RoomsPage'));
 const ToursPage = lazy(() => import('./pages/ToursPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -164,21 +168,26 @@ function App() {
           onShowToast={showToast}
         />
 
-        {/* Room Quick-View Modal */}
-        <RoomModal
-          isOpen={isRoomModalOpen}
-          onClose={() => setIsRoomModalOpen(false)}
-          room={selectedRoom}
-          onBookRoom={(room) => handleOpenBooking(room)}
-        />
+        {/* Lazy-loaded Room & Tour Modals (framer-motion only loaded when user clicks view) */}
+        <Suspense fallback={null}>
+          {isRoomModalOpen && (
+            <RoomModal
+              isOpen={isRoomModalOpen}
+              onClose={() => setIsRoomModalOpen(false)}
+              room={selectedRoom}
+              onBookRoom={(room) => handleOpenBooking(room)}
+            />
+          )}
 
-        {/* Tour Itinerary Detailed Modal */}
-        <ItineraryModal
-          isOpen={isTourModalOpen}
-          onClose={() => setIsTourModalOpen(false)}
-          tour={selectedTour}
-          onBookTour={(tour) => handleOpenBooking(tour)}
-        />
+          {isTourModalOpen && (
+            <ItineraryModal
+              isOpen={isTourModalOpen}
+              onClose={() => setIsTourModalOpen(false)}
+              tour={selectedTour}
+              onBookTour={(tour) => handleOpenBooking(tour)}
+            />
+          )}
+        </Suspense>
 
         {/* Floating Toast Notification Bar */}
         <Toast toasts={toasts} onDismiss={dismissToast} />

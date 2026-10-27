@@ -6,7 +6,7 @@ export default function TestimonialsSection() {
     <section className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-16 space-y-2 sm:space-y-3">
-          <span className="text-[11px] sm:text-xs uppercase tracking-widest text-[#c59b27] font-bold block">
+          <span className="text-[11px] sm:text-xs uppercase tracking-widest text-[#8A6805] font-bold block">
             Guest Experiences
           </span>
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold text-[#0a2540] tracking-tight">
@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
               className="bg-[#faf6f0]/70 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="space-y-4">
-                <div className="flex items-center gap-1 text-[#c59b27] text-sm">
+                <div className="flex items-center gap-1 text-[#8A6805] text-sm">
                   {Array.from({ length: t.rating }).map((_, i) => (
                     <span key={i}>★</span>
                   ))}
@@ -38,12 +38,12 @@ export default function TestimonialsSection() {
                 <img 
                   src={t.avatar} 
                   alt={t.name}
-                  className="w-10 h-10 rounded-full object-cover border border-[#c59b27]" 
+                  className="w-10 h-10 rounded-full object-cover border border-[#8A6805]" 
                 />
                 <div>
                   <h3 className="text-xs font-bold text-slate-900">{t.name}</h3>
                   <span className="text-[10px] text-slate-500 block">{t.location}</span>
-                  <span className="text-[10px] text-[#c59b27] font-medium block">{t.stay}</span>
+                  <span className="text-[10px] text-[#8A6805] font-semibold block">{t.stay}</span>
                 </div>
               </div>
             </div>

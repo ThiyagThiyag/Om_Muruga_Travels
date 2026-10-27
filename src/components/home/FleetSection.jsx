@@ -1,42 +1,17 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { motion, useMotionValue, animate } from 'framer-motion';
+import React, { useRef } from 'react';
 import { travelFleetData } from '../../data/travelData';
 
 export default function FleetSection() {
   const containerRef = useRef(null);
-  const [maxDrag, setMaxDrag] = useState(0);
-  const x = useMotionValue(0);
-
-  useEffect(() => {
-    const updateConstraints = () => {
-      if (containerRef.current) {
-        const scrollW = containerRef.current.scrollWidth;
-        const offsetW = containerRef.current.offsetWidth;
-        const diff = Math.max(0, scrollW - offsetW);
-        setMaxDrag(diff);
-      }
-    };
-
-    updateConstraints();
-    window.addEventListener('resize', updateConstraints);
-    const timer = setTimeout(updateConstraints, 200);
-
-    return () => {
-      window.removeEventListener('resize', updateConstraints);
-      clearTimeout(timer);
-    };
-  }, []);
 
   const slide = (direction) => {
-    const currentX = x.get();
-    const step = 340;
-    let targetX = direction === 'left' ? currentX + step : currentX - step;
-    targetX = Math.max(-maxDrag, Math.min(0, targetX));
-    animate(x, targetX, {
-      type: 'spring',
-      stiffness: 300,
-      damping: 30
-    });
+    if (containerRef.current) {
+      const step = 340;
+      containerRef.current.scrollBy({
+        left: direction === 'left' ? -step : step,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -87,22 +62,18 @@ export default function FleetSection() {
         </div>
 
         {/* Draggable Fleet Carousel */}
+        {/* Vehicles Horizontal Slider Container with native scroll-snap (zero layout reflow) */}
         <div
           ref={containerRef}
-          className="overflow-hidden cursor-grab active:cursor-grabbing pb-4 select-none -mx-2 px-2"
+          className="overflow-x-auto scroll-smooth flex gap-4 sm:gap-6 pb-4 select-none -mx-2 px-2 no-scrollbar"
+          style={{ scrollSnapType: 'x mandatory' }}
         >
-          <motion.div
-            drag="x"
-            style={{ x }}
-            dragConstraints={{ right: 0, left: -maxDrag }}
-            dragElastic={0.15}
-            className="flex gap-4 sm:gap-6"
-          >
-            {travelFleetData.map((vehicle) => (
-              <div 
-                key={vehicle.id}
-                className="w-[280px] xs:w-[305px] sm:w-[325px] shrink-0 bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm flex flex-col justify-between hover:border-[#c59b27]/60 transition-all group"
-              >
+          {travelFleetData.map((vehicle) => (
+            <div 
+              key={vehicle.id}
+              style={{ scrollSnapAlign: 'start' }}
+              className="w-[280px] xs:w-[305px] sm:w-[325px] shrink-0 bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm flex flex-col justify-between hover:border-[#c59b27]/60 transition-all group"
+            >
                 <div>
                   <div className="relative h-44 overflow-hidden bg-slate-900">
                     <img 
@@ -116,7 +87,7 @@ export default function FleetSection() {
                       height="176"
                     />
                     <div className="absolute top-3 left-3">
-                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#c59b27] text-white">
+                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#8A6805] text-white">
                         {vehicle.type}
                       </span>
                     </div>
@@ -160,14 +131,13 @@ export default function FleetSection() {
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-2.5 px-4 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-98"
+                    className="w-full py-2.5 px-4 rounded-xl bg-[#128C7E] hover:bg-[#075E54] text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-98"
                   >
                     <span>Inquire Cab on WhatsApp</span>
                   </a>
                 </div>
               </div>
             ))}
-          </motion.div>
         </div>
       </div>
     </section>

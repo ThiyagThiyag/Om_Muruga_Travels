@@ -39,39 +39,68 @@
     <meta name="twitter:site" content="@OmMurugaTravels" />
     <meta name="twitter:creator" content="@OmMurugaTravels" />
 
-    <!-- Google Analytics (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-OMMURUGA24"></script>
+    <!-- Google Analytics (gtag.js) - Loaded purely on user interaction to eliminate main-thread blocking and reduce initial payload -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-OMMURUGA24', {
-        page_path: window.location.pathname,
-        anonymize_ip: true
-      });
+      (function() {
+        var loaded = false;
+        function loadGA() {
+          if (loaded) return;
+          loaded = true;
+          window.removeEventListener('scroll', loadGA);
+          window.removeEventListener('touchstart', loadGA);
+          window.removeEventListener('click', loadGA);
+          window.removeEventListener('keydown', loadGA);
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-OMMURUGA24';
+          document.head.appendChild(s);
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-OMMURUGA24', {
+            page_path: window.location.pathname,
+            anonymize_ip: true
+          });
+        }
+        window.addEventListener('scroll', loadGA, { passive: true, once: true });
+        window.addEventListener('touchstart', loadGA, { passive: true, once: true });
+        window.addEventListener('click', loadGA, { passive: true, once: true });
+        window.addEventListener('keydown', loadGA, { passive: true, once: true });
+      })();
     </script>
 
-    <!-- Preload Critical LCP Hero Image for fast mobile paint -->
-    <link 
-      rel="preload" 
-      as="image" 
-      href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=75" 
-      fetchpriority="high"
-    />
+    <!-- Preload Critical LCP Hero Image only on homepage route (avoids preload unused warning on /contact, /tours, /rooms) -->
+    <script>
+      if (window.location.pathname === '/' || window.location.pathname === '') {
+        var link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1100&q=70';
+        link.setAttribute('fetchpriority', 'high');
+        document.head.appendChild(link);
+      }
+    </script>
 
-    <!-- Google Fonts: Asynchronous non-render-blocking font loader -->
+    <!-- Google Fonts: Streamlined weights loaded asynchronously off critical path -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script>
       (function() {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap';
-        document.head.appendChild(link);
+        function loadWebFonts() {
+          var link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@500;700&display=swap';
+          document.head.appendChild(link);
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadWebFonts);
+        } else {
+          window.addEventListener('load', loadWebFonts);
+        }
       })();
     </script>
     <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
     </noscript>
 
     <!-- Schema.org JSON-LD Structured Data for Local Travel Agency -->
@@ -133,7 +162,7 @@
       <main class="py-8 px-6 max-w-5xl mx-auto">
         <article>
           <header class="space-y-4">
-            <span class="text-xs uppercase tracking-widest text-[#c59b27] font-bold">Group of Gowda's Enterprise</span>
+            <span class="text-xs uppercase tracking-widest text-[#8A6805] font-bold">Group of Gowda's Enterprise</span>
             <h1 class="text-4xl font-serif font-bold text-[#0a2540]">Om Muruga Travels: Curated Hill Station Tour Packages, Family Vacations &amp; Chauffeur Cabs</h1>
             <p class="text-lg text-slate-700 leading-relaxed">
               Tailored hill station tour packages, sanitized family cabs with experienced chauffeurs, outstation tour circuits, and boutique cottage stays across South India.

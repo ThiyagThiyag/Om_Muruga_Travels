@@ -141,9 +141,9 @@ export default function Navbar({ onOpenBooking }) {
               <span className="w-1.5 h-1.5 rounded-full bg-[#c59b27] animate-ping"></span>
               Group of Gowda's Travels Agency
             </span>
-            <a 
-              href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Holidays,%20I%20would%20like%20to%20inquire%20about%20booking" 
-              target="_blank" 
+            <a
+              href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Holidays,%20I%20would%20like%20to%20inquire%20about%20booking"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-[#25D366] hover:text-[#20ba59] font-medium flex items-center gap-1.5 transition-colors"
             >
@@ -154,11 +154,10 @@ export default function Navbar({ onOpenBooking }) {
       </div>
 
       {/* Main Navbar */}
-      <nav className={`transition-all duration-300 relative ${
-        isScrolled 
-          ? 'bg-[#0a2540]/95 backdrop-blur-md shadow-xl border-b border-[#c59b27]/20 py-3' 
-          : 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80 py-3.5'
-      }`}>
+      <nav className={`transition-all duration-300 relative ${isScrolled
+        ? 'bg-[#0a2540]/95 backdrop-blur-md shadow-xl border-b border-[#c59b27]/20 py-3'
+        : 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80 py-3.5'
+        }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
           {/* Brand Logo Link */}
           <Link to="/" className="flex items-center group transition-transform group-hover:scale-102">
@@ -170,13 +169,12 @@ export default function Navbar({ onOpenBooking }) {
             {/* Home */}
             <Link
               to="/"
-              className={`text-sm font-semibold tracking-wide transition-all relative py-1 ${
-                isActive('/')
-                  ? 'text-[#c59b27]'
-                  : isScrolled
+              className={`text-sm font-semibold tracking-wide transition-all relative py-1 ${isActive('/')
+                ? 'text-[#c59b27]'
+                : isScrolled
                   ? 'text-slate-200 hover:text-[#c59b27]'
                   : 'text-slate-700 hover:text-[#0a2540]'
-              }`}
+                }`}
             >
               Home
               {isActive('/') && (
@@ -185,7 +183,7 @@ export default function Navbar({ onOpenBooking }) {
             </Link>
 
             {/* Services Dropdown (Hover Trigger) */}
-            <div 
+            <div
               ref={servicesDropdownRef}
               className="relative"
               onMouseEnter={handleMouseEnter}
@@ -194,23 +192,21 @@ export default function Navbar({ onOpenBooking }) {
               <button
                 type="button"
                 onClick={() => setIsServicesOpen((prev) => !prev)}
-                className={`text-sm font-semibold tracking-wide transition-all relative py-1 flex items-center gap-1.5 focus:outline-none ${
-                  isServicesActive || isServicesOpen
-                    ? 'text-[#c59b27]'
-                    : isScrolled
+                className={`text-sm font-semibold tracking-wide transition-all relative py-1 flex items-center gap-1.5 focus:outline-none ${isServicesActive || isServicesOpen
+                  ? 'text-[#c59b27]'
+                  : isScrolled
                     ? 'text-slate-200 hover:text-[#c59b27]'
                     : 'text-slate-700 hover:text-[#0a2540]'
-                }`}
+                  }`}
                 aria-expanded={isServicesOpen}
                 aria-haspopup="true"
               >
                 <span>Services</span>
-                <svg 
-                  className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                    isServicesOpen ? 'rotate-180 text-[#c59b27]' : ''
-                  }`} 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${isServicesOpen ? 'rotate-180 text-[#c59b27]' : ''
+                    }`}
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
@@ -221,12 +217,11 @@ export default function Navbar({ onOpenBooking }) {
               </button>
 
               {/* Desktop Services Compact Dropdown */}
-              <div 
-                className={`absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[640px] max-w-[94vw] transition-all duration-200 z-50 ${
-                  isServicesOpen 
-                    ? 'opacity-100 visible translate-y-0 pointer-events-auto' 
-                    : 'opacity-0 invisible -translate-y-2 pointer-events-none'
-                }`}
+              <div
+                className={`absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[640px] max-w-[94vw] transition-all duration-200 z-50 ${isServicesOpen
+                  ? 'opacity-100 visible translate-y-0 pointer-events-auto'
+                  : 'opacity-0 invisible -translate-y-2 pointer-events-none'
+                  }`}
               >
                 <div className="bg-white rounded-2xl shadow-xl border border-slate-200/90 overflow-hidden ring-1 ring-black/5">
                   {/* Accent Top Line */}
@@ -288,13 +283,12 @@ export default function Navbar({ onOpenBooking }) {
             {/* About Agency */}
             <Link
               to="/about"
-              className={`text-sm font-semibold tracking-wide transition-all relative py-1 ${
-                isActive('/about')
-                  ? 'text-[#c59b27]'
-                  : isScrolled
+              className={`text-sm font-semibold tracking-wide transition-all relative py-1 ${isActive('/about')
+                ? 'text-[#c59b27]'
+                : isScrolled
                   ? 'text-slate-200 hover:text-[#c59b27]'
                   : 'text-slate-700 hover:text-[#0a2540]'
-              }`}
+                }`}
             >
               About Agency
               {isActive('/about') && (
@@ -305,13 +299,12 @@ export default function Navbar({ onOpenBooking }) {
             {/* Contact */}
             <Link
               to="/contact"
-              className={`text-sm font-semibold tracking-wide transition-all relative py-1 ${
-                isActive('/contact')
-                  ? 'text-[#c59b27]'
-                  : isScrolled
+              className={`text-sm font-semibold tracking-wide transition-all relative py-1 ${isActive('/contact')
+                ? 'text-[#c59b27]'
+                : isScrolled
                   ? 'text-slate-200 hover:text-[#c59b27]'
                   : 'text-slate-700 hover:text-[#0a2540]'
-              }`}
+                }`}
             >
               Contact
               {isActive('/contact') && (
@@ -335,11 +328,10 @@ export default function Navbar({ onOpenBooking }) {
             {/* Mobile hamburger button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`lg:hidden p-2.5 rounded-lg border transition-colors ${
-                isScrolled
-                  ? 'text-white border-white/20 hover:bg-white/10'
-                  : 'text-slate-800 border-slate-300 hover:bg-slate-100'
-              }`}
+              className={`lg:hidden p-2.5 transition-colors ${isScrolled
+                ? 'text-white hover:bg-white/10'
+                : 'text-slate-800 hover:bg-slate-100'
+                }`}
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? (
@@ -363,11 +355,10 @@ export default function Navbar({ onOpenBooking }) {
               <Link
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-base font-semibold py-2 px-3 rounded-xl transition-colors ${
-                  isActive('/')
-                    ? 'bg-[#c59b27]/10 text-[#c59b27]'
-                    : 'text-slate-800 hover:bg-slate-50'
-                }`}
+                className={`text-base font-semibold py-2 px-3 rounded-xl transition-colors ${isActive('/')
+                  ? 'bg-[#c59b27]/10 text-[#c59b27]'
+                  : 'text-slate-800 hover:bg-slate-50'
+                  }`}
               >
                 Home
               </Link>
@@ -377,11 +368,10 @@ export default function Navbar({ onOpenBooking }) {
                 <button
                   type="button"
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                  className={`w-full flex items-center justify-between p-3.5 text-left text-base font-semibold transition-colors ${
-                    isServicesActive || mobileServicesOpen
-                      ? 'text-[#0a2540] bg-[#c59b27]/10'
-                      : 'text-slate-800 hover:bg-slate-100'
-                  }`}
+                  className={`w-full flex items-center justify-between p-3.5 text-left text-base font-semibold transition-colors ${isServicesActive || mobileServicesOpen
+                    ? 'text-[#0a2540] bg-[#c59b27]/10'
+                    : 'text-slate-800 hover:bg-slate-100'
+                    }`}
                 >
                   <div className="flex items-center gap-2">
                     <span>Services</span>
@@ -389,12 +379,11 @@ export default function Navbar({ onOpenBooking }) {
                       Cabs, Tours, Rooms
                     </span>
                   </div>
-                  <svg 
-                    className={`w-4 h-4 text-slate-500 transition-transform duration-200 ${
-                      mobileServicesOpen ? 'rotate-180 text-[#c59b27]' : ''
-                    }`} 
-                    fill="none" 
-                    stroke="currentColor" 
+                  <svg
+                    className={`w-4 h-4 text-slate-500 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180 text-[#c59b27]' : ''
+                      }`}
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
@@ -410,11 +399,10 @@ export default function Navbar({ onOpenBooking }) {
                           key={cat.id}
                           type="button"
                           onClick={() => setActiveMobileCategory(cat.id)}
-                          className={`flex-1 py-1.5 px-2 text-xs font-bold rounded-lg transition-all ${
-                            activeMobileCategory === cat.id
-                              ? 'bg-[#0a2540] text-white shadow-xs'
-                              : 'text-slate-600 hover:text-slate-900'
-                          }`}
+                          className={`flex-1 py-1.5 px-2 text-xs font-bold rounded-lg transition-all ${activeMobileCategory === cat.id
+                            ? 'bg-[#0a2540] text-white shadow-xs'
+                            : 'text-slate-600 hover:text-slate-900'
+                            }`}
                         >
                           {cat.shortTitle}
                         </button>
@@ -473,11 +461,10 @@ export default function Navbar({ onOpenBooking }) {
               <Link
                 to="/about"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-base font-semibold py-2 px-3 rounded-xl transition-colors ${
-                  isActive('/about')
-                    ? 'bg-[#c59b27]/10 text-[#c59b27]'
-                    : 'text-slate-800 hover:bg-slate-50'
-                }`}
+                className={`text-base font-semibold py-2 px-3 rounded-xl transition-colors ${isActive('/about')
+                  ? 'bg-[#c59b27]/10 text-[#c59b27]'
+                  : 'text-slate-800 hover:bg-slate-50'
+                  }`}
               >
                 About Agency
               </Link>
@@ -486,11 +473,10 @@ export default function Navbar({ onOpenBooking }) {
               <Link
                 to="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-base font-semibold py-2 px-3 rounded-xl transition-colors ${
-                  isActive('/contact')
-                    ? 'bg-[#c59b27]/10 text-[#c59b27]'
-                    : 'text-slate-800 hover:bg-slate-50'
-                }`}
+                className={`text-base font-semibold py-2 px-3 rounded-xl transition-colors ${isActive('/contact')
+                  ? 'bg-[#c59b27]/10 text-[#c59b27]'
+                  : 'text-slate-800 hover:bg-slate-50'
+                  }`}
               >
                 Contact
               </Link>
@@ -518,9 +504,9 @@ export default function Navbar({ onOpenBooking }) {
                       +91 63846 93543
                     </a>
                   </div>
-                  <a 
-                    href="https://wa.me/916382508601" 
-                    target="_blank" 
+                  <a
+                    href="https://wa.me/916382508601"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#25D366] font-semibold text-center py-2 rounded-xl bg-emerald-50 border border-emerald-200"
                   >

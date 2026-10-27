@@ -12,7 +12,7 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
     <section className="py-12 sm:py-16 md:py-20 px-3 xs:px-4 sm:px-8 max-w-7xl mx-auto w-full">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-4 sm:gap-6">
         <div>
-          <span className="text-[11px] sm:text-xs uppercase tracking-widest text-[#c59b27] font-bold block mb-1.5 sm:mb-2">
+          <span className="text-[11px] sm:text-xs uppercase tracking-widest text-[#8A6805] font-bold block mb-1.5 sm:mb-2">
             Featured Circuits
           </span>
           <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold text-[#0a2540] tracking-tight">
@@ -67,13 +67,13 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
                   <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#0a2540]/90 text-white backdrop-blur-sm border border-white/20">
                     {tour.badge}
                   </span>
-                  <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#c59b27] text-white shadow-sm">
+                  <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#8A6805] text-white shadow-sm">
                     {tour.duration}
                   </span>
                 </div>
                 <div className="absolute bottom-3 right-3">
                   <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-white text-slate-900 shadow-md flex items-center gap-1">
-                    <span className="text-[#c59b27]">★</span> {tour.rating}
+                    <span className="text-[#8A6805]">★</span> {tour.rating}
                   </span>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
                   <div className="bg-amber-50/60 rounded-xl p-3 border border-amber-200/50 space-y-1">
                     {tour.highlights.slice(0, 2).map((h, i) => (
                       <div key={i} className="flex items-center gap-1.5 text-xs text-slate-700">
-                        <span className="text-[#c59b27] font-bold">✓</span>
+                        <span className="text-[#8A6805] font-bold">✓</span>
                         <span className="truncate">{h}</span>
                       </div>
                     ))}
@@ -102,7 +102,7 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
 
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                   <div>
-                    <span className="text-[10px] text-slate-400 block uppercase tracking-wider font-semibold">
+                    <span className="text-[10px] text-slate-500 block uppercase tracking-wider font-semibold">
                       Tour Package
                     </span>
                     <span className="text-sm font-bold text-[#0a2540]">
@@ -113,7 +113,7 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => onOpenTourModal(tour)}
-                      className="px-3 py-1.5 rounded-lg border border-[#c59b27] text-[#c59b27] hover:bg-[#c59b27] hover:text-white text-xs font-bold transition-all"
+                      className="px-3 py-1.5 rounded-lg border border-[#8A6805] text-[#8A6805] hover:bg-[#8A6805] hover:text-white text-xs font-bold transition-all"
                     >
                       Itinerary
                     </button>
@@ -156,14 +156,14 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
                 </div>
                 <div className="absolute bottom-3 right-3">
                   <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-white text-slate-900 shadow-md flex items-center gap-1">
-                    <span className="text-[#c59b27]">★</span> {room.rating}
+                    <span className="text-[#8A6805]">★</span> {room.rating}
                   </span>
                 </div>
               </div>
 
               <div className="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <span className="text-[11px] font-semibold text-[#c59b27] uppercase tracking-wider block mb-1">
+                  <span className="text-[11px] font-semibold text-[#8A6805] uppercase tracking-wider block mb-1">
                     {room.type}
                   </span>
                   <h3 className="text-base font-bold text-slate-900 font-serif line-clamp-1 mb-2">

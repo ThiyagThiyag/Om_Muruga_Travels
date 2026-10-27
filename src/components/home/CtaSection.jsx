@@ -18,7 +18,7 @@ export default function CtaSection() {
             href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20a%20tour%20package"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 min-h-[44px]"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#128C7E] hover:bg-[#075E54] text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 min-h-[44px]"
           >
             <span>Chat on WhatsApp (+91 63825 08601)</span>
           </a>

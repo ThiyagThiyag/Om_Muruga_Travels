@@ -87,7 +87,7 @@ export default function WhyChooseUsSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-8 relative z-10">
         {/* Simple & Neat Header */}
         <div className="max-w-2xl mx-auto text-center mb-16 sm:mb-20 space-y-3">
-          <span className="text-xs uppercase tracking-widest text-[#c59b27] font-bold block">
+          <span className="text-xs uppercase tracking-widest text-[#8A6805] font-bold block">
             The Om Muruga Advantage
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#0a2540] tracking-tight">
@@ -109,25 +109,25 @@ export default function WhyChooseUsSection() {
               >
                 {/* Index & Minimal Icon Tag */}
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-3xl sm:text-4xl font-serif font-light text-[#c59b27] group-hover:scale-110 transition-transform duration-300 select-none">
+                  <span className="text-3xl sm:text-4xl font-serif font-bold text-[#8A6805] group-hover:scale-110 transition-transform duration-300 select-none">
                     {item.num}
                   </span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#c59b27]/40"></span>
-                  <span className="w-8 h-8 rounded-full bg-amber-50 border border-amber-200/60 flex items-center justify-center shrink-0">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#8A6805]/40"></span>
+                  <span className="w-8 h-8 rounded-full bg-amber-50 border border-amber-300/80 flex items-center justify-center shrink-0">
                     {item.icon}
                   </span>
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 group-hover:text-[#c59b27] transition-colors">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-600 group-hover:text-[#8A6805] transition-colors">
                     {item.tag}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#0a2540] group-hover:text-[#c59b27] transition-colors leading-snug">
+                <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#0a2540] group-hover:text-[#8A6805] transition-colors leading-snug">
                   {item.title}
                 </h3>
 
                 {/* Subtle Expanding Line */}
-                <div className="w-10 h-[2px] bg-[#c59b27]/40 my-3 group-hover:w-20 transition-all duration-300"></div>
+                <div className="w-10 h-[2px] bg-[#8A6805]/40 my-3 group-hover:w-20 transition-all duration-300"></div>
 
                 {/* Description */}
                 <p className="text-sm text-slate-600 leading-relaxed max-w-md">
@@ -146,25 +146,25 @@ export default function WhyChooseUsSection() {
               >
                 {/* Index & Minimal Icon Tag */}
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-3xl sm:text-4xl font-serif font-light text-[#c59b27] group-hover:scale-110 transition-transform duration-300 select-none">
+                  <span className="text-3xl sm:text-4xl font-serif font-bold text-[#8A6805] group-hover:scale-110 transition-transform duration-300 select-none">
                     {item.num}
                   </span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#c59b27]/40"></span>
-                  <span className="w-8 h-8 rounded-full bg-amber-50 border border-amber-200/60 flex items-center justify-center shrink-0">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#8A6805]/40"></span>
+                  <span className="w-8 h-8 rounded-full bg-amber-50 border border-amber-300/80 flex items-center justify-center shrink-0">
                     {item.icon}
                   </span>
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 group-hover:text-[#c59b27] transition-colors">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-600 group-hover:text-[#8A6805] transition-colors">
                     {item.tag}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#0a2540] group-hover:text-[#c59b27] transition-colors leading-snug">
+                <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#0a2540] group-hover:text-[#8A6805] transition-colors leading-snug">
                   {item.title}
                 </h3>
 
                 {/* Subtle Expanding Line */}
-                <div className="w-10 h-[2px] bg-[#c59b27]/40 my-3 group-hover:w-20 transition-all duration-300"></div>
+                <div className="w-10 h-[2px] bg-[#8A6805]/40 my-3 group-hover:w-20 transition-all duration-300"></div>
 
                 {/* Description */}
                 <p className="text-sm text-slate-600 leading-relaxed max-w-md">
@@ -177,7 +177,7 @@ export default function WhyChooseUsSection() {
 
         {/* Clean Bottom Trust Footnote with ample separation */}
         <div className="mt-20 sm:mt-28 pt-8 border-t border-slate-200/70 text-center max-w-md mx-auto">
-          <p className="text-xs uppercase tracking-widest text-slate-400 font-semibold">
+          <p className="text-xs uppercase tracking-widest text-slate-600 font-semibold">
             Group of Gowda's Hospitality & Travel Enterprise
           </p>
         </div>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const galleryImages = [
   { image: '/assets/images/image-48.jpeg' },
@@ -10,54 +9,22 @@ const galleryImages = [
   { image: '/assets/images/image-6.jpeg' },
 ];
 
-const variants = {
-  enter: (direction) => ({
-    x: direction > 0 ? '100%' : '-100%',
-    opacity: 0,
-    scale: 0.96
-  }),
-  center: {
-    zIndex: 1,
-    x: 0,
-    opacity: 1,
-    scale: 1,
-    transition: {
-      x: { type: 'spring', stiffness: 280, damping: 30 },
-      opacity: { duration: 0.35 },
-      scale: { duration: 0.35 }
-    }
-  },
-  exit: (direction) => ({
-    zIndex: 0,
-    x: direction < 0 ? '100%' : '-100%',
-    opacity: 0,
-    scale: 0.96,
-    transition: {
-      x: { type: 'spring', stiffness: 280, damping: 30 },
-      opacity: { duration: 0.25 },
-      scale: { duration: 0.25 }
-    }
-  })
-};
-
 export default function AboutGallery() {
-  const [[page, direction], setPage] = useState([0, 0]);
+  const [imageIndex, setImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  const imageIndex = Math.abs(page % galleryImages.length);
-
   const paginate = (newDirection) => {
-    setPage([page + newDirection, newDirection]);
+    setImageIndex((prev) => (prev + newDirection + galleryImages.length) % galleryImages.length);
   };
 
-  // Subtle auto-play when not dragging or hovering
+  // Subtle auto-play when not hovering
   useEffect(() => {
     if (isHovered) return;
     const timer = setInterval(() => {
       paginate(1);
     }, 6000);
     return () => clearInterval(timer);
-  }, [page, isHovered]);
+  }, [imageIndex, isHovered]);
 
   const currentImage = galleryImages[imageIndex];
 
@@ -82,47 +49,26 @@ export default function AboutGallery() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Animated Single Full-Width Image with Framer Motion Drag */}
-        <AnimatePresence initial={false} custom={direction}>
-          <motion.div
-            key={page}
-            custom={direction}
-            variants={variants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={0.8}
-            onDragEnd={(e, { offset, velocity }) => {
-              const swipe = Math.abs(offset.x) * velocity.x;
-              if (swipe < -8000 || offset.x < -60) {
-                paginate(1);
-              } else if (swipe > 8000 || offset.x > 60) {
-                paginate(-1);
-              }
-            }}
-            className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing"
-          >
-            {/* Background Full Width Image */}
-            <img
-              src={currentImage.image}
-              alt="Gallery view"
-              className="w-full h-full object-cover pointer-events-none"
-              draggable="false"
-            />
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          {/* Background Full Width Image */}
+          <img
+            key={imageIndex}
+            src={currentImage.image}
+            alt="Gallery view"
+            className="w-full h-full object-cover pointer-events-none transition-opacity duration-300 animate-in fade-in"
+            draggable="false"
+          />
 
-            {/* Subtle Natural Vignette */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20 pointer-events-none"></div>
+          {/* Subtle Natural Vignette */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20 pointer-events-none"></div>
 
-            {/* Top Indicator Bar */}
-            <div className="absolute top-4 right-4 sm:top-6 sm:right-6 pointer-events-none z-10">
-              <span className="px-3 py-1 rounded-full text-[11px] font-medium bg-black/50 backdrop-blur-md text-white/90 border border-white/20">
-                {imageIndex + 1} / {galleryImages.length}
-              </span>
-            </div>
-          </motion.div>
-        </AnimatePresence>
+          {/* Top Indicator Bar */}
+          <div className="absolute top-4 right-4 sm:top-6 sm:right-6 pointer-events-none z-10">
+            <span className="px-3 py-1 rounded-full text-[11px] font-medium bg-black/50 backdrop-blur-md text-white/90 border border-white/20">
+              {imageIndex + 1} / {galleryImages.length}
+            </span>
+          </div>
+        </div>
 
         {/* Left Arrow Button */}
         <button

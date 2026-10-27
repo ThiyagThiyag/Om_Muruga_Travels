@@ -1,42 +1,17 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { motion, useMotionValue, animate } from 'framer-motion';
+import React, { useRef } from 'react';
 import { travelFleetData } from '../../data/travelData';
 
 export default function ToursFleetShowcase() {
   const containerRef = useRef(null);
-  const [maxDrag, setMaxDrag] = useState(0);
-  const x = useMotionValue(0);
-
-  useEffect(() => {
-    const updateConstraints = () => {
-      if (containerRef.current) {
-        const scrollW = containerRef.current.scrollWidth;
-        const offsetW = containerRef.current.offsetWidth;
-        const diff = Math.max(0, scrollW - offsetW);
-        setMaxDrag(diff);
-      }
-    };
-
-    updateConstraints();
-    window.addEventListener('resize', updateConstraints);
-    const timer = setTimeout(updateConstraints, 200);
-
-    return () => {
-      window.removeEventListener('resize', updateConstraints);
-      clearTimeout(timer);
-    };
-  }, []);
 
   const slide = (direction) => {
-    const currentX = x.get();
-    const step = 340;
-    let targetX = direction === 'left' ? currentX + step : currentX - step;
-    targetX = Math.max(-maxDrag, Math.min(0, targetX));
-    animate(x, targetX, {
-      type: 'spring',
-      stiffness: 300,
-      damping: 30
-    });
+    if (containerRef.current) {
+      const step = 340;
+      containerRef.current.scrollBy({
+        left: direction === 'left' ? -step : step,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -88,20 +63,15 @@ export default function ToursFleetShowcase() {
       {/* Draggable Fleet Carousel Container */}
       <div 
         ref={containerRef}
-        className="overflow-hidden cursor-grab active:cursor-grabbing pb-6 select-none -mx-2 px-2"
+        className="overflow-x-auto scroll-smooth flex gap-5 sm:gap-6 pb-6 select-none -mx-2 px-2 no-scrollbar"
+        style={{ scrollSnapType: 'x mandatory' }}
       >
-        <motion.div
-          drag="x"
-          style={{ x }}
-          dragConstraints={{ right: 0, left: -maxDrag }}
-          dragElastic={0.15}
-          className="flex gap-5 sm:gap-6"
-        >
-          {travelFleetData.map((cab) => (
-            <div 
-              key={cab.id}
-              className="w-[280px] xs:w-[305px] sm:w-[325px] shrink-0 bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
-            >
+        {travelFleetData.map((cab) => (
+          <div 
+            key={cab.id}
+            style={{ scrollSnapAlign: 'start' }}
+            className="w-[280px] xs:w-[305px] sm:w-[325px] shrink-0 bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+          >
               <div>
                 {/* Cab Photo */}
                 <div className="relative h-44 overflow-hidden bg-slate-900">
@@ -167,7 +137,6 @@ export default function ToursFleetShowcase() {
               </div>
             </div>
           ))}
-        </motion.div>
       </div>
     </div>
   );

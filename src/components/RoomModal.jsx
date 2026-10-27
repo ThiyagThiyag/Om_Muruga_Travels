@@ -1,48 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-
-const slideVariants = {
-  enter: (direction) => ({
-    x: direction > 0 ? '100%' : '-100%',
-    opacity: 0
-  }),
-  center: {
-    zIndex: 1,
-    x: 0,
-    opacity: 1,
-    transition: {
-      x: { type: 'spring', stiffness: 300, damping: 32 },
-      opacity: { duration: 0.25 }
-    }
-  },
-  exit: (direction) => ({
-    zIndex: 0,
-    x: direction < 0 ? '100%' : '-100%',
-    opacity: 0,
-    transition: {
-      x: { type: 'spring', stiffness: 300, damping: 32 },
-      opacity: { duration: 0.2 }
-    }
-  })
-};
 
 export default function RoomModal({ isOpen, onClose, room }) {
-  const [[page, direction], setPage] = useState([0, 0]);
+  const [imageIndex, setImageIndex] = useState(0);
 
   // Reset swiper index when opening modal or selecting new room
   useEffect(() => {
     if (isOpen) {
-      setPage([0, 0]);
+      setImageIndex(0);
     }
   }, [isOpen, room?.id]);
 
   if (!isOpen || !room) return null;
 
   const images = room.gallery && room.gallery.length > 0 ? room.gallery : [room.mainImage];
-  const imageIndex = ((page % images.length) + images.length) % images.length;
 
   const paginate = (newDirection) => {
-    setPage([page + newDirection, newDirection]);
+    setImageIndex((prev) => (prev + newDirection + images.length) % images.length);
   };
 
   const whatsAppUrl = `https://wa.me/916382508601?text=${encodeURIComponent(
@@ -60,35 +33,15 @@ export default function RoomModal({ isOpen, onClose, room }) {
       >
         {/* Full Image Swiper Showcase (Compact Landscape Framing, 100% Full Cover) */}
         <div className="relative h-[250px] xs:h-[280px] sm:h-[320px] md:h-[360px] w-full bg-slate-950 overflow-hidden select-none">
-          <AnimatePresence initial={false} custom={direction}>
-            <motion.div
-              key={page}
-              custom={direction}
-              variants={slideVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              drag="x"
-              dragConstraints={{ left: 0, right: 0 }}
-              dragElastic={0.8}
-              onDragEnd={(e, { offset, velocity }) => {
-                const swipe = Math.abs(offset.x) * velocity.x;
-                if (swipe < -8000 || offset.x < -60) {
-                  paginate(1);
-                } else if (swipe > 8000 || offset.x > 60) {
-                  paginate(-1);
-                }
-              }}
-              className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing overflow-hidden"
-            >
-              <img
-                src={images[imageIndex]}
-                alt={`${room.title} photo ${imageIndex + 1}`}
-                className="w-full h-full object-cover select-none pointer-events-none"
-                draggable="false"
-              />
-            </motion.div>
-          </AnimatePresence>
+          <div className="absolute inset-0 w-full h-full overflow-hidden">
+            <img
+              key={imageIndex}
+              src={images[imageIndex]}
+              alt={`${room.title} photo ${imageIndex + 1}`}
+              className="w-full h-full object-cover select-none transition-opacity duration-300"
+              draggable="false"
+            />
+          </div>
 
           {/* Top Bar: Room Title & Close Button */}
           <div className="absolute top-0 left-0 right-0 z-20 p-4 sm:p-5 flex items-center justify-between bg-gradient-to-b from-black/75 via-black/30 to-transparent pointer-events-none">

@@ -127,10 +127,10 @@ export default function ServicesSection() {
 
                   {/* Watermark Index Number */}
                   <div className="flex flex-col items-end">
-                    <span className="text-3xl font-serif font-bold text-slate-200 group-hover:text-amber-200/80 transition-colors select-none">
+                    <span className="text-3xl font-serif font-bold text-slate-400 group-hover:text-amber-700/80 transition-colors select-none">
                       {service.id}
                     </span>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#c59b27] bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200/60 mt-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#8A6805] bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-300/80 mt-1">
                       {service.badge}
                     </span>
                   </div>
@@ -151,7 +151,7 @@ export default function ServicesSection() {
               <div className="pt-5 mt-6 border-t border-slate-100">
                 <Link
                   to={service.link}
-                  className="inline-flex items-center gap-2 text-xs font-bold text-[#c59b27] group-hover:text-[#0a2540] transition-colors"
+                  className="inline-flex items-center gap-2 text-xs font-bold text-[#8A6805] group-hover:text-[#0a2540] transition-colors"
                 >
                   <span>Explore Offering</span>
                   <svg className="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
