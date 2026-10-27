@@ -6,19 +6,18 @@ export default function HeroSection({ onOpenBooking }) {
 
   return (
     <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 overflow-hidden bg-[#061727]">
-      {/* Background Image Layer: Cleanly rendered local asset without stacked mask layers */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      {/* Background Image Layer: Cleanly rendered without overlay so Chromium LCP observer detects it directly on desktop viewports */}
+      <div className="absolute inset-0 z-0 overflow-hidden bg-[#061727]">
         <img
           src="/assets/images/image-45.jpeg"
           alt="Scenic Western Ghats Mountain Tour - Om Muruga Travels"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center brightness-40 contrast-105"
           fetchPriority="high"
           loading="eager"
           decoding="sync"
           width="1400"
           height="800"
         />
-        <div className="absolute inset-0 bg-[#061727]/65 pointer-events-none" />
       </div>
 
       {/* Content Container */}
