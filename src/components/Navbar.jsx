@@ -138,7 +138,7 @@ export default function Navbar({ onOpenBooking }) {
 
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#c59b27]/20 text-[#f4e8c1] font-medium text-[11px] border border-[#c59b27]/30">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c59b27] animate-ping"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c59b27]"></span>
               Group of Gowda's Travels Agency
             </span>
             <a
