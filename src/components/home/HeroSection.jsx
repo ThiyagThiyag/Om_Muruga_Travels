@@ -5,24 +5,22 @@ export default function HeroSection({ onOpenBooking }) {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 overflow-hidden bg-[#0a2540]">
-      {/* Background Image Layer with subtle cinematic tint */}
-      <div className="absolute inset-0 z-0 bg-[#061727]">
+    <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 overflow-hidden bg-[#061727]">
+      {/* Background Image Layer: Full opacity so browser immediately captures it as LCP */}
+      <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1100&q=70"
           alt="Scenic Mountain Road Tour - Om Muruga Travels"
-          className="w-full h-full object-cover object-center opacity-40"
+          className="w-full h-full object-cover object-center"
           fetchPriority="high"
           loading="eager"
           decoding="sync"
           width="1400"
           height="800"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#061727]/80 via-transparent to-[#061727]/90 pointer-events-none" />
+        {/* Simple semi-transparent overlay to keep text readable */}
+        <div className="absolute inset-0 bg-[#061727]/75" />
       </div>
-
-      {/* Decorative Glow Elements */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#c59b27]/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Content Container */}
       <div className="relative z-10 max-w-5xl mx-auto text-center w-full space-y-7 sm:space-y-9">
