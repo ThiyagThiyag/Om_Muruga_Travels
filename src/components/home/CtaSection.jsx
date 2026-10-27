@@ -4,7 +4,7 @@ export default function CtaSection() {
   return (
     <section className="relative py-12 sm:py-16 md:py-20 bg-[#0a2540] text-white overflow-hidden">
       <div className="absolute inset-0 opacity-15">
-        <img src="/assets/images/image-43.jpeg" alt="Background pattern" className="w-full h-full object-cover" />
+        <img src="/assets/images/image-43.jpeg" alt="Background pattern" loading="lazy" decoding="async" className="w-full h-full object-cover" />
       </div>
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-8 text-center space-y-4 sm:space-y-6">
         <h2 className="text-2xl xs:text-3xl sm:text-4xl font-serif font-bold text-white tracking-tight">
