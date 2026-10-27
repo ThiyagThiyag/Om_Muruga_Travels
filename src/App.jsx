@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Layout & Reusable Components
@@ -11,12 +11,12 @@ import ItineraryModal from './components/ItineraryModal';
 import FloatingContactWidget from './components/FloatingContactWidget';
 import Toast from './components/Toast';
 
-// Pages
-import HomePage from './pages/HomePage';
-import RoomsPage from './pages/RoomsPage';
-import ToursPage from './pages/ToursPage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+// Code-split / Lazy-loaded Pages for peak performance & minimal initial bundle
+const HomePage = lazy(() => import('./pages/HomePage'));
+const RoomsPage = lazy(() => import('./pages/RoomsPage'));
+const ToursPage = lazy(() => import('./pages/ToursPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 function App() {
   // Global Modals State
@@ -73,57 +73,66 @@ function App() {
         {/* Global Navigation Header */}
         <Navbar onOpenBooking={handleOpenBooking} />
 
-        {/* Dynamic Multi-Page Routes */}
+        {/* Dynamic Multi-Page Routes with Lazy Suspense */}
         <main className="flex-1">
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <HomePage
-                  onOpenBooking={handleOpenBooking}
-                  onOpenRoomModal={handleOpenRoomModal}
-                  onOpenTourModal={handleOpenTourModal}
-                />
-              }
-            />
-            <Route
-              path="/rooms"
-              element={
-                <RoomsPage
-                  onOpenBooking={handleOpenBooking}
-                  onOpenRoomModal={handleOpenRoomModal}
-                />
-              }
-            />
-            <Route
-              path="/tours"
-              element={
-                <ToursPage
-                  onOpenBooking={handleOpenBooking}
-                  onOpenTourModal={handleOpenTourModal}
-                />
-              }
-            />
-            <Route
-              path="/about"
-              element={<AboutPage onOpenBooking={handleOpenBooking} />}
-            />
-            <Route
-              path="/contact"
-              element={<ContactPage onShowToast={showToast} />}
-            />
-            {/* Fallback to Home */}
-            <Route
-              path="*"
-              element={
-                <HomePage
-                  onOpenBooking={handleOpenBooking}
-                  onOpenRoomModal={handleOpenRoomModal}
-                  onOpenTourModal={handleOpenTourModal}
-                />
-              }
-            />
-          </Routes>
+          <Suspense
+            fallback={
+              <div className="min-h-[60vh] flex flex-col items-center justify-center gap-3">
+                <div className="w-9 h-9 border-3 border-[#c59b27]/30 border-t-[#c59b27] rounded-full animate-spin"></div>
+                <span className="text-xs font-medium text-slate-400 tracking-wider uppercase">Loading experience...</span>
+              </div>
+            }
+          >
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <HomePage
+                    onOpenBooking={handleOpenBooking}
+                    onOpenRoomModal={handleOpenRoomModal}
+                    onOpenTourModal={handleOpenTourModal}
+                  />
+                }
+              />
+              <Route
+                path="/rooms"
+                element={
+                  <RoomsPage
+                    onOpenBooking={handleOpenBooking}
+                    onOpenRoomModal={handleOpenRoomModal}
+                  />
+                }
+              />
+              <Route
+                path="/tours"
+                element={
+                  <ToursPage
+                    onOpenBooking={handleOpenBooking}
+                    onOpenTourModal={handleOpenTourModal}
+                  />
+                }
+              />
+              <Route
+                path="/about"
+                element={<AboutPage onOpenBooking={handleOpenBooking} />}
+              />
+              <Route
+                path="/contact"
+                element={<ContactPage onShowToast={showToast} />}
+              />
+              {/* Fallback to Home */}
+              <Route
+                path="*"
+                element={
+                  <HomePage
+                    onOpenBooking={handleOpenBooking}
+                    onOpenRoomModal={handleOpenRoomModal}
+                    onOpenTourModal={handleOpenTourModal}
+                  />
+                }
+              />
+            </Routes>
+          </Suspense>
         </main>
 
         {/* Global Footer */}

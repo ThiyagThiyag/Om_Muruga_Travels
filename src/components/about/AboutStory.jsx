@@ -40,11 +40,19 @@ export default function AboutStory() {
             src="/assets/images/image-1.jpeg" 
             alt="Bamboo interior" 
             className="rounded-2xl shadow-md w-full h-56 object-cover hover:scale-102 transition-transform"
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="224"
           />
           <img 
             src="/assets/images/image-43.jpeg" 
             alt="Gazebo" 
             className="rounded-2xl shadow-md w-full h-44 object-cover hover:scale-102 transition-transform"
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="176"
           />
         </div>
         <div className="space-y-4 pt-6">
@@ -52,11 +60,19 @@ export default function AboutStory() {
             src="/assets/images/image-44.jpeg" 
             alt="Manor exterior" 
             className="rounded-2xl shadow-md w-full h-44 object-cover hover:scale-102 transition-transform"
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="176"
           />
           <img 
             src="/assets/images/image-7.jpeg" 
             alt="Treehouse" 
             className="rounded-2xl shadow-md w-full h-56 object-cover hover:scale-102 transition-transform"
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="224"
           />
         </div>
       </div>

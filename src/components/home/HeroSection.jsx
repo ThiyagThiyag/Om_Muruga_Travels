@@ -9,9 +9,13 @@ export default function HeroSection({ onOpenBooking }) {
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=80"
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=75"
           alt="Scenic Mountain Road Tour - Om Muruga Travels"
           className="w-full h-full object-cover object-center scale-105"
+          fetchPriority="high"
+          decoding="async"
+          width="1400"
+          height="800"
         />
         {/* Cinematic Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#061727]/90 via-[#0a2540]/80 to-[#061727]/95" />
