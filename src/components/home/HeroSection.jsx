@@ -6,20 +6,18 @@ export default function HeroSection({ onOpenBooking }) {
 
   return (
     <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 overflow-hidden bg-[#061727]">
-      {/* Background Image Layer: Full opacity so browser immediately captures it as LCP */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Image Layer: Cleanly rendered without stacked mask layers */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1100&q=70"
           alt="Scenic Mountain Road Tour - Om Muruga Travels"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center brightness-75 contrast-105"
           fetchPriority="high"
           loading="eager"
           decoding="sync"
           width="1400"
           height="800"
         />
-        {/* Simple semi-transparent overlay to keep text readable */}
-        <div className="absolute inset-0 bg-[#061727]/75" />
       </div>
 
       {/* Content Container */}
