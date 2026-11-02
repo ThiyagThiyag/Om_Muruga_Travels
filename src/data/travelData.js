@@ -271,7 +271,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 142,
     badge: 'Bestseller',
-    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-kodai.webp',
     description: 'Explore the princess of hill stations with boat rides on Kodai Lake, Pillar Rocks, Coakers Walk, and serene pine forests.',
     highlights: [
       'Boating on star-shaped Kodaikanal Lake',
@@ -307,7 +307,7 @@ export const toursData = [
     rating: 5.0,
     reviewsCount: 210,
     badge: 'Top Rated',
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-munnar.webp',
     description: 'Breathe the crisp mountain air amidst boundless tea estates, cascading waterfalls, and spice plantation walks.',
     highlights: [
       'Rolling carpet tea plantations of Mattupetty',
@@ -339,7 +339,7 @@ export const toursData = [
     rating: 4.8,
     reviewsCount: 98,
     badge: 'Family Favorite',
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-ooty.webp',
     description: 'Ride the UNESCO Nilgiri Mountain Railway, visit botanical gardens, tea factories, and enjoy boating on Pykara Lake.',
     highlights: [
       'Historic Nilgiri Mountain Toy Train ride',

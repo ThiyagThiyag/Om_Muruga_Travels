@@ -54,15 +54,20 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
               className="group bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="relative h-60 overflow-hidden bg-slate-900">
-                <img 
-                  src={tour.image} 
-                  alt={tour.title}
-                  className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500" 
-                  loading="lazy"
-                  decoding="async"
-                  width="400"
-                  height="240"
-                />
+                <picture>
+                  {tour.image.endsWith('.webp') && (
+                    <source type="image/avif" srcSet={tour.image.replace('.webp', '.avif')} />
+                  )}
+                  <img 
+                    src={tour.image} 
+                    alt={tour.title}
+                    className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500" 
+                    loading="lazy"
+                    decoding="async"
+                    width="400"
+                    height="240"
+                  />
+                </picture>
                 <div className="absolute top-3 left-3 flex items-center gap-2">
                   <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#0a2540]/90 text-white backdrop-blur-sm border border-white/20">
                     {tour.badge}
