@@ -6,7 +6,7 @@ export default function HeroSection({ onOpenBooking }) {
 
   return (
     <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 overflow-hidden bg-[#061727]">
-      {/* Background Image Layer: Cleanly rendered for Chromium LCP Paint Timing */}
+      {/* Background Image Layer: Explicitly sized for Chromium LCP Paint Timing */}
       <img
         id="hero-lcp-image"
         src="/assets/images/image-45.jpeg"
@@ -14,6 +14,9 @@ export default function HeroSection({ onOpenBooking }) {
         className="absolute inset-0 w-full h-full object-cover object-center brightness-45 contrast-105 z-0"
         fetchPriority="high"
         loading="eager"
+        decoding="sync"
+        width="1200"
+        height="800"
       />
 
       {/* Content Container */}
