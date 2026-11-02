@@ -7,7 +7,9 @@ export default function ContactBanner() {
         <img 
           src="/assets/images/image-44.jpeg" 
           alt="Cottage Entrance" 
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
+          loading="lazy"
+          decoding="async"
         />
         <div className="relative z-10 max-w-2xl space-y-2.5 sm:space-y-4">
           <span className="text-[11px] sm:text-xs uppercase tracking-widest text-[#c59b27] font-bold block">

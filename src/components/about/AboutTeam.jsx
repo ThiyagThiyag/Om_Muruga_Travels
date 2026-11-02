@@ -27,6 +27,10 @@ export default function AboutTeam() {
                 src={member.image} 
                 alt={member.name}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="256"
               />
             </div>
             <div className="p-5 space-y-2">

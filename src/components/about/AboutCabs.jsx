@@ -31,6 +31,10 @@ export default function AboutCabs({ onOpenBooking }) {
                   src={cab.image} 
                   alt={cab.name} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
+                  width="400"
+                  height="208"
                 />
                 <div className="absolute top-3 left-3">
                   <span className="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#0a2540]/90 backdrop-blur-md text-[#f4e8c1] border border-[#c59b27]/30 shadow-sm">

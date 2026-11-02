@@ -18,6 +18,10 @@ export default function ContactTransitGuide() {
           src="/assets/images/image-44.jpeg" 
           alt="Estate Stays" 
           className="w-full h-full object-cover" 
+          loading="lazy"
+          decoding="async"
+          width="400"
+          height="192"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
         <div className="absolute bottom-3 left-4 text-white">
