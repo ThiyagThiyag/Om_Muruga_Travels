@@ -6,17 +6,20 @@ export default function HeroSection({ onOpenBooking }) {
 
   return (
     <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 bg-[#061727]">
-      {/* Background Image: Directly visible to browser layout engine */}
-      <img
-        src="/assets/images/image-45.jpeg"
-        alt="Scenic Western Ghats Mountain Tour - Om Muruga Travels"
-        className="absolute inset-0 w-full h-full object-cover object-center brightness-45 contrast-105"
-        fetchPriority="high"
-        loading="eager"
-        decoding="async"
-        width="1000"
-        height="749"
-      />
+      {/* Background Image: Modern WebP with optimized JPEG fallback directly visible to browser engine */}
+      <picture className="absolute inset-0 w-full h-full">
+        <source type="image/webp" srcSet="/assets/images/image-45.webp" />
+        <img
+          src="/assets/images/image-45.jpeg"
+          alt="Scenic Western Ghats Mountain Tour - Om Muruga Travels"
+          className="w-full h-full object-cover object-center brightness-45 contrast-105"
+          fetchPriority="high"
+          loading="eager"
+          decoding="sync"
+          width="800"
+          height="599"
+        />
+      </picture>
 
       {/* Content Container */}
       <div className="relative z-10 max-w-5xl mx-auto text-center w-full space-y-7 sm:space-y-9">
