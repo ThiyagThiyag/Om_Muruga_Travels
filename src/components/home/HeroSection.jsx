@@ -6,17 +6,15 @@ export default function HeroSection({ onOpenBooking }) {
 
   return (
     <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 overflow-hidden bg-[#061727]">
-      {/* Background Image Layer: Cleanly rendered so Chromium LCP observer detects it directly on both mobile & desktop */}
-      <div className="absolute inset-0 z-0 bg-[#061727] pointer-events-none">
-        <img
-          src="/assets/images/image-45.jpeg"
-          alt="Scenic Western Ghats Mountain Tour - Om Muruga Travels"
-          className="w-full h-full object-cover object-center brightness-45 contrast-105"
-          fetchPriority="high"
-          loading="eager"
-          decoding="async"
-        />
-      </div>
+      {/* Background Image Layer: Cleanly rendered for Chromium LCP Paint Timing */}
+      <img
+        id="hero-lcp-image"
+        src="/assets/images/image-45.jpeg"
+        alt="Scenic Western Ghats Mountain Tour - Om Muruga Travels"
+        className="absolute inset-0 w-full h-full object-cover object-center brightness-45 contrast-105 z-0"
+        fetchPriority="high"
+        loading="eager"
+      />
 
       {/* Content Container */}
       <div className="relative z-10 max-w-5xl mx-auto text-center w-full space-y-7 sm:space-y-9">
