@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { roomsData, toursData } from '../../data/travelData';
+import { featuredTours, featuredRooms } from '../../data/featuredHomeData';
 
 export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal, onOpenTourModal }) {
   const [activeTab, setActiveTab] = useState('tours'); // 'tours' (primary) or 'rooms' (secondary)
 
-  const featuredTours = toursData.slice(0, 6);
-  const featuredRooms = roomsData.slice(0, 4);
+  
 
   return (
     <section className="py-12 sm:py-16 md:py-20 px-3 xs:px-4 sm:px-8 max-w-7xl mx-auto w-full">

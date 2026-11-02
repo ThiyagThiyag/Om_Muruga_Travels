@@ -16,9 +16,9 @@ export default function HeroSection({ onOpenBooking }) {
           className="w-full h-full object-cover object-center brightness-45 contrast-105 block"
           fetchPriority="high"
           loading="eager"
-          decoding="sync"
-          width="1280"
-          height="720"
+          decoding="async"
+          width="700"
+          height="524"
         />
       </picture>
 

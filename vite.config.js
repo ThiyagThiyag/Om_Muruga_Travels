@@ -2,9 +2,6 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
-import fs from 'fs'
-import path from 'path'
-
 const inlineCssPlugin = () => ({
   name: 'inline-css-plugin',
   enforce: 'post',

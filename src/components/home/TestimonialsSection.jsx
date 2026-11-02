@@ -1,5 +1,5 @@
 import React from 'react';
-import { testimonialsData } from '../../data/travelData';
+import { testimonialsData } from '../../data/featuredHomeData';
 
 export default function TestimonialsSection() {
   return (
