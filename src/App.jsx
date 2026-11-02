@@ -5,11 +5,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
-import BookingModal from './components/BookingModal';
 import FloatingContactWidget from './components/FloatingContactWidget';
 import Toast from './components/Toast';
 
-// Lazy load Modals that import heavy animation libraries (framer-motion) so they don't block initial page load
+// Lazy load Modals on demand so they never block initial page load
+const BookingModal = lazy(() => import('./components/BookingModal'));
 const RoomModal = lazy(() => import('./components/RoomModal'));
 const ItineraryModal = lazy(() => import('./components/ItineraryModal'));
 
@@ -160,15 +160,19 @@ function App() {
         {/* Global Footer */}
         <Footer onShowToast={showToast} />
 
-        {/* Global Booking Modal */}
-        <BookingModal
-          isOpen={isBookingOpen}
-          onClose={() => setIsBookingOpen(false)}
-          initialItem={bookingItem}
-          onShowToast={showToast}
-        />
+        {/* Global Booking Modal (lazy-loaded on demand) */}
+        <Suspense fallback={null}>
+          {isBookingOpen && (
+            <BookingModal
+              isOpen={isBookingOpen}
+              onClose={() => setIsBookingOpen(false)}
+              initialItem={bookingItem}
+              onShowToast={showToast}
+            />
+          )}
+        </Suspense>
 
-        {/* Lazy-loaded Room & Tour Modals (framer-motion only loaded when user clicks view) */}
+        {/* Lazy-loaded Room & Tour Modals */}
         <Suspense fallback={null}>
           {isRoomModalOpen && (
             <RoomModal

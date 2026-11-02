@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { travelFleetData } from '../../data/travelData';
+import { travelFleetData } from '../../data/featuredHomeData';
 
 export default function FleetSection() {
   const containerRef = useRef(null);

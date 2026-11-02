@@ -768,7 +768,7 @@ export const testimonialsData = [
     location: 'Chennai, Tamil Nadu',
     stay: 'Bamboo Luxury Cottage',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=40&fm=webp',
+    avatar: '/assets/images/avatar-1.svg',
     comment: 'Our stay at Om Muruga Holidays cottage was extraordinary! The bamboo aroma, cool hill breeze, and warm hospitality by the Gowda family made our anniversary unforgettable. Booked directly over WhatsApp seamlessly.'
   },
   {
@@ -777,7 +777,7 @@ export const testimonialsData = [
     location: 'Bangalore, Karnataka',
     stay: 'Elevated Family Treehouse',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=40&fm=webp',
+    avatar: '/assets/images/avatar-2.svg',
     comment: 'The kids loved the treehouse and playing badminton right on the green lawn! The campfire in the evening with hot food was pure bliss. Just called their direct number and got an instant booking confirmation.'
   },
   {
@@ -786,7 +786,7 @@ export const testimonialsData = [
     location: 'Coimbatore, Tamil Nadu',
     stay: 'Kodaikanal Nature Odyssey',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=40&fm=webp',
+    avatar: '/assets/images/avatar-3.svg',
     comment: 'Booked the tour package over a quick WhatsApp chat. The driver was extremely polite and knowledgeable about scenic photo spots that tourists usually miss. Everything was well coordinated from pickup to drop.'
   },
   {
@@ -795,7 +795,7 @@ export const testimonialsData = [
     location: 'Mysore, Karnataka',
     stay: 'Grand Manor Master Suite',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=40&fm=webp',
+    avatar: '/assets/images/avatar-4.svg',
     comment: 'A hidden paradise away from the city noise. The aerial view of the property is as magical in real life as in the drone photos. The breakfast spread was fresh, piping hot, and delicious.'
   }
 ];
