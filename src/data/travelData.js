@@ -369,7 +369,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 185,
     badge: 'Spiritual Trail',
-    image: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-madurai.webp',
     description: 'Experience majestic Dravidian architecture, sacred 22 theerthams, Pamban Sea Bridge, and the ghost town of Dhanushkodi.',
     highlights: [
       'Madurai Meenakshi Amman Temple darshan',
@@ -400,7 +400,7 @@ export const toursData = [
     rating: 4.8,
     reviewsCount: 110,
     badge: 'Relaxation',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-coorg.webp',
     description: 'Immerse in the Scotland of India with fragrant coffee plantations, Tibetan Golden Temple, and gushing Abbey Falls.',
     highlights: [
       'Dubare Elephant Camp river rafting & bathing',
@@ -425,7 +425,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 88,
     badge: 'International Special',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-bali.webp',
     description: 'Paradise on earth: lush Ubud rice terraces, cliff-top Uluwatu sunsets with Kecak fire dance, and Nusa Penida island hopping.',
     highlights: [
       'Tegalalang Rice Terraces & Jungle Swing',
