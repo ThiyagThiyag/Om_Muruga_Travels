@@ -271,7 +271,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 142,
     badge: 'Bestseller',
-    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=400&q=55&fm=webp',
     description: 'Explore the princess of hill stations with boat rides on Kodai Lake, Pillar Rocks, Coakers Walk, and serene pine forests.',
     highlights: [
       'Boating on star-shaped Kodaikanal Lake',
@@ -307,7 +307,7 @@ export const toursData = [
     rating: 5.0,
     reviewsCount: 210,
     badge: 'Top Rated',
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=400&q=55&fm=webp',
     description: 'Breathe the crisp mountain air amidst boundless tea estates, cascading waterfalls, and spice plantation walks.',
     highlights: [
       'Rolling carpet tea plantations of Mattupetty',
