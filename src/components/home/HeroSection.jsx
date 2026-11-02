@@ -7,18 +7,18 @@ export default function HeroSection({ onOpenBooking }) {
   return (
     <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 bg-[#061727]">
       {/* Background Image: Next-gen AVIF/WebP with optimized JPEG fallback */}
-      <picture className="absolute inset-0 w-full h-full">
+      <picture className="absolute inset-0 w-full h-full block">
         <source type="image/avif" srcSet="/assets/images/image-45.avif" />
         <source type="image/webp" srcSet="/assets/images/image-45.webp" />
         <img
-          src="/assets/images/image-45.jpeg"
+          src="/assets/images/image-45.webp"
           alt="Scenic Western Ghats Mountain Tour - Om Muruga Travels"
-          className="w-full h-full object-cover object-center brightness-45 contrast-105"
+          className="w-full h-full object-cover object-center brightness-45 contrast-105 block"
           fetchPriority="high"
           loading="eager"
           decoding="sync"
-          width="640"
-          height="479"
+          width="1280"
+          height="720"
         />
       </picture>
 
