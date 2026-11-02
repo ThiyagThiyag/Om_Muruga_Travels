@@ -6,8 +6,9 @@ export default function HeroSection({ onOpenBooking }) {
 
   return (
     <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 bg-[#061727]">
-      {/* Background Image: Modern WebP with optimized JPEG fallback directly visible to browser engine */}
+      {/* Background Image: Next-gen AVIF/WebP with optimized JPEG fallback */}
       <picture className="absolute inset-0 w-full h-full">
+        <source type="image/avif" srcSet="/assets/images/image-45.avif" />
         <source type="image/webp" srcSet="/assets/images/image-45.webp" />
         <img
           src="/assets/images/image-45.jpeg"
@@ -16,8 +17,8 @@ export default function HeroSection({ onOpenBooking }) {
           fetchPriority="high"
           loading="eager"
           decoding="sync"
-          width="800"
-          height="599"
+          width="640"
+          height="479"
         />
       </picture>
 
