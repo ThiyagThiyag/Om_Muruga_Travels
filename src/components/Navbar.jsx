@@ -216,13 +216,11 @@ export default function Navbar({ onOpenBooking }) {
                 )}
               </button>
 
-              {/* Desktop Services Compact Dropdown */}
-              <div
-                className={`absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[640px] max-w-[94vw] transition-all duration-200 z-50 ${isServicesOpen
-                  ? 'opacity-100 visible translate-y-0 pointer-events-auto'
-                  : 'opacity-0 invisible -translate-y-2 pointer-events-none'
-                  }`}
-              >
+              {/* Desktop Services Compact Dropdown - rendered only when open */}
+              {isServicesOpen && (
+                <div
+                  className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[640px] max-w-[94vw] transition-all duration-200 z-50 opacity-100 visible translate-y-0 pointer-events-auto"
+                >
                 <div className="bg-white rounded-2xl shadow-xl border border-slate-200/90 overflow-hidden ring-1 ring-black/5">
                   {/* Accent Top Line */}
                   <div className="h-1 w-full bg-gradient-to-r from-amber-500 via-[#c59b27] to-[#0a2540]"></div>
@@ -278,6 +276,7 @@ export default function Navbar({ onOpenBooking }) {
                   </div>
                 </div>
               </div>
+              )}
             </div>
 
             {/* About Agency */}
