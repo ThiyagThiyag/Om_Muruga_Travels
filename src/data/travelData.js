@@ -271,7 +271,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 142,
     badge: 'Bestseller',
-    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=400&q=55&fm=webp',
+    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Explore the princess of hill stations with boat rides on Kodai Lake, Pillar Rocks, Coakers Walk, and serene pine forests.',
     highlights: [
       'Boating on star-shaped Kodaikanal Lake',
@@ -307,7 +307,7 @@ export const toursData = [
     rating: 5.0,
     reviewsCount: 210,
     badge: 'Top Rated',
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=400&q=55&fm=webp',
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Breathe the crisp mountain air amidst boundless tea estates, cascading waterfalls, and spice plantation walks.',
     highlights: [
       'Rolling carpet tea plantations of Mattupetty',
@@ -339,7 +339,7 @@ export const toursData = [
     rating: 4.8,
     reviewsCount: 98,
     badge: 'Family Favorite',
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Ride the UNESCO Nilgiri Mountain Railway, visit botanical gardens, tea factories, and enjoy boating on Pykara Lake.',
     highlights: [
       'Historic Nilgiri Mountain Toy Train ride',
@@ -369,7 +369,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 185,
     badge: 'Spiritual Trail',
-    image: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Experience majestic Dravidian architecture, sacred 22 theerthams, Pamban Sea Bridge, and the ghost town of Dhanushkodi.',
     highlights: [
       'Madurai Meenakshi Amman Temple darshan',
@@ -400,7 +400,7 @@ export const toursData = [
     rating: 4.8,
     reviewsCount: 110,
     badge: 'Relaxation',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Immerse in the Scotland of India with fragrant coffee plantations, Tibetan Golden Temple, and gushing Abbey Falls.',
     highlights: [
       'Dubare Elephant Camp river rafting & bathing',
@@ -425,7 +425,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 88,
     badge: 'International Special',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Paradise on earth: lush Ubud rice terraces, cliff-top Uluwatu sunsets with Kecak fire dance, and Nusa Penida island hopping.',
     highlights: [
       'Tegalalang Rice Terraces & Jungle Swing',
@@ -458,7 +458,7 @@ export const toursData = [
     rating: 5.0,
     reviewsCount: 64,
     badge: 'Luxury Global',
-    image: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Breathtaking Swiss Alps, crystal-clear Lake Lucerne, Jungfraujoch Top of Europe, and fairytale Black Forest.',
     highlights: [
       'Cogwheel train to Jungfraujoch summit',
@@ -487,7 +487,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 94,
     badge: 'Adventure & Peace',
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Snow-capped peaks of Manali, Solang Valley paragliding, Atal Tunnel, and serene apple orchards of Naggar.',
     highlights: [
       'Atal Tunnel drive to snow-clad Sissu waterfall',
@@ -515,7 +515,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 160,
     badge: 'Trending Tour',
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Cruise emerald palm backwaters on an authentic luxury houseboat, explore Fort Kochi colonial history, and taste fresh coastal Kerala cuisine.',
     highlights: [
       'Overnight private AC houseboat stay in Alleppey',
@@ -546,7 +546,7 @@ export const toursData = [
     rating: 5.0,
     reviewsCount: 135,
     badge: 'Luxury Vacation',
-    image: 'https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Experience heaven on earth: romantic Dal Lake Shikara rides, Gulmarg snow gondola cable car, Betaab Valley in Pahalgam, and Sonamarg glaciers.',
     highlights: [
       'Shikara boat ride on Dal Lake & stay in heritage houseboat',
@@ -579,7 +579,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 96,
     badge: 'International Special',
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=300&q=35&fm=webp',
     description: 'Futuristic skyscrapers, 4x4 desert dune bashing with BBQ dinner, Burj Khalifa 124th-floor views, and Dubai Marina luxury dhow cruise.',
     highlights: [
       'Burj Khalifa 124th floor observation deck visit',
@@ -613,7 +613,7 @@ export const travelFleetData = [
     luggage: '2 Medium Bags + 2 Handbags',
     idealFor: 'Couples, small families, airport pickups & city sightseeing',
     features: ['Chilled Air Conditioning', 'Clean Sanitized Interiors', 'Experienced Hill Driver', 'Phone Charger & Music System'],
-    image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=500&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=300&q=35&fm=webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -624,7 +624,7 @@ export const travelFleetData = [
     luggage: '4 Large Bags + Overhead Roof Carrier',
     idealFor: 'Family hill station road trips, outstation touring & long distance comfort',
     features: ['Plush Captain Seat Recliners', 'Dual AC Climate Control', 'Roof Carrier Available', 'Hill-Trained Veteran Driver'],
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=500&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=300&q=35&fm=webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -635,7 +635,7 @@ export const travelFleetData = [
     luggage: '4 Large Bags + Trunk Space',
     idealFor: 'Ultra-smooth eco road trips, corporate VIP travel & plush hill comfort',
     features: ['Ottoman Powered Recliners', 'Whisper-Quiet Hybrid Cabin', 'Sunroof & Ambient Lights', 'Electronic Climate Zones'],
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=500&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=300&q=35&fm=webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -646,7 +646,7 @@ export const travelFleetData = [
     luggage: '3 Medium Bags + Overhead Storage',
     idealFor: 'Budget-friendly family vacations, temple tours & weekend getaways',
     features: ['Efficient Cooling System', 'Flexible 3-Row Seating', 'Smooth Mountain Suspension', 'Pristine Sanitized Cabin'],
-    image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=500&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=300&q=35&fm=webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -657,7 +657,7 @@ export const travelFleetData = [
     luggage: '4 Large Suitcases',
     idealFor: 'Rugged Western Ghats off-road trails, VIP delegations & estate touring',
     features: ['Heavy-Duty 4WD Terrain System', 'Elevated Road Stance', 'Leather Heated Seats', 'Master Hill Chauffeur'],
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=500&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=300&q=35&fm=webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -668,7 +668,7 @@ export const travelFleetData = [
     luggage: 'Spacious Dedicated Luggage Boot',
     idealFor: 'Extended family getaways, pilgrimage groups & corporate team outings',
     features: ['Push-back Reclining Seats', 'Individual AC Vents', 'LED TV & Audio System', 'Generous Legroom'],
-    image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=500&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=300&q=35&fm=webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -679,7 +679,7 @@ export const travelFleetData = [
     luggage: 'Executive Luggage Storage',
     idealFor: 'VIP family tours, premium pilgrimage & executive corporate delegates',
     features: ['Aircraft-style Luxury Cabin', 'Panoramic Sealed Windows', 'Individual USB Ports & Lights', 'Air Suspension Ride'],
-    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=500&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=300&q=35&fm=webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -690,7 +690,7 @@ export const travelFleetData = [
     luggage: 'Spacious Underfloor Luggage Bins',
     idealFor: 'College excursions, wedding transport, large group pilgrimages',
     features: ['Air Suspension Smooth Journey', 'Powerful Chiller AC', 'Microphone & Audio System', 'Dual Emergency Exits'],
-    image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=500&q=70&auto=format',
+    image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=300&q=35&fm=webp',
     tariffNote: 'Best Rate on Inquiry'
   }
 ];
@@ -768,7 +768,7 @@ export const testimonialsData = [
     location: 'Chennai, Tamil Nadu',
     stay: 'Bamboo Luxury Cottage',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=40&fm=webp',
     comment: 'Our stay at Om Muruga Holidays cottage was extraordinary! The bamboo aroma, cool hill breeze, and warm hospitality by the Gowda family made our anniversary unforgettable. Booked directly over WhatsApp seamlessly.'
   },
   {
@@ -777,7 +777,7 @@ export const testimonialsData = [
     location: 'Bangalore, Karnataka',
     stay: 'Elevated Family Treehouse',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=40&fm=webp',
     comment: 'The kids loved the treehouse and playing badminton right on the green lawn! The campfire in the evening with hot food was pure bliss. Just called their direct number and got an instant booking confirmation.'
   },
   {
@@ -786,7 +786,7 @@ export const testimonialsData = [
     location: 'Coimbatore, Tamil Nadu',
     stay: 'Kodaikanal Nature Odyssey',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=40&fm=webp',
     comment: 'Booked the tour package over a quick WhatsApp chat. The driver was extremely polite and knowledgeable about scenic photo spots that tourists usually miss. Everything was well coordinated from pickup to drop.'
   },
   {
@@ -795,7 +795,7 @@ export const testimonialsData = [
     location: 'Mysore, Karnataka',
     stay: 'Grand Manor Master Suite',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=40&fm=webp',
     comment: 'A hidden paradise away from the city noise. The aerial view of the property is as magical in real life as in the drone photos. The breakfast spread was fresh, piping hot, and delicious.'
   }
 ];
@@ -812,25 +812,25 @@ export const teamData = [
     name: 'Thiyagarajan Gowda',
     role: 'Founder & Managing Director',
     bio: 'Hospitality visionary dedicated to creating authentic boutique stays and memorable holiday journeys across South India.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=35&fm=webp'
   },
   {
     name: 'Pravin Murugan',
     role: 'Head of Tour Operations',
     bio: 'Over 12 years of experience crafting personalized luxury travel circuits across the Western Ghats and international getaways.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=35&fm=webp'
   },
   {
     name: 'Lakshmi Narayanan',
     role: 'Guest Experience & Concierge Lead',
     bio: 'Passionate about personalized guest care, bespoke dining arrangements, and ensuring seamless check-ins.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=35&fm=webp'
   },
   {
     name: 'Anitha S.',
     role: 'Senior Destination Specialist',
     bio: 'Expert travel planner specializing in family holiday packages, honeymoon suites, and group retreat itineraries.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80'
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=35&fm=webp'
   }
 ];
 
