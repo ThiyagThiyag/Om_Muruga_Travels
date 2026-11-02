@@ -5,16 +5,15 @@ export default function HeroSection({ onOpenBooking }) {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 overflow-hidden bg-[#061727]">
-      {/* Background Image Layer: Explicitly sized for Chromium LCP Paint Timing */}
+    <section className="relative min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-28 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-8 bg-[#061727]">
+      {/* Background Image: Directly visible to browser layout engine */}
       <img
-        id="hero-lcp-image"
         src="/assets/images/image-45.jpeg"
         alt="Scenic Western Ghats Mountain Tour - Om Muruga Travels"
-        className="absolute inset-0 w-full h-full object-cover object-center brightness-45 contrast-105 z-0"
+        className="absolute inset-0 w-full h-full object-cover object-center brightness-45 contrast-105"
         fetchPriority="high"
         loading="eager"
-        decoding="sync"
+        decoding="async"
         width="1200"
         height="800"
       />
