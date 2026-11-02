@@ -76,16 +76,21 @@ export default function FleetSection() {
             >
                 <div>
                   <div className="relative h-44 overflow-hidden bg-slate-900">
-                    <img 
-                      src={vehicle.image} 
-                      alt={vehicle.name} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
-                      draggable="false"
-                      loading="lazy"
-                      decoding="async"
-                      width="325"
-                      height="176"
-                    />
+                    <picture>
+                      {vehicle.image.endsWith('.webp') && (
+                        <source type="image/avif" srcSet={vehicle.image.replace('.webp', '.avif')} />
+                      )}
+                      <img 
+                        src={vehicle.image} 
+                        alt={vehicle.name} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
+                        draggable="false"
+                        loading="lazy"
+                        decoding="async"
+                        width="325"
+                        height="176"
+                      />
+                    </picture>
                     <div className="absolute top-3 left-3">
                       <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#8A6805] text-white">
                         {vehicle.type}

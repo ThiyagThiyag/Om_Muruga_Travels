@@ -11,13 +11,13 @@
   --color-brand-sand: #faf6f0;
   --color-brand-sand-muted: #f2ebe0;
   --color-brand-cream: #fdfbf7;
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Outfit", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-serif: -apple-system-ui-serif, ui-serif, 'Georgia', 'Cambria', 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 :root {
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Outfit", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-serif: -apple-system-ui-serif, ui-serif, 'Georgia', 'Cambria', 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   
   /* Fluid responsive typography tokens */
   --fluid-hero: clamp(1.85rem, 1.25rem + 3.2vw, 4.25rem);

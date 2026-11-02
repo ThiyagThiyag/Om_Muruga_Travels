@@ -50,8 +50,10 @@ export default function VideoSection({ onOpenBooking }) {
             <video 
               controls 
               preload="none"
-              poster="/assets/images/image-44.jpeg"
+              poster="/assets/images/image-44.webp"
               className="w-full h-full object-cover"
+              width="582"
+              height="388"
             >
               <source src="/assets/videos/video1.mp4" type="video/mp4" />
               Your browser does not support the video tag.

@@ -613,7 +613,7 @@ export const travelFleetData = [
     luggage: '2 Medium Bags + 2 Handbags',
     idealFor: 'Couples, small families, airport pickups & city sightseeing',
     features: ['Chilled Air Conditioning', 'Clean Sanitized Interiors', 'Experienced Hill Driver', 'Phone Charger & Music System'],
-    image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/fleet-1.webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -624,7 +624,7 @@ export const travelFleetData = [
     luggage: '4 Large Bags + Overhead Roof Carrier',
     idealFor: 'Family hill station road trips, outstation touring & long distance comfort',
     features: ['Plush Captain Seat Recliners', 'Dual AC Climate Control', 'Roof Carrier Available', 'Hill-Trained Veteran Driver'],
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/fleet-2.webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -635,7 +635,7 @@ export const travelFleetData = [
     luggage: '4 Large Bags + Trunk Space',
     idealFor: 'Ultra-smooth eco road trips, corporate VIP travel & plush hill comfort',
     features: ['Ottoman Powered Recliners', 'Whisper-Quiet Hybrid Cabin', 'Sunroof & Ambient Lights', 'Electronic Climate Zones'],
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/fleet-3.webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -646,7 +646,7 @@ export const travelFleetData = [
     luggage: '3 Medium Bags + Overhead Storage',
     idealFor: 'Budget-friendly family vacations, temple tours & weekend getaways',
     features: ['Efficient Cooling System', 'Flexible 3-Row Seating', 'Smooth Mountain Suspension', 'Pristine Sanitized Cabin'],
-    image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/fleet-4.webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -657,7 +657,7 @@ export const travelFleetData = [
     luggage: '4 Large Suitcases',
     idealFor: 'Rugged Western Ghats off-road trails, VIP delegations & estate touring',
     features: ['Heavy-Duty 4WD Terrain System', 'Elevated Road Stance', 'Leather Heated Seats', 'Master Hill Chauffeur'],
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/fleet-5.webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -668,7 +668,7 @@ export const travelFleetData = [
     luggage: 'Spacious Dedicated Luggage Boot',
     idealFor: 'Extended family getaways, pilgrimage groups & corporate team outings',
     features: ['Push-back Reclining Seats', 'Individual AC Vents', 'LED TV & Audio System', 'Generous Legroom'],
-    image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/fleet-6.webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -679,7 +679,7 @@ export const travelFleetData = [
     luggage: 'Executive Luggage Storage',
     idealFor: 'VIP family tours, premium pilgrimage & executive corporate delegates',
     features: ['Aircraft-style Luxury Cabin', 'Panoramic Sealed Windows', 'Individual USB Ports & Lights', 'Air Suspension Ride'],
-    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/fleet-7.webp',
     tariffNote: 'Best Rate on Inquiry'
   },
   {
@@ -690,7 +690,7 @@ export const travelFleetData = [
     luggage: 'Spacious Underfloor Luggage Bins',
     idealFor: 'College excursions, wedding transport, large group pilgrimages',
     features: ['Air Suspension Smooth Journey', 'Powerful Chiller AC', 'Microphone & Audio System', 'Dual Emergency Exits'],
-    image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/fleet-8.webp',
     tariffNote: 'Best Rate on Inquiry'
   }
 ];
