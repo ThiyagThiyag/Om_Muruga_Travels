@@ -91,11 +91,6 @@ export default function FleetSection() {
                         height="176"
                       />
                     </picture>
-                    <div className="absolute top-3 left-3">
-                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#8A6805] text-white">
-                        {vehicle.type}
-                      </span>
-                    </div>
                   </div>
 
                   <div className="p-5 space-y-3">

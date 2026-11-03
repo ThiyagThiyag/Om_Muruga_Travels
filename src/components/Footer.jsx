@@ -151,7 +151,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/tours#fleet" className="text-slate-200 hover:text-[#c59b27] transition-colors flex items-center gap-1.5 font-medium">
+                <Link to="/cabs" className="text-slate-200 hover:text-[#c59b27] transition-colors flex items-center gap-1.5 font-medium">
                   <span className="text-[#c59b27]">›</span> Private Cabs & Fleet
                 </Link>
               </li>

@@ -177,7 +177,7 @@ export default function WhyChooseUsSection() {
         {/* Clean Bottom Trust Footnote with ample separation */}
         <div className="mt-20 sm:mt-28 pt-8 border-t border-slate-200/70 text-center max-w-md mx-auto">
           <p className="text-xs uppercase tracking-widest text-slate-600 font-semibold">
-            Group of Gowda's Hospitality & Travel Enterprise
+            Group of Gowda's Travel Enterprise
           </p>
         </div>
       </div>
