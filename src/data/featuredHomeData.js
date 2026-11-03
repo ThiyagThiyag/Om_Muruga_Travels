@@ -1,13 +1,50 @@
 // Lightweight decoupled dataset specifically for Homepage to avoid parsing heavy catalog on initial load
+// Matches the exact active tour packages catalog
 export const featuredTours = [
   {
-    "id": "tour-1",
+    "id": "tour-ooty",
+    "title": "Ooty Heritage Queen of Hill Stations",
+    "badge": "Popular Choice",
+    "duration": "3 Days / 2 Nights",
+    "rating": 4.9,
+    "category": "Hill Station & Nature",
+    "description": "Experience the pristine beauty of the Nilgiris with Botanical Gardens, Doddabetta Peak, Pykara Lake boating, and iconic tea estates.",
+    "highlights": [
+      "Government Botanical & Centenary Rose Garden",
+      "Doddabetta Peak 360-degree Nilgiri overlook",
+      "Pykara Lake speed boating & waterfalls"
+    ],
+    "idealFor": "",
+    "image": "/assets/images/tour-ooty.webp",
+    "pickupDrop": "",
+    "route": ""
+  },
+  {
+    "id": "tour-conoor",
+    "title": "Coonoor Tea Trails & Toy Train Romance",
+    "badge": "Scenic Trail",
+    "duration": "2 Days / 1 Night",
+    "rating": 4.9,
+    "category": "Hill Station & Nature",
+    "description": "Ride the UNESCO Nilgiri Mountain Toy Train, stroll through lush Sim's Park botanical trees, and gaze over Dolphin's Nose and Lamb's Rock.",
+    "highlights": [
+      "UNESCO Heritage Nilgiri Mountain Steam Train",
+      "Sim's Park exotic floral conservatory",
+      "Dolphin's Nose & Lamb's Rock canyon views"
+    ],
+    "idealFor": "",
+    "image": "/assets/images/tour-conoor.webp",
+    "pickupDrop": "",
+    "route": ""
+  },
+  {
+    "id": "tour-kodai",
     "title": "Kodaikanal Mist & Pine Forest Odyssey",
     "badge": "Bestseller",
     "duration": "4 Days / 3 Nights",
     "rating": 4.9,
     "category": "Hill Station & Nature",
-    "description": "Explore the princess of hill stations with boat rides on Kodai Lake, Pillar Rocks, Coakers Walk, and serene pine forests.",
+    "description": "Explore the princess of hill stations with boat rides on star-shaped Kodai Lake, Pillar Rocks, Coaker's Walk, and enchanting pine forest walks.",
     "highlights": [
       "Boating on star-shaped Kodaikanal Lake",
       "Walk through mystical Pine Forest trails",
@@ -19,13 +56,31 @@ export const featuredTours = [
     "route": ""
   },
   {
-    "id": "tour-2",
-    "title": "Munnar & Wayanad Tea Garden Escape",
+    "id": "tour-kerala",
+    "title": "Enchanting Kerala Backwaters & Alleppey Cruise",
+    "badge": "Trending Tour",
+    "duration": "4 Days / 3 Nights",
+    "rating": 4.9,
+    "category": "Hill Station & Nature",
+    "description": "Cruise emerald palm backwaters on an authentic luxury houseboat, explore Fort Kochi colonial history, and taste fresh coastal Kerala cuisine.",
+    "highlights": [
+      "Overnight private AC houseboat stay in Alleppey",
+      "Historic Chinese fishing nets & Mattancherry Palace",
+      "Village canoe boat rides through serene canals"
+    ],
+    "idealFor": "",
+    "image": "/assets/images/tour-kerala.webp",
+    "pickupDrop": "",
+    "route": ""
+  },
+  {
+    "id": "tour-munnar",
+    "title": "Munnar Tea Valley & Cloud Mist Getaway",
     "badge": "Top Rated",
-    "duration": "5 Days / 4 Nights",
+    "duration": "3 Days / 2 Nights",
     "rating": 5,
     "category": "Hill Station & Nature",
-    "description": "Breathe the crisp mountain air amidst boundless tea estates, cascading waterfalls, and spice plantation walks.",
+    "description": "Breathe the crisp mountain air amidst boundless tea estates, cascading waterfalls, and spice plantation walks in God's Own Country.",
     "highlights": [
       "Rolling carpet tea plantations of Mattupetty",
       "Eravikulam National Park & Nilgiri Tahr spotting",
@@ -37,43 +92,25 @@ export const featuredTours = [
     "route": ""
   },
   {
-    "id": "tour-3",
-    "title": "Ooty, Coonoor & Heritage Toy Train Wonder",
-    "badge": "Family Favorite",
+    "id": "tour-wayanad",
+    "title": "Wayanad Rainforest & Waterfalls Adventure",
+    "badge": "Adventure Special",
     "duration": "3 Days / 2 Nights",
     "rating": 4.8,
     "category": "Hill Station & Nature",
-    "description": "Ride the UNESCO Nilgiri Mountain Railway, visit botanical gardens, tea factories, and enjoy boating on Pykara Lake.",
+    "description": "Explore misty rainforest peaks, prehistoric Edakkal Caves, bamboo rafting on Kuruva Island, and breathtaking Banasura Sagar Dam.",
     "highlights": [
-      "Historic Nilgiri Mountain Toy Train ride",
-      "Government Botanical & Rose Gardens",
-      "Doddabetta Peak 360-degree viewpoint"
+      "Prehistoric rock carvings at Edakkal Caves",
+      "Banasura Sagar Dam largest earth dam in India",
+      "Soochipara cascading forest waterfalls"
     ],
     "idealFor": "",
-    "image": "/assets/images/tour-ooty.webp",
+    "image": "/assets/images/tour-wayanad.webp",
     "pickupDrop": "",
     "route": ""
   },
   {
-    "id": "tour-4",
-    "title": "Madurai, Rameswaram & Dhanushkodi Odyssey",
-    "badge": "Spiritual Trail",
-    "duration": "4 Days / 3 Nights",
-    "rating": 4.9,
-    "category": "Spiritual & Cultural",
-    "description": "Experience majestic Dravidian architecture, sacred 22 theerthams, Pamban Sea Bridge, and the ghost town of Dhanushkodi.",
-    "highlights": [
-      "Madurai Meenakshi Amman Temple darshan",
-      "Iconic Pamban Sea Bridge rail crossing view",
-      "Ramanathaswamy Temple 1000-pillar corridor"
-    ],
-    "idealFor": "",
-    "image": "/assets/images/tour-madurai.webp",
-    "pickupDrop": "",
-    "route": ""
-  },
-  {
-    "id": "tour-5",
+    "id": "tour-coorg",
     "title": "Coorg Coffee Estates & Abbey Falls Trek",
     "badge": "Relaxation",
     "duration": "3 Days / 2 Nights",
@@ -81,30 +118,12 @@ export const featuredTours = [
     "category": "Hill Station & Nature",
     "description": "Immerse in the Scotland of India with fragrant coffee plantations, Tibetan Golden Temple, and gushing Abbey Falls.",
     "highlights": [
-      "Dubare Elephant Camp river rafting & bathing",
+      "Dubare Elephant Camp river interaction",
       "Namdroling Tibetan Monastery Golden Temple",
       "Raja Seat sunset panoramic overlook"
     ],
     "idealFor": "",
     "image": "/assets/images/tour-coorg.webp",
-    "pickupDrop": "",
-    "route": ""
-  },
-  {
-    "id": "tour-6",
-    "title": "Tropical Bali Island & Temple Tour",
-    "badge": "International Special",
-    "duration": "6 Days / 5 Nights",
-    "rating": 4.9,
-    "category": "International",
-    "description": "Paradise on earth: lush Ubud rice terraces, cliff-top Uluwatu sunsets with Kecak fire dance, and Nusa Penida island hopping.",
-    "highlights": [
-      "Tegalalang Rice Terraces & Jungle Swing",
-      "Uluwatu Sunset Temple & Fire Dance",
-      "Speedboat day trip to Nusa Penida Kelingking beach"
-    ],
-    "idealFor": "",
-    "image": "/assets/images/tour-bali.webp",
     "pickupDrop": "",
     "route": ""
   }

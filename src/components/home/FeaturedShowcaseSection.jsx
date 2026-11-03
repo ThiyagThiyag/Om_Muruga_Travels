@@ -175,15 +175,9 @@ export default function FeaturedShowcaseSection({ onOpenRoomModal, onOpenTourMod
                   <h3 className="text-base font-bold text-slate-900 font-serif line-clamp-1 mb-2">
                     {room.title}
                   </h3>
-                  <p className="text-xs text-slate-600 line-clamp-2 mb-4 leading-relaxed">
+                  <p className="text-xs text-slate-600 line-clamp-2 mb-2 leading-relaxed">
                     {room.shortDescription}
                   </p>
-                  
-                  <div className="flex items-center gap-3 text-xs text-slate-500 pb-4 border-b border-slate-100">
-                    <span>👥 {room.capacity}</span>
-                    <span>•</span>
-                    <span>🛏️ {room.bedType}</span>
-                  </div>
                 </div>
 
                 <div className="pt-4 flex items-center justify-between">
@@ -197,12 +191,6 @@ export default function FeaturedShowcaseSection({ onOpenRoomModal, onOpenTourMod
                   </div>
 
                   <div className="flex items-center gap-2">
-                    <button
-                      onClick={() => onOpenRoomModal(room)}
-                      className="px-3 py-1.5 rounded-lg border border-slate-200 text-slate-700 hover:text-[#0a2540] hover:bg-slate-50 text-xs font-semibold transition-colors"
-                    >
-                      Details
-                    </button>
                     <a
                       href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20cottage%20stay%20availability"
                       target="_blank"
