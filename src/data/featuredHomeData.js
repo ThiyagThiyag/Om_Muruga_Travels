@@ -211,22 +211,6 @@ export const travelFleetData = [
     "tariffNote": "Best Rate on Inquiry"
   },
   {
-    "id": "fleet-3",
-    "name": "Toyota Innova Hycross Hybrid",
-    "type": "Executive Lounge MUV (AC)",
-    "capacity": "6 to 7 Passengers + 1 Chauffeur",
-    "luggage": "4 Large Bags + Trunk Space",
-    "idealFor": "Ultra-smooth eco road trips, corporate VIP travel & plush hill comfort",
-    "features": [
-      "Ottoman Powered Recliners",
-      "Whisper-Quiet Hybrid Cabin",
-      "Sunroof & Ambient Lights",
-      "Electronic Climate Zones"
-    ],
-    "image": "/assets/images/fleet-3.webp",
-    "tariffNote": "Best Rate on Inquiry"
-  },
-  {
     "id": "fleet-4",
     "name": "Maruti Ertiga / XL6",
     "type": "Family MUV (AC)",
@@ -240,22 +224,6 @@ export const travelFleetData = [
       "Pristine Sanitized Cabin"
     ],
     "image": "/assets/images/fleet-4.webp",
-    "tariffNote": "Best Rate on Inquiry"
-  },
-  {
-    "id": "fleet-5",
-    "name": "Toyota Fortuner 4x4 SUV",
-    "type": "Premium All-Terrain SUV (AC)",
-    "capacity": "6 Passengers + 1 Chauffeur",
-    "luggage": "4 Large Suitcases",
-    "idealFor": "Rugged Western Ghats off-road trails, VIP delegations & estate touring",
-    "features": [
-      "Heavy-Duty 4WD Terrain System",
-      "Elevated Road Stance",
-      "Leather Heated Seats",
-      "Master Hill Chauffeur"
-    ],
-    "image": "/assets/images/fleet-5.webp",
     "tariffNote": "Best Rate on Inquiry"
   },
   {
@@ -303,7 +271,7 @@ export const travelFleetData = [
       "Microphone & Audio System",
       "Dual Emergency Exits"
     ],
-    "image": "/assets/images/fleet-8.webp",
+    "image": "/assets/images/fleet-coach.webp",
     "tariffNote": "Best Rate on Inquiry"
   }
 ];

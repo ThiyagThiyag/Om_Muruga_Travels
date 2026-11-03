@@ -265,34 +265,92 @@ export const roomsData = [
 
 export const toursData = [
   {
-    id: 'tour-1',
+    id: 'tour-ooty',
+    title: 'Ooty Heritage Queen of Hill Stations',
+    destination: 'Ooty',
+    category: 'Hill Station & Nature',
+    duration: '3 Days / 2 Nights',
+    tariffNote: 'Tariff on Request',
+    rating: 4.9,
+    reviewsCount: 168,
+    badge: 'Popular Choice',
+    image: '/assets/images/tour-ooty.webp',
+    description: 'Experience the pristine beauty of the Nilgiris with Botanical Gardens, Doddabetta Peak, Pykara Lake boating, and iconic tea estates.',
+    highlights: [
+      'Government Botanical & Centenary Rose Garden',
+      'Doddabetta Peak 360-degree Nilgiri overlook',
+      'Pykara Lake speed boating & waterfalls',
+      'Handcrafted homemade chocolate tasting tour'
+    ],
+    inclusions: [
+      'Hill View Cottage / Resort Accommodations',
+      'Daily Delicious Breakfast',
+      'Dedicated Chauffeur AC Cab for Sightseeing',
+      'Toll, Parking & Driver Night Allowances'
+    ],
+    exclusions: ['Entry tickets to gardens & viewpoints', 'Boating charges'],
+    itinerary: [
+      { day: 1, title: 'Arrival in Ooty & Lake Promenade', desc: 'Pickup from Coimbatore / Mettupalayam, scenic Nilgiri ghat drive, hotel check-in, evening Ooty Lake boating and local bazaar walk.' },
+      { day: 2, title: 'Doddabetta & Tea Factory Tour', desc: 'Panoramic view from Doddabetta Peak, visit tea factory & museum, Rose Garden, and Botanical Garden.' },
+      { day: 3, title: 'Pykara Falls & Departure', desc: 'Morning visit to Pine Forest shooting spot, Pykara Lake speed boating, and return transfer to Coimbatore.' }
+    ]
+  },
+  {
+    id: 'tour-conoor',
+    title: 'Coonoor Tea Trails & Toy Train Romance',
+    destination: 'Coonoor',
+    category: 'Hill Station & Nature',
+    duration: '2 Days / 1 Night',
+    tariffNote: 'Tariff on Request',
+    rating: 4.9,
+    reviewsCount: 124,
+    badge: 'Scenic Trail',
+    image: '/assets/images/tour-conoor.webp',
+    description: 'Ride the UNESCO Nilgiri Mountain Toy Train, stroll through lush Sim\'s Park botanical trees, and gaze over Dolphin\'s Nose and Lamb\'s Rock.',
+    highlights: [
+      'UNESCO Heritage Nilgiri Mountain Steam Train',
+      'Sim\'s Park exotic floral conservatory',
+      'Dolphin\'s Nose & Lamb\'s Rock canyon views',
+      'Highfield Tea Factory processing tour'
+    ],
+    inclusions: [
+      'Colonial Tea Estate Bungalow / Hotel Stay',
+      'Daily Breakfast & Evening Tea',
+      'Dedicated Private AC Cab',
+      'Toy Train Ticket Coordination'
+    ],
+    exclusions: ['Toy train government ticket fee', 'Personal meals & camera tickets'],
+    itinerary: [
+      { day: 1, title: 'Steam Toy Train to Coonoor & Sim\'s Park', desc: 'Board the historic steam toy train through mountain tunnels to Coonoor, check in, explore Sim\'s Park floral wonders and Lamb\'s Rock.' },
+      { day: 2, title: 'Dolphin\'s Nose, Tea Gardens & Departure', desc: 'Morning sunrise at Dolphin\'s Nose viewpoint overlooking Catherine Falls, guided walk through organic tea gardens, return drop.' }
+    ]
+  },
+  {
+    id: 'tour-kodai',
     title: 'Kodaikanal Mist & Pine Forest Odyssey',
+    destination: 'Kodaikanal',
     category: 'Hill Station & Nature',
     duration: '4 Days / 3 Nights',
     tariffNote: 'Tariff on Request',
     rating: 4.9,
-    reviewsCount: 142,
+    reviewsCount: 195,
     badge: 'Bestseller',
     image: '/assets/images/tour-kodai.webp',
-    description: 'Explore the princess of hill stations with boat rides on Kodai Lake, Pillar Rocks, Coakers Walk, and serene pine forests.',
+    description: 'Explore the princess of hill stations with boat rides on star-shaped Kodai Lake, Pillar Rocks, Coaker\'s Walk, and enchanting pine forest walks.',
     highlights: [
       'Boating on star-shaped Kodaikanal Lake',
       'Walk through mystical Pine Forest trails',
       'Pillar Rocks & Dolphin Nose viewpoint',
-      'Stay in handcrafted nature cottages'
+      'Bryant Park and homemade Kodai chocolate tasting'
     ],
     inclusions: [
-      'Comfortable Handpicked Nature Stay',
+      'Handcrafted Nature Cottage / Resort Stay',
       'Daily Breakfast & Dinner',
       'Private AC Cab for all sightseeing',
       'Toll, Parking & Driver allowances',
       'Complimentary campfire evening'
     ],
-    exclusions: [
-      'Entry tickets to viewpoints / boat rides',
-      'Personal expenses & shopping',
-      'Flight or train tickets'
-    ],
+    exclusions: ['Entry tickets to viewpoints / boat rides', 'Personal expenses & shopping'],
     itinerary: [
       { day: 1, title: 'Arrival & Kodai Lake Sunset', desc: 'Pickup from Madurai / Kodai Road, scenic drive uphill, check-in, evening boat cruise and lake promenade walk.' },
       { day: 2, title: 'Pillar Rocks, Coakers Walk & Pine Forest', desc: 'Visit mystical Pillar Rocks, panoramic Green Valley View, Guna Caves, and scenic stroll through pine tree trails.' },
@@ -301,221 +359,14 @@ export const toursData = [
     ]
   },
   {
-    id: 'tour-2',
-    title: 'Munnar & Wayanad Tea Garden Escape',
-    category: 'Hill Station & Nature',
-    duration: '5 Days / 4 Nights',
-    tariffNote: 'Tariff on Request',
-    rating: 5.0,
-    reviewsCount: 210,
-    badge: 'Top Rated',
-    image: '/assets/images/tour-munnar.webp',
-    description: 'Breathe the crisp mountain air amidst boundless tea estates, cascading waterfalls, and spice plantation walks.',
-    highlights: [
-      'Rolling carpet tea plantations of Mattupetty',
-      'Eravikulam National Park & Nilgiri Tahr spotting',
-      'Echo Point & Kundala Dam pedal boating',
-      'Authentic Kerala Kathakali cultural show'
-    ],
-    inclusions: [
-      'Handpicked Premium Nature Accommodations',
-      'Buffet Breakfast included every morning',
-      'Private Chauffeur-driven AC SUV',
-      'Spice Plantation guided tasting walk'
-    ],
-    exclusions: ['Lunch and mid-day snacks', 'Jeep safari charges in forest reserve'],
-    itinerary: [
-      { day: 1, title: 'Cochin Arrival to Munnar', desc: 'Scenic journey through Cheeyappara & Valara waterfalls, stay check-in and leisure.' },
-      { day: 2, title: 'Tea Museum & Mattupetty', desc: 'Visit Tata Tea Museum, Mattupetty Dam, Echo Point, and Rose Garden.' },
-      { day: 3, title: 'Eravikulam & Anamudi Views', desc: 'Witness endangered mountain goats at Rajamalai, Kundala Lake pedal boat ride.' },
-      { day: 4, title: 'Spices & Tree Top Leisure', desc: 'Guided stroll through cardamom and cinnamon gardens, traditional evening art performance.' },
-      { day: 5, title: 'Departure via Athirappilly', desc: 'Breakfast, scenic drive back via the Niagara of India (Athirappilly Falls) to Cochin.' }
-    ]
-  },
-  {
-    id: 'tour-3',
-    title: 'Ooty, Coonoor & Heritage Toy Train Wonder',
-    category: 'Hill Station & Nature',
-    duration: '3 Days / 2 Nights',
-    tariffNote: 'Tariff on Request',
-    rating: 4.8,
-    reviewsCount: 98,
-    badge: 'Family Favorite',
-    image: '/assets/images/tour-ooty.webp',
-    description: 'Ride the UNESCO Nilgiri Mountain Railway, visit botanical gardens, tea factories, and enjoy boating on Pykara Lake.',
-    highlights: [
-      'Historic Nilgiri Mountain Toy Train ride',
-      'Government Botanical & Rose Gardens',
-      'Doddabetta Peak 360-degree viewpoint',
-      'Sims Park & Dolphin Nose in Coonoor'
-    ],
-    inclusions: [
-      'Hill View Cottage / Suite Accommodations',
-      'Daily Breakfast & Dinner',
-      'Toy Train Ticket arrangement',
-      'Private Dedicated Cab'
-    ],
-    exclusions: ['Camera fees', 'Personal boating expenses'],
-    itinerary: [
-      { day: 1, title: 'Arrival in Ooty & Botanical Garden', desc: 'Pickup from Coimbatore, ascend Nilgiri hills, check-in, explore historic Rose & Botanical Gardens.' },
-      { day: 2, title: 'Toy Train to Coonoor & Tea Estates', desc: 'Steam toy train through 16 tunnels to Coonoor, visit Sims Park, tea processing unit, and Dolphin Nose.' },
-      { day: 3, title: 'Pykara Lake, Shooting Spot & Drop', desc: 'Speed boating at Pykara Lake, movie shooting spot meadow, and return drive to Coimbatore.' }
-    ]
-  },
-  {
-    id: 'tour-4',
-    title: 'Madurai, Rameswaram & Dhanushkodi Odyssey',
-    category: 'Spiritual & Cultural',
-    duration: '4 Days / 3 Nights',
-    tariffNote: 'Tariff on Request',
-    rating: 4.9,
-    reviewsCount: 185,
-    badge: 'Spiritual Trail',
-    image: '/assets/images/tour-madurai.webp',
-    description: 'Experience majestic Dravidian architecture, sacred 22 theerthams, Pamban Sea Bridge, and the ghost town of Dhanushkodi.',
-    highlights: [
-      'Madurai Meenakshi Amman Temple darshan',
-      'Iconic Pamban Sea Bridge rail crossing view',
-      'Ramanathaswamy Temple 1000-pillar corridor',
-      '4x4 Beach drive to Rama Sethu / Dhanushkodi'
-    ],
-    inclusions: [
-      'Premium Heritage Accommodations',
-      'Daily Vegetarian South Indian Breakfast',
-      'VIP Temple Darshan coordination',
-      'AC Cab throughout the journey'
-    ],
-    exclusions: ['Temple special pooja tickets', 'Dhanushkodi 4x4 Jeep fee'],
-    itinerary: [
-      { day: 1, title: 'Madurai Heritage & Meenakshi Amman', desc: 'Explore Thirumalai Nayakkar Palace, evening Meenakshi Amman Temple pooja ceremony.' },
-      { day: 2, title: 'Pamban Bridge Drive to Rameswaram', desc: 'Drive across the turquoise sea on Pamban Bridge, check-in, evening Agni Theertham sea bath.' },
-      { day: 3, title: 'Ramanathaswamy Temple & Dhanushkodi', desc: 'Morning 22 holy wells bath, visit APJ Abdul Kalam Memorial, and thrill ride to Dhanushkodi edge.' },
-      { day: 4, title: 'Return Journey', desc: 'Morning sunrise over the Gulf of Mannar, return drive to Madurai for departure.' }
-    ]
-  },
-  {
-    id: 'tour-5',
-    title: 'Coorg Coffee Estates & Abbey Falls Trek',
-    category: 'Hill Station & Nature',
-    duration: '3 Days / 2 Nights',
-    tariffNote: 'Tariff on Request',
-    rating: 4.8,
-    reviewsCount: 110,
-    badge: 'Relaxation',
-    image: '/assets/images/tour-coorg.webp',
-    description: 'Immerse in the Scotland of India with fragrant coffee plantations, Tibetan Golden Temple, and gushing Abbey Falls.',
-    highlights: [
-      'Dubare Elephant Camp river rafting & bathing',
-      'Namdroling Tibetan Monastery Golden Temple',
-      'Raja Seat sunset panoramic overlook',
-      'Fresh Arabica coffee bean tasting sessions'
-    ],
-    inclusions: ['Plantation Private Cottage Stay', 'Breakfast & Evening Coffee', 'All transfers by private car'],
-    exclusions: ['Elephant camp activities fees', 'Personal shopping'],
-    itinerary: [
-      { day: 1, title: 'Mysore to Coorg via Golden Temple', desc: 'Visit Bylakuppe Tibetan settlement, arrive at coffee estate homestay, evening bonfire.' },
-      { day: 2, title: 'Dubare Camp, Abbey Falls & Raja Seat', desc: 'Interact with trained elephants, visit roaring Abbey Falls, catch sunset at Rajas Seat.' },
-      { day: 3, title: 'Talacauvery & Departure', desc: 'Visit birthplace of sacred river Cauvery at Brahmagiri hills and drop back to Mysore.' }
-    ]
-  },
-  {
-    id: 'tour-6',
-    title: 'Tropical Bali Island & Temple Tour',
-    category: 'International',
-    duration: '6 Days / 5 Nights',
-    tariffNote: 'Tariff on Request',
-    rating: 4.9,
-    reviewsCount: 88,
-    badge: 'International Special',
-    image: '/assets/images/tour-bali.webp',
-    description: 'Paradise on earth: lush Ubud rice terraces, cliff-top Uluwatu sunsets with Kecak fire dance, and Nusa Penida island hopping.',
-    highlights: [
-      'Tegalalang Rice Terraces & Jungle Swing',
-      'Uluwatu Sunset Temple & Fire Dance',
-      'Speedboat day trip to Nusa Penida Kelingking beach',
-      'Balinese aromatherapy spa session'
-    ],
-    inclusions: [
-      'Luxury Private Pool Accommodations',
-      'Daily Breakfast & 2 Candlelight Dinners',
-      'English-speaking local Balinese guide',
-      'Fast boat tickets to Nusa Penida'
-    ],
-    exclusions: ['International flight tickets', 'Indonesia Visa on Arrival ($35)'],
-    itinerary: [
-      { day: 1, title: 'Denpasar Arrival to Seminyak', desc: 'Traditional flower garland welcome, transfer to private pool villa, beach club evening.' },
-      { day: 2, title: 'Ubud Culture & Rice Terraces', desc: 'Sacred Monkey Forest, Tegalalang rice fields, traditional woodcarving village.' },
-      { day: 3, title: 'Nusa Penida Island Tour', desc: 'Fast boat to iconic T-Rex shaped Kelingking Beach, Broken Beach, and Angel Billabong.' },
-      { day: 4, title: 'Water Sports & Uluwatu Sunset', desc: 'Parasailing and banana boat at Benoa, evening cliff temple sunset and Kecak dance.' },
-      { day: 5, title: 'Free Leisure & Sunset Cruise', desc: 'Shopping in Seminyak, couples spa treatment, luxury catamaran dinner cruise.' },
-      { day: 6, title: 'Souvenirs & Departure', desc: 'Breakfast, visit local Krishna art market, airport transfer.' }
-    ]
-  },
-  {
-    id: 'tour-7',
-    title: 'European Alpine Scenic Splendor',
-    category: 'International',
-    duration: '7 Days / 6 Nights',
-    tariffNote: 'Tariff on Request',
-    rating: 5.0,
-    reviewsCount: 64,
-    badge: 'Luxury Global',
-    image: '/assets/images/tour-alps.webp',
-    description: 'Breathtaking Swiss Alps, crystal-clear Lake Lucerne, Jungfraujoch Top of Europe, and fairytale Black Forest.',
-    highlights: [
-      'Cogwheel train to Jungfraujoch summit',
-      'Lake Lucerne scenic paddle steamer cruise',
-      'Mount Titlis rotating cable car & glacier cliff walk',
-      'Swiss chocolate & cheese factory tasting'
-    ],
-    inclusions: ['Centrally Located Scenic Chalet Stays', 'Swiss Travel Pass (First Class)', 'Daily Continental Breakfasts', 'Experienced Tour Director'],
-    exclusions: ['Airfare to Zurich', 'Schengen Visa fees'],
-    itinerary: [
-      { day: 1, title: 'Zurich to Lucerne', desc: 'Arrive in Zurich, scenic train to Lucerne, Chapel Bridge and Lion Monument walk.' },
-      { day: 2, title: 'Mount Titlis Glacier Adventure', desc: 'Ride the Rotair cable car, walk through glacier caves, Titlis Cliff Walk.' },
-      { day: 3, title: 'Interlaken & Brienz Cruise', desc: 'Journey to Interlaken between two lakes, turquoise waters of Lake Brienz.' },
-      { day: 4, title: 'Jungfraujoch - Top of Europe', desc: 'Ascend to 3,454m snow-capped summit with views of Aletsch Glacier.' },
-      { day: 5, title: 'Fairytale Grindelwald & Lauterbrunnen', desc: 'Valley of 72 waterfalls, traditional wooden chalets, alpine meadow stroll.' },
-      { day: 6, title: 'Zurich Lake Promenade & Shopping', desc: 'Return to Zurich, luxury Bahnhofstrasse shopping, farewell Swiss fondue dinner.' },
-      { day: 7, title: 'Auf Wiedersehen', desc: 'Breakfast, transfer to Zurich International Airport for return journey.' }
-    ]
-  },
-  {
-    id: 'tour-8',
-    title: 'Serene Himalayan Valley Retreat',
-    category: 'Hill Station & Nature',
-    duration: '6 Days / 5 Nights',
-    tariffNote: 'Tariff on Request',
-    rating: 4.9,
-    reviewsCount: 94,
-    badge: 'Adventure & Peace',
-    image: '/assets/images/tour-himalayas.webp',
-    description: 'Snow-capped peaks of Manali, Solang Valley paragliding, Atal Tunnel, and serene apple orchards of Naggar.',
-    highlights: [
-      'Atal Tunnel drive to snow-clad Sissu waterfall',
-      'Solang Valley adventure sports & zorbing',
-      'Hadimba Devi ancient wooden temple',
-      'Old Manali riverside cafe vibes & live music'
-    ],
-    inclusions: ['Luxury Alpine Cottage Accommodations', 'Breakfast & Dinner', 'Private 4x4 Vehicle for Snow points', 'Trekking Guide'],
-    exclusions: ['Paragliding and skiing charges', 'Personal warm clothing rental'],
-    itinerary: [
-      { day: 1, title: 'Chandigarh to Manali Drive', desc: 'Picturesque drive along Beas River through Mandi & Kullu, check-in to your private stay.' },
-      { day: 2, title: 'Manali Local Heritage Tour', desc: 'Hadimba Temple, Vashisht Hot Springs, Tibetan Monastery, and Mall Road.' },
-      { day: 3, title: 'Solang Valley & Atal Tunnel Adventure', desc: 'Drive through landmark engineering marvel Atal Tunnel to Lahaul Valley and Sissu.' },
-      { day: 4, title: 'Naggar Castle & Apple Orchards', desc: 'Visit historic wood-and-stone Naggar Castle, Nicholas Roerich art gallery.' },
-      { day: 5, title: 'Jogini Waterfall Nature Trek', desc: 'Gentle morning pine trek to Jogini falls, afternoon cafe relaxation in Old Manali.' },
-      { day: 6, title: 'Kullu Shawls & Departure', desc: 'River rafting in Kullu, local handloom shopping, return drive to Chandigarh.' }
-    ]
-  },
-  {
-    id: 'tour-9',
+    id: 'tour-kerala',
     title: 'Enchanting Kerala Backwaters & Alleppey Cruise',
+    destination: 'Kerala',
     category: 'Hill Station & Nature',
     duration: '4 Days / 3 Nights',
     tariffNote: 'Tariff on Request',
     rating: 4.9,
-    reviewsCount: 160,
+    reviewsCount: 180,
     badge: 'Trending Tour',
     image: '/assets/images/tour-kerala.webp',
     description: 'Cruise emerald palm backwaters on an authentic luxury houseboat, explore Fort Kochi colonial history, and taste fresh coastal Kerala cuisine.',
@@ -523,10 +374,10 @@ export const toursData = [
       'Overnight private AC houseboat stay in Alleppey',
       'Historic Chinese fishing nets & Mattancherry Palace',
       'Village canoe boat rides through serene canals',
-      'Fresh Karimeen fish fry & traditional sadhya'
+      'Fresh Karimeen fish fry & traditional Kerala sadhya'
     ],
     inclusions: [
-      'Private AC Houseboat with all meals',
+      'Private AC Houseboat with all meals included',
       'Dedicated AC Cab for all city transfers',
       'Tolls, parking & experienced driver',
       'Sightseeing coordination'
@@ -540,160 +391,191 @@ export const toursData = [
     ]
   },
   {
-    id: 'tour-10',
-    title: 'Kashmir Paradise & Gulmarg Snow Wonderland',
+    id: 'tour-munnar',
+    title: 'Munnar Tea Valley & Cloud Mist Getaway',
+    destination: 'Munnar',
     category: 'Hill Station & Nature',
-    duration: '6 Days / 5 Nights',
+    duration: '3 Days / 2 Nights',
     tariffNote: 'Tariff on Request',
     rating: 5.0,
-    reviewsCount: 135,
-    badge: 'Luxury Vacation',
-    image: '/assets/images/tour-kashmir.webp',
-    description: 'Experience heaven on earth: romantic Dal Lake Shikara rides, Gulmarg snow gondola cable car, Betaab Valley in Pahalgam, and Sonamarg glaciers.',
+    reviewsCount: 215,
+    badge: 'Top Rated',
+    image: '/assets/images/tour-munnar.webp',
+    description: 'Breathe the crisp mountain air amidst boundless tea estates, cascading waterfalls, and spice plantation walks in God\'s Own Country.',
     highlights: [
-      'Shikara boat ride on Dal Lake & stay in heritage houseboat',
-      'World highest Gulmarg Gondola Cable Car phase 1 & 2',
-      'Betaab Valley & Aru Valley pine horse ride in Pahalgam',
-      'Saffron farm visit and Kashmiri Wazwan tasting'
+      'Rolling carpet tea plantations of Mattupetty',
+      'Eravikulam National Park & Nilgiri Tahr spotting',
+      'Echo Point & Kundala Dam pedal boating',
+      'Spice plantation guided walk with fresh cardamom'
     ],
     inclusions: [
-      'Heritage Houseboat & Boutique Stay Accommodations',
-      'Daily Breakfast & Dinner',
-      'Private Dedicated AC/Heated Chauffeur Cab',
-      'Shikara Ride on Dal Lake'
+      'Handpicked Premium Nature Accommodations',
+      'Buffet Breakfast included every morning',
+      'Private Chauffeur-driven AC Cab',
+      'Spice Plantation guided tasting walk'
     ],
-    exclusions: ['Gondola ride tickets', 'Personal snow sports charges'],
+    exclusions: ['Lunch and mid-day snacks', 'Jeep safari charges in forest reserve'],
     itinerary: [
-      { day: 1, title: 'Srinagar Arrival & Dal Lake Shikara', desc: 'Warm Kashmiri welcome, check in to Dal Lake houseboat, sunset shikara ride, floating market visit.' },
-      { day: 2, title: 'Srinagar to Gulmarg Snow Meadows', desc: 'Ascend to Gulmarg, ride the famous Gondola cable car up to Apharwat peak, snow activities.' },
-      { day: 3, title: 'Gulmarg to Pahalgam Valley of Shepherds', desc: 'Drive through saffron fields and Avantipur ruins to scenic Pahalgam along the Lidder River.' },
-      { day: 4, title: 'Pahalgam Betaab & Aru Valleys', desc: 'Explore Betaab Valley, Chandanwari, horse trail to Baisaran mini-Switzerland meadow.' },
-      { day: 5, title: 'Mughal Gardens of Srinagar', desc: 'Return to Srinagar, visit Shalimar Bagh, Nishat Bagh, and Shankaracharya Temple hilltop.' },
-      { day: 6, title: 'Dry Fruits Market & Departure', desc: 'Breakfast, shopping for authentic saffron, walnuts, and Kashmiri shawls, airport transfer.' }
+      { day: 1, title: 'Cochin Arrival to Munnar', desc: 'Scenic journey through Cheeyappara & Valara waterfalls, tea estate check-in and leisure.' },
+      { day: 2, title: 'Tea Museum & Mattupetty', desc: 'Visit Tata Tea Museum, Mattupetty Dam, Echo Point, and Kundala Lake.' },
+      { day: 3, title: 'Eravikulam National Park & Departure', desc: 'Witness endangered mountain goats at Rajamalai, scenic drive back to Cochin for drop.' }
     ]
   },
   {
-    id: 'tour-11',
-    title: 'Dazzling Dubai & Desert Safari Extravaganza',
-    category: 'International',
-    duration: '5 Days / 4 Nights',
+    id: 'tour-wayanad',
+    title: 'Wayanad Rainforest & Waterfalls Adventure',
+    destination: 'Wayanad',
+    category: 'Hill Station & Nature',
+    duration: '3 Days / 2 Nights',
     tariffNote: 'Tariff on Request',
-    rating: 4.9,
-    reviewsCount: 96,
-    badge: 'International Special',
-    image: '/assets/images/tour-dubai.webp',
-    description: 'Futuristic skyscrapers, 4x4 desert dune bashing with BBQ dinner, Burj Khalifa 124th-floor views, and Dubai Marina luxury dhow cruise.',
+    rating: 4.8,
+    reviewsCount: 140,
+    badge: 'Adventure Special',
+    image: '/assets/images/tour-wayanad.webp',
+    description: 'Explore misty rainforest peaks, prehistoric Edakkal Caves, bamboo rafting on Kuruva Island, and breathtaking Banasura Sagar Dam.',
     highlights: [
-      'Burj Khalifa 124th floor observation deck visit',
-      '4x4 Desert Dune Bashing with belly dance & BBQ dinner',
-      'Dubai Marina luxury Dhow cruise with buffet',
-      'Miracle Garden floral display & Global Village'
+      'Prehistoric rock carvings at Edakkal Caves',
+      'Banasura Sagar Dam largest earth dam in India',
+      'Soochipara cascading forest waterfalls',
+      'Pristine bamboo rafting at Kuruva Island'
     ],
     inclusions: [
-      'Central 4-Star Hotel / Boutique Stay in Dubai',
-      'Daily Buffet Breakfast & Desert Safari BBQ Dinner',
-      'All Sightseeing Transfers by Private AC Vehicle',
-      'Dubai Airport Meet, Greet & Transfers'
+      'Rainforest Plantation Resort Stay',
+      'Daily Farm-fresh Breakfast',
+      'Private AC Cab for all excursions',
+      'Driver allowances & parking'
     ],
-    exclusions: ['Flight tickets', 'UAE Visa fees ($95)'],
+    exclusions: ['Entry tickets to caves and rafting fees', 'Personal expenses'],
     itinerary: [
-      { day: 1, title: 'Dubai Arrival & Marina Dhow Cruise', desc: 'Arrival at Dubai International Airport, private transfer to hotel, evening 2-hour Marina cruise with live shows.' },
-      { day: 2, title: 'City Tour, Dubai Mall & Burj Khalifa', desc: 'Drive through Palm Jumeirah, photo stop at Burj Al Arab, visit Dubai Mall fountain show and ascend Burj Khalifa.' },
-      { day: 3, title: 'Thrilling 4x4 Desert Safari & Camp', desc: 'Afternoon pickup in 4x4 Land Cruiser for high sand dunes bashing, camel ride, sandboarding, and campfire dinner.' },
-      { day: 4, title: 'Miracle Garden & Gold Souk Shopping', desc: 'Explore millions of flowers at Miracle Garden, bargain for gold and perfumes at Deira Gold Souk.' },
-      { day: 5, title: 'Departure', desc: 'Breakfast, leisure shopping at Meena Bazaar, private airport drop.' }
+      { day: 1, title: 'Calicut Arrival to Wayanad & Banasura Dam', desc: 'Pickup from Calicut / Mysore, drive up Thamarassery Churam ghats, check in, visit Banasura Sagar Dam speedboat point.' },
+      { day: 2, title: 'Edakkal Caves & Soochipara Falls', desc: 'Morning trek to ancient Edakkal Caves, afternoon refreshing dip near Soochipara Waterfalls and spice garden.' },
+      { day: 3, title: 'Pookode Lake & Departure', desc: 'Scenic pedal boating at Pookode Lake, honey museum visit, and timely drop to Calicut / Mysore.' }
+    ]
+  },
+  {
+    id: 'tour-coorg',
+    title: 'Coorg Coffee Estates & Abbey Falls Trek',
+    destination: 'Coorg',
+    category: 'Hill Station & Nature',
+    duration: '3 Days / 2 Nights',
+    tariffNote: 'Tariff on Request',
+    rating: 4.8,
+    reviewsCount: 130,
+    badge: 'Relaxation',
+    image: '/assets/images/tour-coorg.webp',
+    description: 'Immerse in the Scotland of India with fragrant coffee plantations, Tibetan Golden Temple, and gushing Abbey Falls.',
+    highlights: [
+      'Dubare Elephant Camp river interaction',
+      'Namdroling Tibetan Monastery Golden Temple',
+      'Raja Seat sunset panoramic overlook',
+      'Fresh Arabica coffee bean tasting sessions'
+    ],
+    inclusions: ['Plantation Private Cottage Stay', 'Breakfast & Evening Coffee', 'All transfers by private car'],
+    exclusions: ['Elephant camp activities fees', 'Personal shopping'],
+    itinerary: [
+      { day: 1, title: 'Mysore to Coorg via Golden Temple', desc: 'Visit Bylakuppe Tibetan settlement, arrive at coffee estate homestay, evening bonfire.' },
+      { day: 2, title: 'Dubare Camp, Abbey Falls & Raja Seat', desc: 'Interact with trained elephants, visit roaring Abbey Falls, catch sunset at Rajas Seat.' },
+      { day: 3, title: 'Talacauvery & Departure', desc: 'Visit birthplace of sacred river Cauvery at Brahmagiri hills and drop back to Mysore.' }
     ]
   }
 ];
 
 export const travelFleetData = [
   {
-    id: 'fleet-1',
-    name: 'Swift Dzire / Toyota Etios',
-    type: 'Sedan (AC)',
-    capacity: '4 Passengers + 1 Chauffeur',
-    luggage: '2 Medium Bags + 2 Handbags',
-    idealFor: 'Couples, small families, airport pickups & city sightseeing',
-    features: ['Chilled Air Conditioning', 'Clean Sanitized Interiors', 'Experienced Hill Driver', 'Phone Charger & Music System'],
-    image: '/assets/images/fleet-1.webp',
-    tariffNote: 'Best Rate on Inquiry'
+    "id": "fleet-1",
+    "name": "Swift Dzire / Toyota Etios",
+    "type": "Sedan (AC)",
+    "capacity": "4 Passengers + 1 Chauffeur",
+    "luggage": "2 Medium Bags + 2 Handbags",
+    "idealFor": "Couples, small families, airport pickups & city sightseeing",
+    "features": [
+      "Chilled Air Conditioning",
+      "Clean Sanitized Interiors",
+      "Experienced Hill Driver",
+      "Phone Charger & Music System"
+    ],
+    "image": "/assets/images/fleet-1.webp",
+    "tariffNote": "Best Rate on Inquiry"
   },
   {
-    id: 'fleet-2',
-    name: 'Toyota Innova Crysta',
-    type: 'Luxury MUV (AC)',
-    capacity: '6 to 7 Passengers + 1 Chauffeur',
-    luggage: '4 Large Bags + Overhead Roof Carrier',
-    idealFor: 'Family hill station road trips, outstation touring & long distance comfort',
-    features: ['Plush Captain Seat Recliners', 'Dual AC Climate Control', 'Roof Carrier Available', 'Hill-Trained Veteran Driver'],
-    image: '/assets/images/fleet-2.webp',
-    tariffNote: 'Best Rate on Inquiry'
+    "id": "fleet-2",
+    "name": "Toyota Innova Crysta",
+    "type": "Luxury MUV (AC)",
+    "capacity": "6 to 7 Passengers + 1 Chauffeur",
+    "luggage": "4 Large Bags + Overhead Roof Carrier",
+    "idealFor": "Family hill station road trips, outstation touring & long distance comfort",
+    "features": [
+      "Plush Captain Seat Recliners",
+      "Dual AC Climate Control",
+      "Roof Carrier Available",
+      "Hill-Trained Veteran Driver"
+    ],
+    "image": "/assets/images/fleet-2.webp",
+    "tariffNote": "Best Rate on Inquiry"
   },
   {
-    id: 'fleet-3',
-    name: 'Toyota Innova Hycross Hybrid',
-    type: 'Executive Lounge MUV (AC)',
-    capacity: '6 to 7 Passengers + 1 Chauffeur',
-    luggage: '4 Large Bags + Trunk Space',
-    idealFor: 'Ultra-smooth eco road trips, corporate VIP travel & plush hill comfort',
-    features: ['Ottoman Powered Recliners', 'Whisper-Quiet Hybrid Cabin', 'Sunroof & Ambient Lights', 'Electronic Climate Zones'],
-    image: '/assets/images/fleet-3.webp',
-    tariffNote: 'Best Rate on Inquiry'
+    "id": "fleet-4",
+    "name": "Maruti Ertiga / XL6",
+    "type": "Family MUV (AC)",
+    "capacity": "5 to 6 Passengers + 1 Chauffeur",
+    "luggage": "3 Medium Bags + Overhead Storage",
+    "idealFor": "Budget-friendly family vacations, temple tours & weekend getaways",
+    "features": [
+      "Efficient Cooling System",
+      "Flexible 3-Row Seating",
+      "Smooth Mountain Suspension",
+      "Pristine Sanitized Cabin"
+    ],
+    "image": "/assets/images/fleet-4.webp",
+    "tariffNote": "Best Rate on Inquiry"
   },
   {
-    id: 'fleet-4',
-    name: 'Maruti Ertiga / XL6',
-    type: 'Family MUV (AC)',
-    capacity: '5 to 6 Passengers + 1 Chauffeur',
-    luggage: '3 Medium Bags + Overhead Storage',
-    idealFor: 'Budget-friendly family vacations, temple tours & weekend getaways',
-    features: ['Efficient Cooling System', 'Flexible 3-Row Seating', 'Smooth Mountain Suspension', 'Pristine Sanitized Cabin'],
-    image: '/assets/images/fleet-4.webp',
-    tariffNote: 'Best Rate on Inquiry'
+    "id": "fleet-6",
+    "name": "Tempo Traveler (12 / 14 / 17 Seater)",
+    "type": "Group Touring Van (AC)",
+    "capacity": "12 to 17 Passengers + 1 Chauffeur",
+    "luggage": "Spacious Dedicated Luggage Boot",
+    "idealFor": "Extended family getaways, pilgrimage groups & corporate team outings",
+    "features": [
+      "Push-back Reclining Seats",
+      "Individual AC Vents",
+      "LED TV & Audio System",
+      "Generous Legroom"
+    ],
+    "image": "/assets/images/fleet-6.webp",
+    "tariffNote": "Best Rate on Inquiry"
   },
   {
-    id: 'fleet-5',
-    name: 'Toyota Fortuner 4x4 SUV',
-    type: 'Premium All-Terrain SUV (AC)',
-    capacity: '6 Passengers + 1 Chauffeur',
-    luggage: '4 Large Suitcases',
-    idealFor: 'Rugged Western Ghats off-road trails, VIP delegations & estate touring',
-    features: ['Heavy-Duty 4WD Terrain System', 'Elevated Road Stance', 'Leather Heated Seats', 'Master Hill Chauffeur'],
-    image: '/assets/images/fleet-5.webp',
-    tariffNote: 'Best Rate on Inquiry'
+    "id": "fleet-7",
+    "name": "Force Urbania Luxury Van",
+    "type": "Executive Luxury Van (AC)",
+    "capacity": "10 to 12 Passengers + 1 Chauffeur",
+    "luggage": "Executive Luggage Storage",
+    "idealFor": "VIP family tours, premium pilgrimage & executive corporate delegates",
+    "features": [
+      "Aircraft-style Luxury Cabin",
+      "Panoramic Sealed Windows",
+      "Individual USB Ports & Lights",
+      "Air Suspension Ride"
+    ],
+    "image": "/assets/images/fleet-7.webp",
+    "tariffNote": "Best Rate on Inquiry"
   },
   {
-    id: 'fleet-6',
-    name: 'Tempo Traveler (12 / 14 / 17 Seater)',
-    type: 'Group Touring Van (AC)',
-    capacity: '12 to 17 Passengers + 1 Chauffeur',
-    luggage: 'Spacious Dedicated Luggage Boot',
-    idealFor: 'Extended family getaways, pilgrimage groups & corporate team outings',
-    features: ['Push-back Reclining Seats', 'Individual AC Vents', 'LED TV & Audio System', 'Generous Legroom'],
-    image: '/assets/images/fleet-6.webp',
-    tariffNote: 'Best Rate on Inquiry'
-  },
-  {
-    id: 'fleet-7',
-    name: 'Force Urbania Luxury Van',
-    type: 'Executive Luxury Van (AC)',
-    capacity: '10 to 12 Passengers + 1 Chauffeur',
-    luggage: 'Executive Luggage Storage',
-    idealFor: 'VIP family tours, premium pilgrimage & executive corporate delegates',
-    features: ['Aircraft-style Luxury Cabin', 'Panoramic Sealed Windows', 'Individual USB Ports & Lights', 'Air Suspension Ride'],
-    image: '/assets/images/fleet-7.webp',
-    tariffNote: 'Best Rate on Inquiry'
-  },
-  {
-    id: 'fleet-8',
-    name: 'Deluxe Tour Coach (21 / 25 Seater)',
-    type: 'Mini Tour Bus (AC)',
-    capacity: '21 to 25 Passengers + 1 Driver + 1 Helper',
-    luggage: 'Spacious Underfloor Luggage Bins',
-    idealFor: 'College excursions, wedding transport, large group pilgrimages',
-    features: ['Air Suspension Smooth Journey', 'Powerful Chiller AC', 'Microphone & Audio System', 'Dual Emergency Exits'],
-    image: '/assets/images/fleet-8.webp',
-    tariffNote: 'Best Rate on Inquiry'
+    "id": "fleet-8",
+    "name": "Deluxe Tour Coach (21 / 25 Seater)",
+    "type": "Mini Tour Bus (AC)",
+    "capacity": "21 to 25 Passengers + 1 Driver + 1 Helper",
+    "luggage": "Spacious Underfloor Luggage Bins",
+    "idealFor": "College excursions, wedding transport, large group pilgrimages",
+    "features": [
+      "Air Suspension Smooth Journey",
+      "Powerful Chiller AC",
+      "Microphone & Audio System",
+      "Dual Emergency Exits"
+    ],
+    "image": "/assets/images/fleet-coach.webp",
+    "tariffNote": "Best Rate on Inquiry"
   }
 ];
 

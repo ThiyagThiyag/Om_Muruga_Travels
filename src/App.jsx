@@ -14,9 +14,10 @@ const ItineraryModal = lazy(() => import('./components/ItineraryModal'));
 // Direct import for immediate synchronous render of HomePage (0 CLS, instant FCP/LCP)
 import HomePage from './pages/HomePage';
 
-// Lazy-loaded secondary pages (Rooms, Tours, About, Contact)
+// Lazy-loaded secondary pages (Rooms, Tours, Cabs, About, Contact)
 const RoomsPage = lazy(() => import('./pages/RoomsPage'));
 const ToursPage = lazy(() => import('./pages/ToursPage'));
+const CabsPage = lazy(() => import('./pages/CabsPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 
@@ -106,6 +107,14 @@ function App() {
                   <ToursPage
                     onOpenTourModal={handleOpenTourModal}
                   />
+                }
+              />
+
+              {/* Dedicated Cabs & Fleet Page */}
+              <Route
+                path="/cabs"
+                element={
+                  <CabsPage />
                 }
               />
 

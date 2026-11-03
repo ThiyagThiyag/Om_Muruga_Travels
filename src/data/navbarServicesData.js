@@ -3,17 +3,17 @@ export const servicesMegaMenuData = [
     id: 'cabs',
     title: 'Cabs & Fleet',
     shortTitle: 'Cabs',
-    mainPath: '/tours#fleet',
+    mainPath: '/cabs',
     icon: 'car',
     iconBg: 'bg-amber-50 text-amber-600 border-amber-200',
     subtopics: [
-      { title: 'Sedan Cabs (Dzire / Etios)', path: '/tours#fleet' },
-      { title: 'Innova Crysta & MUVs', path: '/tours#fleet' },
-      { title: 'Tempo Traveler (Group)', path: '/tours#fleet' }
+      { title: 'Swift Dzire & Sedans', path: '/cabs' },
+      { title: 'Innova Crysta & Ertiga', path: '/cabs' },
+      { title: 'Tempo Traveler & Urbania', path: '/cabs' }
     ],
     footerAction: {
       text: 'View All Cabs',
-      path: '/tours#fleet'
+      path: '/cabs'
     }
   },
   {
@@ -24,9 +24,9 @@ export const servicesMegaMenuData = [
     icon: 'compass',
     iconBg: 'bg-blue-50 text-[#0a2540] border-blue-200',
     subtopics: [
-      { title: 'Hill Station Packages', path: '/tours/hill-station' },
-      { title: 'Temple & Spiritual Tours', path: '/tours/spiritual' },
-      { title: 'Honeymoon Specials', path: '/tours/honeymoon' }
+      { title: 'Ooty & Coonoor Tours', path: '/tours/ooty' },
+      { title: 'Kodaikanal Packages', path: '/tours/kodaikanal' },
+      { title: 'Kerala & Munnar Getaways', path: '/tours/kerala' }
     ],
     footerAction: {
       text: 'View All Tours',
@@ -41,9 +41,9 @@ export const servicesMegaMenuData = [
     icon: 'home',
     iconBg: 'bg-emerald-50 text-emerald-700 border-emerald-200',
     subtopics: [
-      { title: 'Bamboo Cottages', path: '/rooms/cottage' },
-      { title: 'Treehouse Villas', path: '/rooms/treehouse' },
-      { title: 'Deluxe Manor Suites', path: '/rooms/suite' }
+      { title: 'Bamboo Cottages', path: '/rooms' },
+      { title: 'Treehouse Villas', path: '/rooms' },
+      { title: 'Deluxe Manor Suites', path: '/rooms' }
     ],
     footerAction: {
       text: 'View All Stays',

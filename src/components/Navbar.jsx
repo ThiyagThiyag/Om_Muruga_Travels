@@ -68,7 +68,7 @@ export default function Navbar() {
     return location.pathname.startsWith(path);
   };
 
-  const isServicesActive = location.pathname.startsWith('/tours') || location.pathname.startsWith('/rooms');
+  const isServicesActive = location.pathname.startsWith('/tours') || location.pathname.startsWith('/rooms') || location.pathname.startsWith('/cabs');
 
   // Render Category Icon helper
   const renderCategoryIcon = (iconType) => {
@@ -131,7 +131,7 @@ export default function Navbar() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span>Om Muruga Travels • Kodaikanal • Ooty • Munnar • All South India</span>
+              <span>Om Muruga Travels • Ooty • Kodaikanal • Kerala • Karnataka • All South India</span>
             </span>
           </div>
 
@@ -220,61 +220,61 @@ export default function Navbar() {
                 <div
                   className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[640px] max-w-[94vw] transition-all duration-200 z-50 opacity-100 visible translate-y-0 pointer-events-auto"
                 >
-                <div className="bg-white rounded-2xl shadow-xl border border-slate-200/90 overflow-hidden ring-1 ring-black/5">
-                  {/* Accent Top Line */}
-                  <div className="h-1 w-full bg-gradient-to-r from-amber-500 via-[#c59b27] to-[#0a2540]"></div>
+                  <div className="bg-white rounded-2xl shadow-xl border border-slate-200/90 overflow-hidden ring-1 ring-black/5">
+                    {/* Accent Top Line */}
+                    <div className="h-1 w-full bg-gradient-to-r from-amber-500 via-[#c59b27] to-[#0a2540]"></div>
 
-                  {/* 3 Compact Columns for Cabs, Tours, Rooms */}
-                  <div className="p-4 sm:p-5 grid grid-cols-3 divide-x divide-slate-100 gap-4">
-                    {servicesMegaMenuData.map((category) => (
-                      <div key={category.id} className="flex flex-col justify-between pl-3.5 first:pl-0">
-                        <div>
-                          {/* Column Header */}
-                          <div className="flex items-center gap-2 pb-2.5 border-b border-slate-100">
-                            <div className={`w-7 h-7 rounded-lg flex items-center justify-center border shadow-2xs shrink-0 ${category.iconBg}`}>
-                              {renderCategoryIcon(category.icon)}
+                    {/* 3 Compact Columns for Cabs, Tours, Rooms */}
+                    <div className="p-4 sm:p-5 grid grid-cols-3 divide-x divide-slate-100 gap-4">
+                      {servicesMegaMenuData.map((category) => (
+                        <div key={category.id} className="flex flex-col justify-between pl-3.5 first:pl-0">
+                          <div>
+                            {/* Column Header */}
+                            <div className="flex items-center gap-2 pb-2.5 border-b border-slate-100">
+                              <div className={`w-7 h-7 rounded-lg flex items-center justify-center border shadow-2xs shrink-0 ${category.iconBg}`}>
+                                {renderCategoryIcon(category.icon)}
+                              </div>
+                              <Link
+                                to={category.mainPath}
+                                onClick={() => setIsServicesOpen(false)}
+                                className="text-sm font-bold text-[#0a2540] hover:text-[#c59b27] transition-colors font-serif truncate"
+                              >
+                                {category.title}
+                              </Link>
                             </div>
+
+                            {/* Subtopics List */}
+                            <div className="mt-2 space-y-1">
+                              {category.subtopics.map((sub, idx) => (
+                                <Link
+                                  key={idx}
+                                  to={sub.path}
+                                  onClick={() => setIsServicesOpen(false)}
+                                  className="group/sub px-2 py-1.5 rounded-lg hover:bg-amber-50/70 transition-colors flex items-center gap-1.5 text-xs text-slate-700 hover:text-[#0a2540] font-medium"
+                                >
+                                  <span className="text-[#c59b27] text-[10px] group-hover/sub:translate-x-0.5 transition-transform">›</span>
+                                  <span className="truncate">{sub.title}</span>
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+
+                          {/* Column Footer Link */}
+                          <div className="pt-2 mt-2 border-t border-slate-100">
                             <Link
-                              to={category.mainPath}
+                              to={category.footerAction.path}
                               onClick={() => setIsServicesOpen(false)}
-                              className="text-sm font-bold text-[#0a2540] hover:text-[#c59b27] transition-colors font-serif truncate"
+                              className="inline-flex items-center gap-1 text-[11px] font-bold text-[#c59b27] hover:text-[#a37f1c] group/action transition-colors"
                             >
-                              {category.title}
+                              <span>{category.footerAction.text}</span>
+                              <span className="group-hover/action:translate-x-0.5 transition-transform">→</span>
                             </Link>
                           </div>
-
-                          {/* Subtopics List */}
-                          <div className="mt-2 space-y-1">
-                            {category.subtopics.map((sub, idx) => (
-                              <Link
-                                key={idx}
-                                to={sub.path}
-                                onClick={() => setIsServicesOpen(false)}
-                                className="group/sub px-2 py-1.5 rounded-lg hover:bg-amber-50/70 transition-colors flex items-center gap-1.5 text-xs text-slate-700 hover:text-[#0a2540] font-medium"
-                              >
-                                <span className="text-[#c59b27] text-[10px] group-hover/sub:translate-x-0.5 transition-transform">›</span>
-                                <span className="truncate">{sub.title}</span>
-                              </Link>
-                            ))}
-                          </div>
                         </div>
-
-                        {/* Column Footer Link */}
-                        <div className="pt-2 mt-2 border-t border-slate-100">
-                          <Link
-                            to={category.footerAction.path}
-                            onClick={() => setIsServicesOpen(false)}
-                            className="inline-flex items-center gap-1 text-[11px] font-bold text-[#c59b27] hover:text-[#a37f1c] group/action transition-colors"
-                          >
-                            <span>{category.footerAction.text}</span>
-                            <span className="group-hover/action:translate-x-0.5 transition-transform">→</span>
-                          </Link>
-                        </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
               )}
             </div>
 
@@ -320,7 +320,7 @@ export default function Navbar() {
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-md hover:shadow-lg hover:shadow-emerald-500/30 hover:-translate-y-0.5 transition-all"
             >
               <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.652-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.652-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
               </svg>
               <span>WhatsApp Us</span>
             </a>

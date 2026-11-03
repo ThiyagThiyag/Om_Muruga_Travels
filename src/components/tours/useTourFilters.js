@@ -2,19 +2,28 @@ import { useState, useMemo, useEffect } from 'react';
 import { useSearchParams, useParams, useLocation } from 'react-router-dom';
 import { toursData } from '../../data/travelData';
 
-export const tourCategories = [
-  'All', 
-  'Hill Station & Nature', 
-  'Spiritual & Cultural', 
-  'International'
+export const tourDestinations = [
+  'All',
+  'Ooty',
+  'Coonoor',
+  'Kodaikanal',
+  'Kerala',
+  'Munnar',
+  'Wayanad',
+  'Coorg'
 ];
 
-const slugToCategory = {
-  'hill-station': 'Hill Station & Nature',
-  'spiritual': 'Spiritual & Cultural',
-  'honeymoon': 'Hill Station & Nature',
-  'nature': 'Hill Station & Nature',
-  'international': 'International'
+const slugToDestination = {
+  'ooty': 'Ooty',
+  'conoor': 'Coonoor',
+  'coonoor': 'Coonoor',
+  'kodaikanal': 'Kodaikanal',
+  'kodai': 'Kodaikanal',
+  'kerala': 'Kerala',
+  'munnar': 'Munnar',
+  'wayanad': 'Wayanad',
+  'coorg': 'Coorg',
+  'hill-station': 'All'
 };
 
 export function useTourFilters() {
@@ -22,46 +31,52 @@ export function useTourFilters() {
   const { categorySlug } = useParams();
   const location = useLocation();
 
-  const getInitialCategory = () => {
-    if (categorySlug && slugToCategory[categorySlug]) {
-      return slugToCategory[categorySlug];
+  const getInitialDestination = () => {
+    if (categorySlug && slugToDestination[categorySlug.toLowerCase()]) {
+      return slugToDestination[categorySlug.toLowerCase()];
     }
-    const catParam = searchParams.get('category');
-    if (catParam && tourCategories.includes(catParam)) {
-      return catParam;
+    const destParam = searchParams.get('destination') || searchParams.get('category');
+    if (destParam) {
+      const match = tourDestinations.find(d => d.toLowerCase() === destParam.toLowerCase());
+      if (match) return match;
     }
     return 'All';
   };
 
-  const [selectedCategory, setSelectedCategory] = useState(getInitialCategory);
+  const [selectedDestination, setSelectedDestination] = useState(getInitialDestination);
   const [selectedDuration, setSelectedDuration] = useState('all');
 
   useEffect(() => {
-    if (categorySlug && slugToCategory[categorySlug]) {
-      setSelectedCategory(slugToCategory[categorySlug]);
+    if (categorySlug && slugToDestination[categorySlug.toLowerCase()]) {
+      setSelectedDestination(slugToDestination[categorySlug.toLowerCase()]);
       return;
     }
-    const currentParam = searchParams.get('category');
-    if (currentParam && tourCategories.includes(currentParam)) {
-      setSelectedCategory(currentParam);
-    } else if (!currentParam && !categorySlug) {
-      setSelectedCategory('All');
+    const destParam = searchParams.get('destination') || searchParams.get('category');
+    if (destParam) {
+      const match = tourDestinations.find(d => d.toLowerCase() === destParam.toLowerCase());
+      if (match) {
+        setSelectedDestination(match);
+        return;
+      }
+    }
+    if (!destParam && !categorySlug) {
+      setSelectedDestination('All');
     }
   }, [searchParams, categorySlug, location.pathname]);
 
   const filteredTours = useMemo(() => {
     return toursData.filter((t) => {
-      if (selectedCategory !== 'All' && t.category !== selectedCategory) return false;
-      if (selectedDuration === 'short' && !t.duration.includes('3 Days') && !t.duration.includes('4 Days')) return false;
-      if (selectedDuration === 'long' && !t.duration.includes('5 Days') && !t.duration.includes('6 Days') && !t.duration.includes('7 Days')) return false;
+      if (selectedDestination !== 'All' && t.destination !== selectedDestination) return false;
+      if (selectedDuration === 'short' && !t.duration.includes('2 Days') && !t.duration.includes('3 Days')) return false;
+      if (selectedDuration === 'long' && !t.duration.includes('4 Days') && !t.duration.includes('5 Days')) return false;
       return true;
     });
-  }, [selectedCategory, selectedDuration]);
+  }, [selectedDestination, selectedDuration]);
 
   return {
-    categories: tourCategories,
-    selectedCategory,
-    setSelectedCategory,
+    categories: tourDestinations,
+    selectedCategory: selectedDestination,
+    setSelectedCategory: setSelectedDestination,
     selectedDuration,
     setSelectedDuration,
     filteredTours

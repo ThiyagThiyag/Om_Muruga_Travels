@@ -81,11 +81,6 @@ export default function ToursFleetShowcase() {
                     className="w-full h-full object-cover pointer-events-none"
                     draggable="false"
                   />
-                  <div className="absolute top-3 left-3">
-                    <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#0a2540]/90 text-white backdrop-blur-xs border border-white/20 shadow-xs">
-                      {cab.type}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Details */}

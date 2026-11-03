@@ -35,16 +35,6 @@ export default function AboutCabs() {
                   width="400"
                   height="208"
                 />
-                <div className="absolute top-3 left-3">
-                  <span className="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#0a2540]/90 backdrop-blur-md text-[#f4e8c1] border border-[#c59b27]/30 shadow-sm">
-                    {cab.type}
-                  </span>
-                </div>
-                <div className="absolute bottom-3 right-3">
-                  <span className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-white/90 text-slate-800 shadow-xs">
-                    Sanitized & Inspected
-                  </span>
-                </div>
               </div>
 
               {/* Vehicle Content */}
