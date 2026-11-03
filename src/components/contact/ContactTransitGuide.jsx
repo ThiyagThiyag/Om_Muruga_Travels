@@ -1,4 +1,3 @@
-import React from 'react';
 
 export default function ContactTransitGuide() {
   return (
@@ -15,7 +14,7 @@ export default function ContactTransitGuide() {
       {/* Property Image */}
       <div className="relative rounded-2xl overflow-hidden h-40 sm:h-48 bg-slate-900 border border-slate-200">
         <img 
-          src="/assets/images/image-44.jpeg" 
+          src="/assets/images/image-44.webp" 
           alt="Estate Stays" 
           className="w-full h-full object-cover" 
           loading="lazy"

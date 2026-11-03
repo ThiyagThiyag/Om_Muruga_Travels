@@ -1,6 +1,5 @@
-import React from 'react';
 
-export default function ToursGrid({ tours, onOpenTourModal, onOpenBooking }) {
+export default function ToursGrid({ tours, onOpenTourModal }) {
   if (!tours || tours.length === 0) {
     return (
       <div className="max-w-7xl mx-auto py-16 text-center text-slate-500">
@@ -86,12 +85,14 @@ export default function ToursGrid({ tours, onOpenTourModal, onOpenBooking }) {
                 >
                   Itinerary
                 </button>
-                <button
-                  onClick={() => onOpenBooking(tour)}
-                  className="flex-1 xs:flex-initial px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#d4af37] via-[#c59b27] to-[#b0871a] shadow-md hover:shadow-lg hover:shadow-[#c59b27]/30 transition-all flex items-center justify-center gap-1.5 min-h-[38px]"
+                <a
+                  href={`https://wa.me/916382508601?text=${encodeURIComponent('Hi Om Muruga Travels, I would like to inquire about the ' + tour.title + ' package.')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 xs:flex-initial px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-md hover:shadow-lg hover:shadow-emerald-500/30 transition-all flex items-center justify-center gap-1.5 min-h-[38px]"
                 >
-                  <span>Inquire</span>
-                </button>
+                  <span>Inquire on WhatsApp</span>
+                </a>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { faqsData } from '../../data/travelData';
 
 export default function ContactFaq() {

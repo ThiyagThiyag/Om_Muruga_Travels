@@ -1,4 +1,3 @@
-import React from 'react';
 import BrandLogo from '../BrandLogo';
 
 export default function AboutStory() {
@@ -23,9 +22,7 @@ export default function AboutStory() {
 
         {/* Group Logo Endorsement Card */}
         <div className="p-4 bg-white rounded-2xl border border-slate-200/90 shadow-sm flex items-center gap-4">
-          <div className="bg-slate-50 p-2 rounded-xl border border-slate-200">
-            <BrandLogo variant="gowdas" isDarkBackground={false} className="h-12" />
-          </div>
+          <BrandLogo variant="transparent-badge" isDarkBackground={false} />
           <div>
             <h4 className="text-sm font-bold text-slate-900">Group of Gowda's Trust</h4>
             <p className="text-xs text-slate-500">Over a decade of trusted enterprise in hospitality, guest wellness, and travel management.</p>
@@ -37,7 +34,7 @@ export default function AboutStory() {
       <div className="grid grid-cols-2 gap-4">
         <div className="space-y-4">
           <img 
-            src="/assets/images/image-1.jpeg" 
+            src="/assets/images/image-1.webp" 
             alt="Bamboo interior" 
             className="rounded-2xl shadow-md w-full h-56 object-cover hover:scale-102 transition-transform"
             loading="lazy"
@@ -46,7 +43,7 @@ export default function AboutStory() {
             height="224"
           />
           <img 
-            src="/assets/images/image-43.jpeg" 
+            src="/assets/images/image-43.webp" 
             alt="Gazebo" 
             className="rounded-2xl shadow-md w-full h-44 object-cover hover:scale-102 transition-transform"
             loading="lazy"
@@ -57,7 +54,7 @@ export default function AboutStory() {
         </div>
         <div className="space-y-4 pt-6">
           <img 
-            src="/assets/images/image-44.jpeg" 
+            src="/assets/images/image-44.webp" 
             alt="Manor exterior" 
             className="rounded-2xl shadow-md w-full h-44 object-cover hover:scale-102 transition-transform"
             loading="lazy"
@@ -66,7 +63,7 @@ export default function AboutStory() {
             height="176"
           />
           <img 
-            src="/assets/images/image-7.jpeg" 
+            src="/assets/images/image-7.webp" 
             alt="Treehouse" 
             className="rounded-2xl shadow-md w-full h-56 object-cover hover:scale-102 transition-transform"
             loading="lazy"

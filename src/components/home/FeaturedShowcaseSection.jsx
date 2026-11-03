@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { featuredTours, featuredRooms } from '../../data/featuredHomeData';
 
-export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal, onOpenTourModal }) {
+export default function FeaturedShowcaseSection({ onOpenRoomModal, onOpenTourModal }) {
   const [activeTab, setActiveTab] = useState('tours'); // 'tours' (primary) or 'rooms' (secondary)
 
   
@@ -121,12 +121,14 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
                     >
                       Itinerary
                     </button>
-                    <button
-                      onClick={() => onOpenBooking(tour)}
-                      className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0a2540] hover:bg-[#c59b27] transition-colors"
+                    <a
+                      href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20this%20tour%20package"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-[#128C7E] hover:bg-[#075E54] transition-colors inline-block"
                     >
                       Inquire
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -201,12 +203,14 @@ export default function FeaturedShowcaseSection({ onOpenBooking, onOpenRoomModal
                     >
                       Details
                     </button>
-                    <button
-                      onClick={() => onOpenBooking(room)}
-                      className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0a2540] hover:bg-[#c59b27] transition-colors"
+                    <a
+                      href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20cottage%20stay%20availability"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-[#128C7E] hover:bg-[#075E54] transition-colors inline-block"
                     >
                       Inquire
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function RoomModal({ isOpen, onClose, room }) {
   const [imageIndex, setImageIndex] = useState(0);
@@ -103,7 +103,7 @@ export default function RoomModal({ isOpen, onClose, room }) {
                   key={idx}
                   onClick={(e) => {
                     e.stopPropagation();
-                    setPage([idx, idx > imageIndex ? 1 : -1]);
+                    setImageIndex(idx);
                   }}
                   className={`h-2 rounded-full transition-all duration-300 ${
                     imageIndex === idx ? 'w-6 bg-[#c59b27]' : 'w-2 bg-white/50 hover:bg-white'

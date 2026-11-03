@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const galleryImages = [
-  { image: '/assets/images/image-48.jpeg' },
-  { image: '/assets/images/image-1.jpeg' },
-  { image: '/assets/images/image-44.jpeg' },
-  { image: '/assets/images/image-7.jpeg' },
-  { image: '/assets/images/image-43.jpeg' },
-  { image: '/assets/images/image-6.jpeg' },
+  { image: '/assets/images/image-48.webp' },
+  { image: '/assets/images/image-1.webp' },
+  { image: '/assets/images/image-44.webp' },
+  { image: '/assets/images/image-7.webp' },
+  { image: '/assets/images/image-43.webp' },
+  { image: '/assets/images/image-6.webp' },
 ];
 
 export default function AboutGallery() {

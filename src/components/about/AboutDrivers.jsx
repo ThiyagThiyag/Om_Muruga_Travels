@@ -1,4 +1,3 @@
-import React from 'react';
 import { driversData, driverStandards } from '../../data/aboutFleetTripsData';
 
 export default function AboutDrivers() {

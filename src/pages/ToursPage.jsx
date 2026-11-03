@@ -1,12 +1,11 @@
-import React from 'react';
-import { useTourFilters } from '../components/tours/useTourFilters';
 import ToursBanner from '../components/tours/ToursBanner';
 import ToursFilterBar from '../components/tours/ToursFilterBar';
 import ToursGrid from '../components/tours/ToursGrid';
 import ToursFleetShowcase from '../components/tours/ToursFleetShowcase';
 import ToursPerks from '../components/tours/ToursPerks';
+import { useTourFilters } from '../components/tours/useTourFilters';
 
-export default function ToursPage({ onOpenBooking, onOpenTourModal }) {
+export default function ToursPage({ onOpenTourModal }) {
   const {
     categories,
     selectedCategory,
@@ -29,7 +28,6 @@ export default function ToursPage({ onOpenBooking, onOpenTourModal }) {
       <ToursGrid 
         tours={filteredTours} 
         onOpenTourModal={onOpenTourModal} 
-        onOpenBooking={onOpenBooking} 
       />
       <ToursFleetShowcase />
       <ToursPerks />

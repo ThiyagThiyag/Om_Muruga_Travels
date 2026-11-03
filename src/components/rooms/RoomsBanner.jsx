@@ -1,11 +1,10 @@
-import React from 'react';
 
 export default function RoomsBanner() {
   return (
     <div className="max-w-7xl mx-auto mb-8 sm:mb-10">
       <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-[#0a2540] text-white p-5 xs:p-7 sm:p-10 md:p-12 shadow-xl border border-white/10">
         <img 
-          src="/assets/images/image-44.jpeg" 
+          src="/assets/images/image-44.webp" 
           alt="Cottage Villa" 
           className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
           loading="lazy"

@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-export default function FloatingContactWidget({ onOpenBooking }) {
+export default function FloatingContactWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const trayRef = useRef(null);
 
@@ -108,16 +108,7 @@ export default function FloatingContactWidget({ onOpenBooking }) {
                 <span className="font-bold text-[#c59b27] group-hover:text-white">+91 63846 93543</span>
               </a>
 
-              {/* Inquiry Button */}
-              <button
-                onClick={() => {
-                  setIsOpen(false);
-                  if (onOpenBooking) onOpenBooking();
-                }}
-                className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-[#d4af37] via-[#c59b27] to-[#b0871a] text-white font-bold text-xs shadow-sm hover:shadow-md transition-all text-center block mt-2"
-              >
-                📝 Customize Tour / Cab Itinerary
-              </button>
+              
             </div>
           </div>
         )}

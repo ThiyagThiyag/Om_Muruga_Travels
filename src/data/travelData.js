@@ -15,12 +15,12 @@ export const roomsData = [
     location: 'Valley View Wing',
     shortDescription: 'Handcrafted bamboo interior with panoramic hill views, traditional artisan aesthetic, and plush bedding.',
     longDescription: 'Immerse yourself in authentic rustic comfort. Built with sustainable bamboo architecture and designed with woven cane textures, this cottage features high vaulted ceilings, modern bedding, custom wooden lounge furnishings, and an open terrace overlooking lush flora.',
-    mainImage: '/assets/images/image-1.jpeg',
+    mainImage: '/assets/images/image-1.webp',
     gallery: [
-      '/assets/images/image-1.jpeg',
-      '/assets/images/image-3.jpeg',
-      '/assets/images/image-44.jpeg',
-      '/assets/images/image-48.jpeg'
+      '/assets/images/image-1.webp',
+      '/assets/images/image-2.webp',
+      '/assets/images/image-11.webp',
+      '/assets/images/image-14.webp'
     ],
     amenities: [
       'Free High-Speed WiFi',
@@ -48,12 +48,12 @@ export const roomsData = [
     location: 'Lawn Area, Upper Canopy',
     shortDescription: 'Elevated wooden treehouse nestled amidst towering palm trees with direct lawn and sports court access.',
     longDescription: 'Experience the magic of living among treetops. Supported by sturdy natural timber trunks with direct views over the property\'s badminton grounds and palm canopy, this family treehouse combines rustic charm with comfortable modern amenities and breezy natural ventilation.',
-    mainImage: '/assets/images/image-7.jpeg',
+    mainImage: '/assets/images/image-7.webp',
     gallery: [
-      '/assets/images/image-7.jpeg',
-      '/assets/images/image-6.jpeg',
-      '/assets/images/image-43.jpeg',
-      '/assets/images/image-48.jpeg'
+      '/assets/images/image-7.webp',
+      '/assets/images/image-4.webp',
+      '/assets/images/image-6.webp',
+      '/assets/images/image-33.webp'
     ],
     amenities: [
       'Free High-Speed WiFi',
@@ -81,12 +81,12 @@ export const roomsData = [
     location: 'Garden Courtyard',
     shortDescription: 'Intimate bamboo retreat with traditional rugs, hand-carved wooden chairs, and tranquil forest surroundings.',
     longDescription: 'Designed for couples and solo nature lovers seeking peace, this room features woven bamboo walls, patterned carpets, warm ambient lighting, and serene outdoor vistas where bird songs greet your mornings.',
-    mainImage: '/assets/images/image-3.jpeg',
+    mainImage: '/assets/images/image-8.webp',
     gallery: [
-      '/assets/images/image-3.jpeg',
-      '/assets/images/image-1.jpeg',
-      '/assets/images/image-2.jpeg',
-      '/assets/images/image-44.jpeg'
+      '/assets/images/image-8.webp',
+      '/assets/images/image-15.webp',
+      '/assets/images/image-16.webp',
+      '/assets/images/image-14.webp'
     ],
     amenities: [
       'Free High-Speed WiFi',
@@ -113,12 +113,12 @@ export const roomsData = [
     location: 'Main Two-Story Manor',
     shortDescription: 'Spacious stone-finish suite with dual-level balconies, stone accent walls, and private driveway access.',
     longDescription: 'Situated within our iconic stone manor, this deluxe family suite offers sprawling living space, handcrafted teak wardrobe, split air conditioning, modern en-suite designer bathroom with instant water heating, and expansive balcony overlooking the coconut groves.',
-    mainImage: '/assets/images/image-44.jpeg',
+    mainImage: '/assets/images/image-44.webp',
     gallery: [
-      '/assets/images/image-44.jpeg',
-      '/assets/images/image-14.jpeg',
-      '/assets/images/image-32.jpeg',
-      '/assets/images/image-48.jpeg'
+      '/assets/images/image-44.webp',
+      '/assets/images/image-21.webp',
+      '/assets/images/image-22.webp',
+      '/assets/images/image-23.webp'
     ],
     amenities: [
       'Free High-Speed WiFi',
@@ -147,12 +147,12 @@ export const roomsData = [
     location: 'Garden Gazebo Zone',
     shortDescription: 'Cozy retreat steps away from our green gazebo pavilion and sprawling outdoor recreation lawn.',
     longDescription: 'Step straight from your porch onto manicured lawns and under shaded canopies. Ideal for families and small groups who enjoy open air, evening tea in the gazebo, and outdoor sports like badminton and volleyball.',
-    mainImage: '/assets/images/image-43.jpeg',
+    mainImage: '/assets/images/image-43.webp',
     gallery: [
-      '/assets/images/image-43.jpeg',
-      '/assets/images/image-7.jpeg',
-      '/assets/images/image-6.jpeg',
-      '/assets/images/image-44.jpeg'
+      '/assets/images/image-43.webp',
+      '/assets/images/image-36.webp',
+      '/assets/images/image-26.webp',
+      '/assets/images/image-27.webp'
     ],
     amenities: [
       'Free High-Speed WiFi',
@@ -179,11 +179,12 @@ export const roomsData = [
     location: 'Manor Ground Floor',
     shortDescription: 'Polished minimalist room with pristine white walls, ceiling fan, wooden study desk, and sparkling modern bath.',
     longDescription: 'Featuring warm timber flooring, crisp linen, wall-mounted television, and immaculate en-suite tiled bathroom with premium water heater. Ideal for friends travelling together or executive retreats.',
-    mainImage: '/assets/images/image-14.jpeg',
+    mainImage: '/assets/images/image-13.webp',
     gallery: [
-      '/assets/images/image-14.jpeg',
-      '/assets/images/image-32.jpeg',
-      '/assets/images/image-44.jpeg'
+      '/assets/images/image-13.webp',
+      '/assets/images/image-10.webp',
+      '/assets/images/image-12.webp',
+      '/assets/images/image-14.webp'
     ],
     amenities: [
       'Free High-Speed WiFi',
@@ -210,11 +211,12 @@ export const roomsData = [
     location: 'Sunset View Ridge',
     shortDescription: 'Intricate woven cane wall designs, warm yellow illumination, and private garden seating.',
     longDescription: 'Designed to evoke traditional Dravidian craftsmanship combined with eco-conscious hospitality. Features handcrafted tables, comfortable armchairs, and direct sunset vistas through canopy trees.',
-    mainImage: '/assets/images/image-2.jpeg',
+    mainImage: '/assets/images/image-17.webp',
     gallery: [
-      '/assets/images/image-2.jpeg',
-      '/assets/images/image-1.jpeg',
-      '/assets/images/image-44.jpeg'
+      '/assets/images/image-17.webp',
+      '/assets/images/image-25.webp',
+      '/assets/images/image-37.webp',
+      '/assets/images/image-38.webp'
     ],
     amenities: [
       'Free High-Speed WiFi',
@@ -241,12 +243,12 @@ export const roomsData = [
     location: 'Estate Center',
     shortDescription: 'Full private bungalow with multi-room layout, private lawn, dedicated host, and aerial panorama.',
     longDescription: 'Surrounded by hundreds of coconut palms and organic plantation gardens, this whole-villa experience gives your party total privacy, private barbecue facilities, and 24/7 dedicated room butler service.',
-    mainImage: '/assets/images/image-48.jpeg',
+    mainImage: '/assets/images/image-48.webp',
     gallery: [
-      '/assets/images/image-48.jpeg',
-      '/assets/images/image-44.jpeg',
-      '/assets/images/image-7.jpeg',
-      '/assets/images/image-1.jpeg'
+      '/assets/images/image-48.webp',
+      '/assets/images/image-41.webp',
+      '/assets/images/image-42.webp',
+      '/assets/images/image-29.webp'
     ],
     amenities: [
       'Free High-Speed WiFi',
@@ -458,7 +460,7 @@ export const toursData = [
     rating: 5.0,
     reviewsCount: 64,
     badge: 'Luxury Global',
-    image: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-alps.webp',
     description: 'Breathtaking Swiss Alps, crystal-clear Lake Lucerne, Jungfraujoch Top of Europe, and fairytale Black Forest.',
     highlights: [
       'Cogwheel train to Jungfraujoch summit',
@@ -487,7 +489,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 94,
     badge: 'Adventure & Peace',
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-himalayas.webp',
     description: 'Snow-capped peaks of Manali, Solang Valley paragliding, Atal Tunnel, and serene apple orchards of Naggar.',
     highlights: [
       'Atal Tunnel drive to snow-clad Sissu waterfall',
@@ -515,7 +517,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 160,
     badge: 'Trending Tour',
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-kerala.webp',
     description: 'Cruise emerald palm backwaters on an authentic luxury houseboat, explore Fort Kochi colonial history, and taste fresh coastal Kerala cuisine.',
     highlights: [
       'Overnight private AC houseboat stay in Alleppey',
@@ -546,7 +548,7 @@ export const toursData = [
     rating: 5.0,
     reviewsCount: 135,
     badge: 'Luxury Vacation',
-    image: 'https://images.unsplash.com/photo-1548013146-72479768bbaa?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-kashmir.webp',
     description: 'Experience heaven on earth: romantic Dal Lake Shikara rides, Gulmarg snow gondola cable car, Betaab Valley in Pahalgam, and Sonamarg glaciers.',
     highlights: [
       'Shikara boat ride on Dal Lake & stay in heritage houseboat',
@@ -579,7 +581,7 @@ export const toursData = [
     rating: 4.9,
     reviewsCount: 96,
     badge: 'International Special',
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=300&q=35&fm=webp',
+    image: '/assets/images/tour-dubai.webp',
     description: 'Futuristic skyscrapers, 4x4 desert dune bashing with BBQ dinner, Burj Khalifa 124th-floor views, and Dubai Marina luxury dhow cruise.',
     highlights: [
       'Burj Khalifa 124th floor observation deck visit',
@@ -812,25 +814,25 @@ export const teamData = [
     name: 'Thiyagarajan Gowda',
     role: 'Founder & Managing Director',
     bio: 'Hospitality visionary dedicated to creating authentic boutique stays and memorable holiday journeys across South India.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=35&fm=webp'
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80'
   },
   {
     name: 'Pravin Murugan',
     role: 'Head of Tour Operations',
     bio: 'Over 12 years of experience crafting personalized luxury travel circuits across the Western Ghats and international getaways.',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=35&fm=webp'
+    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80'
   },
   {
     name: 'Lakshmi Narayanan',
     role: 'Guest Experience & Concierge Lead',
     bio: 'Passionate about personalized guest care, bespoke dining arrangements, and ensuring seamless check-ins.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=35&fm=webp'
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80'
   },
   {
     name: 'Anitha S.',
     role: 'Senior Destination Specialist',
     bio: 'Expert travel planner specializing in family holiday packages, honeymoon suites, and group retreat itineraries.',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=35&fm=webp'
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80'
   }
 ];
 

@@ -1,7 +1,31 @@
-import React from 'react';
+import { toursData } from '../data/travelData';
 
-export default function ItineraryModal({ isOpen, onClose, tour }) {
-  if (!isOpen || !tour) return null;
+export default function ItineraryModal({ isOpen, onClose, tour: initialTour }) {
+  if (!isOpen || !initialTour) return null;
+
+  // Resolve full tour details from catalog if initialTour is from lightweight featured data
+  const catalogTour = toursData.find(t => t.id === initialTour.id) || {};
+  const tour = {
+    ...catalogTour,
+    ...initialTour,
+    highlights: initialTour.highlights || catalogTour.highlights || [],
+    itinerary: catalogTour.itinerary || initialTour.itinerary || [
+      { day: 1, title: 'Arrival & Scenic Transfer', desc: 'Private pickup from airport/railway station and scenic drive to the destination hotel.' },
+      { day: 2, title: 'Guided Sightseeing & Viewpoints', desc: 'Explore prominent local landmarks, botanical trails, and mountain viewpoints with our private chauffeur.' },
+      { day: 3, title: 'Nature Walks & Local Culture', desc: 'Visit cultural attractions, local spice & tea estates, and picturesque lakes.' }
+    ],
+    inclusions: catalogTour.inclusions || initialTour.inclusions || [
+      'Private Sanitized AC Vehicle throughout the tour',
+      'Professional Mountain Chauffeur & fuel charges',
+      'Handpicked Hotel / Cottage Stay with daily breakfast',
+      'Toll gates, parking fees, and state road permits'
+    ],
+    exclusions: catalogTour.exclusions || initialTour.exclusions || [
+      'Entry monument fees and boating tickets',
+      'Personal laundry, beverages, and extra meals',
+      'Peak season surcharges (if applicable)'
+    ]
+  };
 
   const whatsAppUrl = `https://wa.me/916382508601?text=${encodeURIComponent(
     `Hi Om Muruga Holidays, I am interested in inquiring about the "${tour.title}" (${tour.duration}). Please share custom pricing, inclusions, and departure dates.`
