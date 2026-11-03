@@ -1,7 +1,6 @@
-import React from 'react';
 import { completedTripsData, tripMetrics } from '../../data/aboutFleetTripsData';
 
-export default function AboutTripsDone({ onOpenBooking }) {
+export default function AboutTripsDone() {
   return (
     <section className="max-w-7xl mx-auto mb-14 sm:mb-24">
       {/* Section Header */}

@@ -1,4 +1,3 @@
-import React from 'react';
 import { statsData } from '../../data/travelData';
 
 export default function AboutStats() {

@@ -1,7 +1,6 @@
-import React from 'react';
 import { travelFleetData } from '../../data/travelData';
 
-export default function AboutCabs({ onOpenBooking }) {
+export default function AboutCabs() {
   return (
     <section className="max-w-7xl mx-auto mb-14 sm:mb-24">
       {/* Section Header */}

@@ -1,4 +1,4 @@
-import React, { useState, Suspense, lazy } from 'react';
+import { useState, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Layout & Core Components
@@ -6,10 +6,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import FloatingContactWidget from './components/FloatingContactWidget';
-import Toast from './components/Toast';
 
 // Lazy load Modals on demand so they never block initial page load
-const BookingModal = lazy(() => import('./components/BookingModal'));
 const RoomModal = lazy(() => import('./components/RoomModal'));
 const ItineraryModal = lazy(() => import('./components/ItineraryModal'));
 
@@ -23,37 +21,11 @@ const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 function App() {
-  // Global Modals State
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
-  const [bookingItem, setBookingItem] = useState(null);
-
   const [isRoomModalOpen, setIsRoomModalOpen] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState(null);
 
   const [isTourModalOpen, setIsTourModalOpen] = useState(false);
   const [selectedTour, setSelectedTour] = useState(null);
-
-  // Toast Notification State
-  const [toasts, setToasts] = useState([]);
-
-  const showToast = (message, type = 'success') => {
-    const id = Date.now() + Math.random();
-    setToasts((prev) => [...prev, { id, message, type }]);
-
-    setTimeout(() => {
-      setToasts((prev) => prev.filter((t) => t.id !== id));
-    }, 4500);
-  };
-
-  const dismissToast = (id) => {
-    setToasts((prev) => prev.filter((t) => t.id !== id));
-  };
-
-  // Handlers for Opening Modals
-  const handleOpenBooking = (item = null) => {
-    setBookingItem(item);
-    setIsBookingOpen(true);
-  };
 
   const handleOpenRoomModal = (room) => {
     setSelectedRoom(room);
@@ -72,10 +44,10 @@ function App() {
         <ScrollToTop />
 
         {/* Floating WhatsApp & Direct Call Widget */}
-        <FloatingContactWidget onOpenBooking={handleOpenBooking} />
+        <FloatingContactWidget />
 
         {/* Global Navigation Header */}
-        <Navbar onOpenBooking={handleOpenBooking} />
+        <Navbar />
 
         {/* Dynamic Multi-Page Routes with Lazy Suspense */}
         <main className="flex-1">
@@ -83,26 +55,29 @@ function App() {
             fallback={
               <div className="min-h-[60vh] flex flex-col items-center justify-center gap-3">
                 <div className="w-9 h-9 border-3 border-[#c59b27]/30 border-t-[#c59b27] rounded-full animate-spin"></div>
-                <span className="text-xs font-medium text-slate-400 tracking-wider uppercase">Loading experience...</span>
+                <span className="text-xs uppercase tracking-widest text-[#8A6805] font-semibold">
+                  Loading Experience...
+                </span>
               </div>
             }
           >
             <Routes>
+              {/* Home Page */}
               <Route
                 path="/"
                 element={
                   <HomePage
-                    onOpenBooking={handleOpenBooking}
                     onOpenRoomModal={handleOpenRoomModal}
                     onOpenTourModal={handleOpenTourModal}
                   />
                 }
               />
+
+              {/* Rooms & Cottages Page */}
               <Route
                 path="/rooms"
                 element={
                   <RoomsPage
-                    onOpenBooking={handleOpenBooking}
                     onOpenRoomModal={handleOpenRoomModal}
                   />
                 }
@@ -111,16 +86,16 @@ function App() {
                 path="/rooms/:typeSlug"
                 element={
                   <RoomsPage
-                    onOpenBooking={handleOpenBooking}
                     onOpenRoomModal={handleOpenRoomModal}
                   />
                 }
               />
+
+              {/* Tours & Circuits Page */}
               <Route
                 path="/tours"
                 element={
                   <ToursPage
-                    onOpenBooking={handleOpenBooking}
                     onOpenTourModal={handleOpenTourModal}
                   />
                 }
@@ -129,25 +104,32 @@ function App() {
                 path="/tours/:categorySlug"
                 element={
                   <ToursPage
-                    onOpenBooking={handleOpenBooking}
                     onOpenTourModal={handleOpenTourModal}
                   />
                 }
               />
+
+              {/* About & Heritage Page */}
               <Route
                 path="/about"
-                element={<AboutPage onOpenBooking={handleOpenBooking} />}
+                element={
+                  <AboutPage />
+                }
               />
+
+              {/* Contact Page */}
               <Route
                 path="/contact"
-                element={<ContactPage onShowToast={showToast} />}
+                element={
+                  <ContactPage />
+                }
               />
-              {/* Fallback to Home */}
+
+              {/* Catch-all 404 Route */}
               <Route
                 path="*"
                 element={
                   <HomePage
-                    onOpenBooking={handleOpenBooking}
                     onOpenRoomModal={handleOpenRoomModal}
                     onOpenTourModal={handleOpenTourModal}
                   />
@@ -158,19 +140,7 @@ function App() {
         </main>
 
         {/* Global Footer */}
-        <Footer onShowToast={showToast} />
-
-        {/* Global Booking Modal (lazy-loaded on demand) */}
-        <Suspense fallback={null}>
-          {isBookingOpen && (
-            <BookingModal
-              isOpen={isBookingOpen}
-              onClose={() => setIsBookingOpen(false)}
-              initialItem={bookingItem}
-              onShowToast={showToast}
-            />
-          )}
-        </Suspense>
+        <Footer />
 
         {/* Lazy-loaded Room & Tour Modals */}
         <Suspense fallback={null}>
@@ -179,22 +149,19 @@ function App() {
               isOpen={isRoomModalOpen}
               onClose={() => setIsRoomModalOpen(false)}
               room={selectedRoom}
-              onBookRoom={(room) => handleOpenBooking(room)}
             />
           )}
+        </Suspense>
 
+        <Suspense fallback={null}>
           {isTourModalOpen && (
             <ItineraryModal
               isOpen={isTourModalOpen}
               onClose={() => setIsTourModalOpen(false)}
               tour={selectedTour}
-              onBookTour={(tour) => handleOpenBooking(tour)}
             />
           )}
         </Suspense>
-
-        {/* Floating Toast Notification Bar */}
-        <Toast toasts={toasts} onDismiss={dismissToast} />
       </div>
     </BrowserRouter>
   );

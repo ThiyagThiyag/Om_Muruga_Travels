@@ -1,6 +1,5 @@
-import React from 'react';
 
-export default function VideoSection({ onOpenBooking }) {
+export default function VideoSection() {
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-[#0a2540] text-white overflow-hidden border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
@@ -36,12 +35,14 @@ export default function VideoSection({ onOpenBooking }) {
             </div>
 
             <div className="pt-2 sm:pt-4">
-              <button
-                onClick={() => onOpenBooking && onOpenBooking()}
-                className="w-full sm:w-auto px-6 sm:px-7 py-3 rounded-full text-white font-bold text-xs sm:text-sm bg-gradient-to-r from-[#d4af37] via-[#c59b27] to-[#b0871a] shadow-lg hover:shadow-[#c59b27]/30 transition-all min-h-[44px]"
+              <a
+                href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20plan%20a%20tour%20or%20book%20a%20cab"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-6 sm:px-7 py-3 rounded-full text-white font-bold text-xs sm:text-sm bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-lg hover:shadow-emerald-500/30 transition-all min-h-[44px] inline-flex items-center justify-center gap-2"
               >
-                Plan Your Tour / Cab via WhatsApp
-              </button>
+                <span>Plan Your Tour / Cab via WhatsApp</span>
+              </a>
             </div>
           </div>
 

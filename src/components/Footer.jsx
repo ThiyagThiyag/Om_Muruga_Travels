@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import BrandLogo from './BrandLogo';
 
@@ -12,16 +11,12 @@ export default function Footer() {
           {/* Brand & Contact Column (5 cols) */}
           <div className="lg:col-span-5 space-y-4">
             <div>
-              <BrandLogo variant="combined" isDarkBackground={true} className="h-12 sm:h-13" />
+              <BrandLogo isDarkBackground={true} />
             </div>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed pr-2 max-w-md">
               Premier travel agency and tour operator under <span className="text-[#f4e8c1] font-semibold">Group of Gowda's</span>. We specialize in custom holiday tours, sanitized AC cabs, airport transfers, and exclusive boutique hill stays.
             </p>
-
-            <div className="pt-1">
-              <BrandLogo variant="gowdas" isDarkBackground={true} className="h-9" />
-            </div>
 
             {/* Physical Office Address for Local SEO */}
             <address className="not-italic text-xs text-slate-400 space-y-1 pt-1" itemScope itemType="https://schema.org/PostalAddress">
