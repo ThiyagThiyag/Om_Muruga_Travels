@@ -1,72 +1,6 @@
 export const roomsData = [
   {
     "id": "room-1",
-    "title": "Royal Bamboo Luxury Cottage",
-    "type": "Bamboo Luxury Cottage",
-    "category": "cottage",
-    "tariffNote": "Tariff on Request",
-    "rating": "5.0",
-    "reviewsCount": 82,
-    "badge": "Bestseller",
-    "capacity": "2 Guests",
-    "capacityType": "couple",
-    "bedType": "2 Queen Beds",
-    "size": "395 sq.ft",
-    "location": "Canopy Lawn Sector",
-    "shortDescription": "Authentic resort stay with handcrafted wooden furnishings, verdant plantation atmosphere, and pristine hill views.",
-    "longDescription": "Immerse yourself in authentic rustic comfort. Built with sustainable bamboo architecture and designed with woven cane textures, this room features high vaulted ceilings, modern bedding, custom wooden lounge furnishings, and panoramic views overlooking lush flora.",
-    "mainImage": "/assets/images/resort-1.webp",
-    "gallery": [
-      "/assets/images/resort-1.webp",
-      "/assets/images/resort-2.webp",
-      "/assets/images/resort-3.webp",
-      "/assets/images/resort-4.webp"
-    ],
-    "amenities": [
-      "Free High-Speed WiFi",
-      "Complimentary Breakfast",
-      "Hot Water Geyser",
-      "Nature / Valley View",
-      "Tea & Coffee Maker",
-      "Private Verandah",
-      "Room Service"
-    ]
-  },
-  {
-    "id": "room-2",
-    "title": "Bamboo Heritage Suite",
-    "type": "Manor Suite",
-    "category": "suite",
-    "tariffNote": "Tariff on Request",
-    "rating": "4.9",
-    "reviewsCount": 89,
-    "badge": "Top Rated",
-    "capacity": "3 Guests",
-    "capacityType": "family",
-    "bedType": "King Bed",
-    "size": "410 sq.ft",
-    "location": "Valley View Wing",
-    "shortDescription": "Authentic resort stay with handcrafted wooden furnishings, verdant plantation atmosphere, and pristine hill views.",
-    "longDescription": "Immerse yourself in authentic rustic comfort. Built with sustainable bamboo architecture and designed with woven cane textures, this room features high vaulted ceilings, modern bedding, custom wooden lounge furnishings, and panoramic views overlooking lush flora.",
-    "mainImage": "/assets/images/resort-2.webp",
-    "gallery": [
-      "/assets/images/resort-2.webp",
-      "/assets/images/resort-3.webp",
-      "/assets/images/resort-4.webp",
-      "/assets/images/resort-5.webp"
-    ],
-    "amenities": [
-      "Free High-Speed WiFi",
-      "Complimentary Breakfast",
-      "Hot Water Geyser",
-      "Nature / Valley View",
-      "Tea & Coffee Maker",
-      "Private Verandah",
-      "Room Service"
-    ]
-  },
-  {
-    "id": "room-3",
     "title": "Verandah Bamboo Haven",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -99,7 +33,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-4",
+    "id": "room-2",
     "title": "Sunlit Plantation Room",
     "type": "Manor Suite",
     "category": "suite",
@@ -132,7 +66,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-5",
+    "id": "room-3",
     "title": "Elevated Treehouse Suite",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -165,7 +99,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-6",
+    "id": "room-4",
     "title": "Canopy Treehouse Villa",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -198,7 +132,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-7",
+    "id": "room-5",
     "title": "Pine Crest Bamboo Villa",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -231,7 +165,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-8",
+    "id": "room-6",
     "title": "Serene Garden Cottage",
     "type": "Manor Suite",
     "category": "suite",
@@ -264,7 +198,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-9",
+    "id": "room-7",
     "title": "Grand Manor Master Suite",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -297,7 +231,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-10",
+    "id": "room-8",
     "title": "Deluxe Manor Chamber",
     "type": "Manor Suite",
     "category": "suite",
@@ -330,7 +264,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-11",
+    "id": "room-9",
     "title": "Garden Lawn Gazebo Cottage",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -363,7 +297,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-12",
+    "id": "room-10",
     "title": "Sunset Valley Balcony Room",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -396,7 +330,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-13",
+    "id": "room-11",
     "title": "Artisan Bamboo Studio",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -429,7 +363,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-14",
+    "id": "room-12",
     "title": "Rustic Timber Lodge",
     "type": "Manor Suite",
     "category": "suite",
@@ -462,7 +396,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-15",
+    "id": "room-13",
     "title": "Family Plantation Duplex",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -495,7 +429,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-16",
+    "id": "room-14",
     "title": "Courtyard Garden Retreat",
     "type": "Manor Suite",
     "category": "suite",
@@ -528,7 +462,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-17",
+    "id": "room-15",
     "title": "Skyline Valley Suite",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -561,7 +495,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-18",
+    "id": "room-16",
     "title": "Hilltop Timber Haven",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -594,7 +528,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-19",
+    "id": "room-17",
     "title": "Meadow Breeze Cottage",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -627,7 +561,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-20",
+    "id": "room-18",
     "title": "Orchard View Bamboo Room",
     "type": "Manor Suite",
     "category": "suite",
@@ -660,7 +594,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-21",
+    "id": "room-19",
     "title": "Lawnside Leisure Pavilion",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -693,7 +627,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-22",
+    "id": "room-20",
     "title": "Misty Canopy Treehouse",
     "type": "Manor Suite",
     "category": "suite",
@@ -726,7 +660,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-23",
+    "id": "room-21",
     "title": "Highland Manor Suite",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -759,7 +693,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-24",
+    "id": "room-22",
     "title": "Verdant Bamboo Chalet",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -792,7 +726,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-25",
+    "id": "room-23",
     "title": "Hillside Family Cottage",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -825,7 +759,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-26",
+    "id": "room-24",
     "title": "Forest Edge Retreat",
     "type": "Manor Suite",
     "category": "suite",
@@ -858,7 +792,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-27",
+    "id": "room-25",
     "title": "Golden Hour Sunset Lodge",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -891,7 +825,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-28",
+    "id": "room-26",
     "title": "Terrace Garden Bamboo Villa",
     "type": "Manor Suite",
     "category": "suite",
@@ -924,7 +858,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-29",
+    "id": "room-27",
     "title": "Valley Crest Luxury Suite",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -957,7 +891,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-30",
+    "id": "room-28",
     "title": "Woodland Heritage Haven",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -990,7 +924,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-31",
+    "id": "room-29",
     "title": "Flora Garden Suite",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -1023,7 +957,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-32",
+    "id": "room-30",
     "title": "Timberline View Cottage",
     "type": "Manor Suite",
     "category": "suite",
@@ -1056,7 +990,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-33",
+    "id": "room-31",
     "title": "Whispering Pines Haven",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -1089,7 +1023,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-34",
+    "id": "room-32",
     "title": "Cedar Crest Bamboo Suite",
     "type": "Manor Suite",
     "category": "suite",
@@ -1122,7 +1056,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-35",
+    "id": "room-33",
     "title": "Estate Manor Presidential Room",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -1155,7 +1089,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-36",
+    "id": "room-34",
     "title": "Cottage Verandah Lounge",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -1188,7 +1122,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-37",
+    "id": "room-35",
     "title": "Tranquil Valley Bower",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -1221,7 +1155,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-38",
+    "id": "room-36",
     "title": "Scenic Plateau Bamboo Villa",
     "type": "Manor Suite",
     "category": "suite",
@@ -1254,7 +1188,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-39",
+    "id": "room-37",
     "title": "Palmside Treehouse Retreat",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -1287,7 +1221,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-40",
+    "id": "room-38",
     "title": "Boutique Artisan Suite",
     "type": "Manor Suite",
     "category": "suite",
@@ -1320,7 +1254,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-41",
+    "id": "room-39",
     "title": "Ghat View Timber Haven",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -1353,7 +1287,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-42",
+    "id": "room-40",
     "title": "Mountain Whisper Duplex",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -1386,7 +1320,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-43",
+    "id": "room-41",
     "title": "Tea Estate Manor Room",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -1419,7 +1353,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-44",
+    "id": "room-42",
     "title": "Solitude Bamboo Alcove",
     "type": "Manor Suite",
     "category": "suite",
@@ -1452,7 +1386,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-45",
+    "id": "room-43",
     "title": "Emerald Garden Chalet",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -1485,7 +1419,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-46",
+    "id": "room-44",
     "title": "Panorama Valley Haven",
     "type": "Manor Suite",
     "category": "suite",
@@ -1518,7 +1452,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-47",
+    "id": "room-45",
     "title": "Rustic Bamboo Sanctuary",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -1551,7 +1485,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-48",
+    "id": "room-46",
     "title": "Sunset Glow Manor Suite",
     "type": "Treehouse Villa",
     "category": "treehouse",
@@ -1570,8 +1504,7 @@ export const roomsData = [
     "gallery": [
       "/assets/images/resort-48.webp",
       "/assets/images/resort-49.webp",
-      "/assets/images/resort-50.webp",
-      "/assets/images/resort-1.webp"
+      "/assets/images/resort-50.webp"
     ],
     "amenities": [
       "Free High-Speed WiFi",
@@ -1584,7 +1517,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-49",
+    "id": "room-47",
     "title": "Highlands Leisure Pavilion",
     "type": "Bamboo Luxury Cottage",
     "category": "cottage",
@@ -1602,9 +1535,7 @@ export const roomsData = [
     "mainImage": "/assets/images/resort-49.webp",
     "gallery": [
       "/assets/images/resort-49.webp",
-      "/assets/images/resort-50.webp",
-      "/assets/images/resort-1.webp",
-      "/assets/images/resort-2.webp"
+      "/assets/images/resort-50.webp"
     ],
     "amenities": [
       "Free High-Speed WiFi",
@@ -1617,7 +1548,7 @@ export const roomsData = [
     ]
   },
   {
-    "id": "room-50",
+    "id": "room-48",
     "title": "Master Heritage Estate Manor",
     "type": "Manor Suite",
     "category": "suite",
@@ -1635,8 +1566,6 @@ export const roomsData = [
     "mainImage": "/assets/images/resort-50.webp",
     "gallery": [
       "/assets/images/resort-50.webp",
-      "/assets/images/resort-1.webp",
-      "/assets/images/resort-2.webp",
       "/assets/images/resort-3.webp"
     ],
     "amenities": [
