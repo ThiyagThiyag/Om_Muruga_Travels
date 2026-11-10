@@ -20,10 +20,12 @@ export default function BrandLogo({
     return (
       <div className={`inline-flex items-center select-none ${className}`}>
         <img
-          src={isDarkBackground ? '/assets/images/group-of-gowdas-logo-light.webp' : '/assets/images/group-of-gowdas-logo.webp'}
+          src={isDarkBackground ? '/assets/images/group-of-gowdas-logo-light-sm.webp' : '/assets/images/group-of-gowdas-logo-sm.webp'}
           alt="Group of Gowda's"
           className="h-10 sm:h-12 w-auto object-contain pointer-events-none"
           draggable="false"
+          width="200"
+          height="109"
         />
       </div>
     );
@@ -60,10 +62,12 @@ export default function BrandLogo({
       {/* Umbrella & GROUP OF gowda's Pill Card */}
       <div className="inline-flex items-center px-2.5 py-1 sm:px-3 sm:py-1 bg-white shrink-0">
         <img
-          src="/assets/images/group-of-gowdas-logo.webp"
+          src="/assets/images/group-of-gowdas-logo-sm.webp"
           alt="Group of Gowda's"
           className="h-6 sm:h-7.5 w-auto object-contain pointer-events-none"
           draggable="false"
+          width="137"
+          height="75"
         />
       </div>
 
