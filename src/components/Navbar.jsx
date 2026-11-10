@@ -109,15 +109,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2.5">
-              <a href="tel:+916382508601" className="flex items-center gap-1.5 hover:text-[#c59b27] transition-colors">
+              <a href="tel:+916384693543" className="flex items-center gap-1.5 hover:text-[#c59b27] transition-colors">
                 <svg className="w-3.5 h-3.5 text-[#c59b27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span>+91 63825 08601</span>
+                <span>+91 63846 93543</span>
               </a>
               <span className="text-white/30">|</span>
-              <a href="tel:+916384693543" className="hover:text-[#c59b27] transition-colors">
-                <span>+91 63846 93543</span>
+              <a href="tel:+919626172090" className="hover:text-[#c59b27] transition-colors">
+                <span>+91 96261 72090</span>
               </a>
             </div>
             <a href="mailto:reservations@ommurugaholidays.com" className="flex items-center gap-2 hover:text-[#c59b27] transition-colors">
@@ -141,7 +141,7 @@ export default function Navbar() {
               Group of Gowda's Travels Agency
             </span>
             <a
-              href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Holidays,%20I%20would%20like%20to%20inquire%20about%20booking"
+              href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Holidays,%20I%20would%20like%20to%20inquire%20about%20booking"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#25D366] hover:text-[#20ba59] font-medium flex items-center gap-1.5 transition-colors"
@@ -314,7 +314,7 @@ export default function Navbar() {
           {/* CTA & Mobile Menu Toggle */}
           <div className="flex items-center gap-3 sm:gap-4">
             <a
-              href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20a%20tour%20package%20or%20cab%20booking"
+              href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20a%20tour%20package%20or%20cab%20booking"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-md hover:shadow-lg hover:shadow-emerald-500/30 hover:-translate-y-0.5 transition-all"
@@ -484,7 +484,7 @@ export default function Navbar() {
               {/* Mobile CTA & Quick Contacts */}
               <div className="pt-3 border-t border-slate-200 flex flex-col gap-3">
                 <a
-                  href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20a%20tour%20package%20or%20cab%20booking"
+                  href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20a%20tour%20package%20or%20cab%20booking"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3 rounded-full text-center text-sm font-semibold text-white bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-md block"
@@ -493,23 +493,23 @@ export default function Navbar() {
                 </a>
                 <div className="flex flex-col gap-2 text-xs text-slate-600 px-1 pt-1">
                   <div className="flex items-center justify-between">
-                    <a href="tel:+916382508601" className="flex items-center gap-1.5 hover:text-[#0a2540] font-semibold">
+                    <a href="tel:+916384693543" className="flex items-center gap-1.5 hover:text-[#0a2540] font-semibold">
                       <svg className="w-3.5 h-3.5 text-[#c59b27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
-                      <span>+91 63825 08601</span>
+                      <span>+91 63846 93543</span>
                     </a>
-                    <a href="tel:+916384693543" className="text-slate-600 hover:text-[#0a2540] font-semibold">
-                      +91 63846 93543
+                    <a href="tel:+919626172090" className="text-slate-600 hover:text-[#0a2540] font-semibold">
+                      +91 96261 72090
                     </a>
                   </div>
                   <a
-                    href="https://wa.me/916382508601"
+                    href="https://wa.me/917639327889"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#25D366] font-semibold text-center py-2 rounded-xl bg-emerald-50 border border-emerald-200"
                   >
-                    Chat on WhatsApp (+91 63825 08601)
+                    Chat on WhatsApp (+91 76393 27889)
                   </a>
                 </div>
               </div>

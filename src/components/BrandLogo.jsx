@@ -6,7 +6,7 @@
  * - 'combined' (default): Umbrella & GROUP OF gowda's + OM MURUGA HOLIDAYS
  * - 'muruga': Just the OM MURUGA HOLIDAYS typography
  */
-export default function BrandLogo({ 
+export default function BrandLogo({
   variant = 'combined',
   isDarkBackground = false,
   className = ''
@@ -19,9 +19,9 @@ export default function BrandLogo({
   if (variant === 'transparent-badge' || variant === 'gowdas') {
     return (
       <div className={`inline-flex items-center select-none ${className}`}>
-        <img 
-          src={isDarkBackground ? '/assets/images/group-of-gowdas-logo-light.webp' : '/assets/images/group-of-gowdas-logo.webp'} 
-          alt="Group of Gowda's" 
+        <img
+          src={isDarkBackground ? '/assets/images/group-of-gowdas-logo-light.webp' : '/assets/images/group-of-gowdas-logo.webp'}
+          alt="Group of Gowda's"
           className="h-10 sm:h-12 w-auto object-contain pointer-events-none"
           draggable="false"
         />
@@ -44,7 +44,7 @@ export default function BrandLogo({
             URUGA
           </span>
         </div>
-        <span 
+        <span
           className="text-[7.5px] xs:text-[8.5px] sm:text-[9.5px] font-extrabold uppercase tracking-[0.22em] sm:tracking-[0.3em] leading-none mt-0.5"
           style={{ color: holidaysColor }}
         >
@@ -58,10 +58,10 @@ export default function BrandLogo({
   return (
     <div className={`flex items-center gap-2.5 sm:gap-4 select-none ${className}`}>
       {/* Umbrella & GROUP OF gowda's Pill Card */}
-      <div className="inline-flex items-center px-2.5 py-1 sm:px-3 sm:py-1 rounded-2xl bg-white border border-slate-200 shadow-xs shrink-0">
-        <img 
-          src="/assets/images/group-of-gowdas-logo.webp" 
-          alt="Group of Gowda's" 
+      <div className="inline-flex items-center px-2.5 py-1 sm:px-3 sm:py-1 bg-white shrink-0">
+        <img
+          src="/assets/images/group-of-gowdas-logo.webp"
+          alt="Group of Gowda's"
           className="h-6 sm:h-7.5 w-auto object-contain pointer-events-none"
           draggable="false"
         />
@@ -83,7 +83,7 @@ export default function BrandLogo({
             URUGA
           </span>
         </div>
-        <span 
+        <span
           className="text-[7.5px] xs:text-[8.5px] sm:text-[9.5px] font-extrabold uppercase tracking-[0.22em] sm:tracking-[0.3em] leading-none mt-0.5"
           style={{ color: holidaysColor }}
         >

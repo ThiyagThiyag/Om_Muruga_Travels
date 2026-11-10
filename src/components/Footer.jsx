@@ -41,9 +41,9 @@ export default function Footer() {
                 </svg>
                 <span>Travel Desk:</span>
               </span>
-              <a href="tel:+916382508601" className="hover:text-[#c59b27] font-semibold transition-colors">+91 63825 08601</a>
-              <span className="text-white/30">|</span>
               <a href="tel:+916384693543" className="hover:text-[#c59b27] font-semibold transition-colors">+91 63846 93543</a>
+              <span className="text-white/30">|</span>
+              <a href="tel:+919626172090" className="hover:text-[#c59b27] font-semibold transition-colors">+91 96261 72090</a>
             </div>
 
             {/* Official Social Media Icons with Origin Colors */}
@@ -120,7 +120,7 @@ export default function Footer() {
 
               {/* WhatsApp - Official Green #25D366 */}
               <a
-                href="https://wa.me/916382508601"
+                href="https://wa.me/917639327889"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-[#25D366] hover:brightness-110 flex items-center justify-center text-white transition-all shadow-md hover:scale-110 active:scale-95"
@@ -209,7 +209,7 @@ export default function Footer() {
             {/* Quick 24/7 Assistance Box */}
             <div className="pt-2">
               <a 
-                href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20booking"
+                href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20booking"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-[#25D366] text-xs font-semibold hover:bg-[#25D366] hover:text-white transition-all group"
