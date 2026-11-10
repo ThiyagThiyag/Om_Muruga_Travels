@@ -122,7 +122,7 @@ export default function FeaturedShowcaseSection({ onOpenRoomModal, onOpenTourMod
                       Itinerary
                     </button>
                     <a
-                      href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20this%20tour%20package"
+                      href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20this%20tour%20package"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-[#128C7E] hover:bg-[#075E54] transition-colors inline-block"
@@ -192,7 +192,7 @@ export default function FeaturedShowcaseSection({ onOpenRoomModal, onOpenTourMod
 
                   <div className="flex items-center gap-2">
                     <a
-                      href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20cottage%20stay%20availability"
+                      href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20cottage%20stay%20availability"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-[#128C7E] hover:bg-[#075E54] transition-colors inline-block"

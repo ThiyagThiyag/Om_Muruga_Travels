@@ -21,7 +21,7 @@ export default function FloatingContactWidget() {
     <div className="fixed top-1/2 -translate-y-1/2 right-4 sm:right-6 z-40 flex flex-col items-center gap-3 select-none">
       {/* WhatsApp Floating Circle Button */}
       <a
-        href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20a%20tour%20package%20or%20cab%20booking"
+        href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20inquire%20about%20a%20tour%20package%20or%20cab%20booking"
         target="_blank"
         rel="noopener noreferrer"
         className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 relative group"
@@ -87,25 +87,25 @@ export default function FloatingContactWidget() {
             <div className="space-y-2 pt-3">
               {/* Phone Dials */}
               <a
-                href="tel:+916382508601"
+                href="tel:+916384693543"
                 className="w-full py-2.5 px-3 rounded-xl bg-slate-50 hover:bg-[#0a2540] hover:text-white font-semibold text-xs transition-all flex items-center justify-between border border-slate-200 group"
               >
                 <div className="flex items-center gap-2">
                   <span className="text-sm">📞</span>
                   <span>Desk Hotline</span>
                 </div>
-                <span className="font-bold text-[#c59b27] group-hover:text-white">+91 63825 08601</span>
+                <span className="font-bold text-[#c59b27] group-hover:text-white">+91 63846 93543</span>
               </a>
 
               <a
-                href="tel:+916384693543"
+                href="tel:+919626172090"
                 className="w-full py-2.5 px-3 rounded-xl bg-slate-50 hover:bg-[#0a2540] hover:text-white font-semibold text-xs transition-all flex items-center justify-between border border-slate-200 group"
               >
                 <div className="flex items-center gap-2">
                   <span className="text-sm">📞</span>
                   <span>Manager Line</span>
                 </div>
-                <span className="font-bold text-[#c59b27] group-hover:text-white">+91 63846 93543</span>
+                <span className="font-bold text-[#c59b27] group-hover:text-white">+91 96261 72090</span>
               </a>
 
               

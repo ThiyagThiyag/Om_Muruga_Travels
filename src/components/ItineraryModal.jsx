@@ -27,7 +27,7 @@ export default function ItineraryModal({ isOpen, onClose, tour: initialTour }) {
     ]
   };
 
-  const whatsAppUrl = `https://wa.me/916382508601?text=${encodeURIComponent(
+  const whatsAppUrl = `https://wa.me/917639327889?text=${encodeURIComponent(
     `Hi Om Muruga Holidays, I am interested in inquiring about the "${tour.title}" (${tour.duration}). Please share custom pricing, inclusions, and departure dates.`
   )}`;
 
@@ -158,16 +158,16 @@ export default function ItineraryModal({ isOpen, onClose, tour: initialTour }) {
               <span>WhatsApp Inquiry</span>
             </a>
             <a
-              href="tel:+916382508601"
-              className="flex-1 sm:flex-none px-3.5 py-2.5 rounded-full border-2 border-[#0a2540] text-[#0a2540] hover:bg-[#0a2540] hover:text-white font-bold text-xs transition-all text-center"
-            >
-              Call Desk
-            </a>
-            <a
               href="tel:+916384693543"
               className="flex-1 sm:flex-none px-3.5 py-2.5 rounded-full border-2 border-[#0a2540] text-[#0a2540] hover:bg-[#0a2540] hover:text-white font-bold text-xs transition-all text-center"
             >
-              Call Manager
+              Call Desk: +91 63846 93543
+            </a>
+            <a
+              href="tel:+919626172090"
+              className="flex-1 sm:flex-none px-3.5 py-2.5 rounded-full border-2 border-[#0a2540] text-[#0a2540] hover:bg-[#0a2540] hover:text-white font-bold text-xs transition-all text-center"
+            >
+              Call Manager: +91 96261 72090
             </a>
           </div>
         </div>

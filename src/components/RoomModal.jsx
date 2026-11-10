@@ -18,7 +18,7 @@ export default function RoomModal({ isOpen, onClose, room }) {
     setImageIndex((prev) => (prev + newDirection + images.length) % images.length);
   };
 
-  const whatsAppUrl = `https://wa.me/916382508601?text=${encodeURIComponent(
+  const whatsAppUrl = `https://wa.me/917639327889?text=${encodeURIComponent(
     `Hi Om Muruga Holidays, I would like to inquire about availability and seasonal tariff for ${room.title} (${room.capacity}, ${room.bedType}).`
   )}`;
 
@@ -134,16 +134,16 @@ export default function RoomModal({ isOpen, onClose, room }) {
               <span>WhatsApp Inquiry</span>
             </a>
             <a
-              href="tel:+916382508601"
-              className="flex-1 sm:flex-none px-3.5 py-2.5 rounded-full border-2 border-[#0a2540] text-[#0a2540] hover:bg-[#0a2540] hover:text-white font-bold text-xs transition-all text-center"
-            >
-              Call Desk
-            </a>
-            <a
               href="tel:+916384693543"
               className="flex-1 sm:flex-none px-3.5 py-2.5 rounded-full border-2 border-[#0a2540] text-[#0a2540] hover:bg-[#0a2540] hover:text-white font-bold text-xs transition-all text-center"
             >
-              Call Manager
+              Call: +91 63846 93543
+            </a>
+            <a
+              href="tel:+919626172090"
+              className="flex-1 sm:flex-none px-3.5 py-2.5 rounded-full border-2 border-[#0a2540] text-[#0a2540] hover:bg-[#0a2540] hover:text-white font-bold text-xs transition-all text-center"
+            >
+              Call: +91 96261 72090
             </a>
           </div>
         </div>

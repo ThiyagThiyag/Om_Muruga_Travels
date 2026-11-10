@@ -1,5 +1,5 @@
 export default function ContactQuickDirect() {
-  const whatsAppNumber = '916382508601';
+  const whatsAppNumber = '917639327889';
 
   return (
     <div className="lg:col-span-7 bg-white p-6 xs:p-8 sm:p-10 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm space-y-6">
@@ -39,23 +39,23 @@ export default function ContactQuickDirect() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
           <a
-            href="tel:+916382508601"
+            href="tel:+917639327889"
             className="py-3.5 px-4 rounded-xl bg-slate-50 hover:bg-[#0a2540] hover:text-white border border-slate-200 transition-all text-left group flex items-center justify-between"
           >
             <div>
               <span className="text-[10px] uppercase font-bold text-[#c59b27] group-hover:text-amber-300 block">Travel Desk Phone</span>
-              <span className="text-sm font-bold text-slate-800 group-hover:text-white">+91 63825 08601</span>
+              <span className="text-sm font-bold text-slate-800 group-hover:text-white">+91 96261 72090</span>
             </div>
             <span className="text-lg">📞</span>
           </a>
 
           <a
-            href="tel:+916384693543"
+            href="tel:+919626172090"
             className="py-3.5 px-4 rounded-xl bg-slate-50 hover:bg-[#0a2540] hover:text-white border border-slate-200 transition-all text-left group flex items-center justify-between"
           >
             <div>
               <span className="text-[10px] uppercase font-bold text-[#c59b27] group-hover:text-amber-300 block">Estate Manager</span>
-              <span className="text-sm font-bold text-slate-800 group-hover:text-white">+91 63846 93543</span>
+              <span className="text-sm font-bold text-slate-800 group-hover:text-white">+91 96261 72090</span>
             </div>
             <span className="text-lg">📞</span>
           </a>

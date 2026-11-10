@@ -1938,7 +1938,7 @@ export const whyChooseUsData = [
   {
     icon: 'Clock',
     title: '24/7 Dedicated Support',
-    description: 'Direct phone & WhatsApp lines (+91 63825 08601 / +91 63846 93543) for immediate assistance, personalized rates, and custom plans.'
+    description: 'Direct phone & WhatsApp lines (+91 76393 27889 / +91 63846 93543 / +91 96261 72090) for immediate assistance, personalized rates, and custom plans.'
   },
   {
     icon: 'Home',
@@ -2038,7 +2038,7 @@ export const teamData = [
 export const faqsData = [
   {
     question: 'How do I confirm my stay or tour package booking?',
-    answer: 'All bookings and availability checks are handled directly through WhatsApp or direct phone calls! Simply click the "Inquire on WhatsApp" button or call us at +91 63825 08601 or +91 63846 93543. We share instant photos, seasonal tariffs, and payment details.'
+    answer: 'All bookings and availability checks are handled directly through WhatsApp or direct phone calls! Simply click the "Inquire on WhatsApp" button or call us at +91 76393 27889 or +91 63846 93543 / +91 96261 72090. We share instant photos, seasonal tariffs, and payment details.'
   },
   {
     question: 'How are tariffs calculated?',

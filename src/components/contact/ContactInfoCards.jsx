@@ -20,8 +20,8 @@ export default function ContactInfoCards() {
         </div>
         <h4 className="text-base font-bold text-[#0a2540] font-serif">Direct Hotline</h4>
         <div className="space-y-1 text-xs text-slate-600">
-          <div><a href="tel:+916382508601" className="hover:text-[#c59b27] font-semibold">+91 63825 08601</a> (Desk)</div>
-          <div><a href="tel:+916384693543" className="hover:text-[#c59b27] font-semibold">+91 63846 93543</a> (Manager)</div>
+          <div><a href="tel:+919626172090" className="hover:text-[#c59b27] font-semibold">+91 96261 72090</a> (Desk)</div>
+          <div><a href="tel:+919626172090" className="hover:text-[#c59b27] font-semibold">+91 96261 72090</a> (Manager)</div>
           <a
             href="https://wa.me/918072171542"
             target="_blank"
