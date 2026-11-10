@@ -15,7 +15,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed pr-2 max-w-md">
-              Premier travel agency and tour operator under <span className="text-[#f4e8c1] font-semibold">Group of Gowda's</span>. We specialize in custom holiday tours, sanitized AC cabs, airport transfers, and exclusive boutique hill stays.
+              Premier travel agency and tour operator under <span className="text-[#f4e8c1] font-semibold">Group of Gowda's</span>, proudly serving travelers since 2012. We specialize in custom holiday tours, sanitized AC cabs, airport transfers, and exclusive boutique hill stays.
             </p>
 
             {/* Physical Office Address for Local SEO */}
