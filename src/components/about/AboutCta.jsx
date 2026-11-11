@@ -10,7 +10,7 @@ export default function AboutCta() {
       </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
         <a
-          href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Holidays,%20I%20would%20like%20to%20inquire%20about%20tours%20and%20cabs"
+          href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Holidays,%20I%20would%20like%20to%20inquire%20about%20tours%20and%20cabs"
           target="_blank"
           rel="noopener noreferrer"
           className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-full text-white font-bold text-xs sm:text-sm bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-lg hover:shadow-emerald-500/30 transition-all inline-flex items-center justify-center gap-2"
@@ -18,10 +18,10 @@ export default function AboutCta() {
           <span>Chat on WhatsApp</span>
         </a>
         <a
-          href="tel:+916382508601"
+          href="tel:+917639327889"
           className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-full text-[#0a2540] hover:text-white hover:bg-[#0a2540] border-2 border-[#0a2540] font-bold text-xs sm:text-sm transition-all inline-flex items-center justify-center gap-2"
         >
-          <span>Call Desk: +91 63825 08601</span>
+          <span>Call Desk: +91 76393 27889</span>
         </a>
       </div>
     </div>

@@ -69,75 +69,75 @@ export default function FleetSection() {
           style={{ scrollSnapType: 'x mandatory' }}
         >
           {travelFleetData.map((vehicle) => (
-            <div 
+            <div
               key={vehicle.id}
               style={{ scrollSnapAlign: 'start' }}
               className="w-[280px] xs:w-[305px] sm:w-[325px] shrink-0 bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm flex flex-col justify-between hover:border-[#c59b27]/60 transition-all group"
             >
-                <div>
-                  <div className="relative h-44 overflow-hidden bg-slate-900">
-                    <picture>
-                      {vehicle.image.endsWith('.webp') && (
-                        <source type="image/avif" srcSet={vehicle.image.replace('.webp', '.avif')} />
-                      )}
-                      <img 
-                        src={vehicle.image} 
-                        alt={vehicle.name} 
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
-                        draggable="false"
-                        loading="lazy"
-                        decoding="async"
-                        width="325"
-                        height="176"
-                      />
-                    </picture>
-                  </div>
-
-                  <div className="p-5 space-y-3">
-                    <h3 className="text-base font-bold text-white font-serif line-clamp-1">
-                      {vehicle.name}
-                    </h3>
-                    
-                    <div className="space-y-1.5 text-xs text-slate-300 border-b border-white/10 pb-3">
-                      <div className="flex items-center gap-2">
-                        <span className="text-[#c59b27]">👥</span>
-                        <span>{vehicle.capacity}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-[#c59b27]">🧳</span>
-                        <span>{vehicle.luggage}</span>
-                      </div>
-                    </div>
-
-                    <p className="text-[11px] text-slate-400 line-clamp-2">
-                      <strong className="text-slate-300">Best for:</strong> {vehicle.idealFor}
-                    </p>
-
-                    <div className="space-y-1 pt-1">
-                      {vehicle.features.slice(0, 2).map((feat, i) => (
-                        <div key={i} className="text-[11px] text-slate-300 flex items-center gap-1.5">
-                          <span className="text-emerald-400">✓</span>
-                          <span>{feat}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
+              <div>
+                <div className="relative h-44 overflow-hidden bg-slate-900">
+                  <picture>
+                    {vehicle.image.endsWith('.webp') && (
+                      <source type="image/avif" srcSet={vehicle.image.replace('.webp', '.avif')} />
+                    )}
+                    <img
+                      src={vehicle.image}
+                      alt={vehicle.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none"
+                      draggable="false"
+                      loading="lazy"
+                      decoding="async"
+                      width="325"
+                      height="176"
+                    />
+                  </picture>
                 </div>
 
-                <div className="p-5 pt-0">
-                  <a
-                    href={`https://wa.me/916382508601?text=${encodeURIComponent(
-                      `Hi Om Muruga Travels, I would like to inquire about booking the "${vehicle.name}" (${vehicle.type}) for outstation / sightseeing travel.`
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full py-2.5 px-4 rounded-xl bg-[#128C7E] hover:bg-[#075E54] text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-98"
-                  >
-                    <span>Inquire Cab on WhatsApp</span>
-                  </a>
+                <div className="p-5 space-y-3">
+                  <h3 className="text-base font-bold text-white font-serif line-clamp-1">
+                    {vehicle.name}
+                  </h3>
+
+                  <div className="space-y-1.5 text-xs text-slate-300 border-b border-white/10 pb-3">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[#c59b27]">👥</span>
+                      <span>{vehicle.capacity}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[#c59b27]">🧳</span>
+                      <span>{vehicle.luggage}</span>
+                    </div>
+                  </div>
+
+                  <p className="text-[11px] text-slate-400 line-clamp-2">
+                    <strong className="text-slate-300">Best for:</strong> {vehicle.idealFor}
+                  </p>
+
+                  <div className="space-y-1 pt-1">
+                    {vehicle.features.slice(0, 2).map((feat, i) => (
+                      <div key={i} className="text-[11px] text-slate-300 flex items-center gap-1.5">
+                        <span className="text-emerald-400">✓</span>
+                        <span>{feat}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            ))}
+
+              <div className="p-5 pt-0">
+                <a
+                  href={`https://wa.me/917639327889?text=${encodeURIComponent(
+                    `Hi Om Muruga Travels, I would like to inquire about booking the "${vehicle.name}" (${vehicle.type}) for outstation / sightseeing travel.`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2.5 px-4 rounded-xl bg-[#128C7E] hover:bg-[#075E54] text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-98"
+                >
+                  <span>Inquire Cab on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

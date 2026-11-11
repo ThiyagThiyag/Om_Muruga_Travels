@@ -57,7 +57,7 @@ export default function AboutTripsDone() {
                   height="208"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                
+
                 {/* Badge Top Left */}
                 <div className="absolute top-3 left-3">
                   <span className="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#0a2540]/90 backdrop-blur-md text-[#f4e8c1] border border-[#c59b27]/30 shadow-sm">
@@ -136,7 +136,7 @@ export default function AboutTripsDone() {
         </div>
         <div className="flex flex-col sm:flex-row gap-3 shrink-0 w-full sm:w-auto">
           <a
-            href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Holidays,%20I%20would%20like%20to%20plan%20a%20trip"
+            href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Holidays,%20I%20would%20like%20to%20plan%20a%20trip"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full text-center text-xs font-bold text-white bg-[#25D366] hover:bg-[#20ba59] shadow-md transition-all flex items-center justify-center gap-2"

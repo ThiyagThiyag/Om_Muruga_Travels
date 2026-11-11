@@ -24,7 +24,7 @@ export default function ContactInfoCards() {
           <div><a href="tel:+916384693543" className="hover:text-[#c59b27] font-semibold">+91 63846  93543</a> (Manager)</div>
           <div><a href="tel:+919626172090" className="hover:text-[#c59b27] font-semibold">+91 96261 72090</a> (Assistance Manager)</div>
           <a
-            href="https://wa.me/918072171542"
+            href="https://wa.me/917639327889"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-[#25D366] font-bold mt-1"

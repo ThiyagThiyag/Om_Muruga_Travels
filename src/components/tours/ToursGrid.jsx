@@ -86,7 +86,7 @@ export default function ToursGrid({ tours, onOpenTourModal }) {
                   Itinerary
                 </button>
                 <a
-                  href={`https://wa.me/916382508601?text=${encodeURIComponent('Hi Om Muruga Travels, I would like to inquire about the ' + tour.title + ' package.')}`}
+                  href={`https://wa.me/917639327889?text=${encodeURIComponent('Hi Om Muruga Travels, I would like to inquire about the ' + tour.title + ' package.')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 xs:flex-initial px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-md hover:shadow-lg hover:shadow-emerald-500/30 transition-all flex items-center justify-center gap-1.5 min-h-[38px]"
