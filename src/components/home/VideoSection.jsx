@@ -14,7 +14,7 @@ export default function VideoSection() {
             <p className="text-xs xs:text-sm sm:text-base text-slate-300 leading-relaxed">
               From winding Western Ghat mountain roads to peaceful palm estate cottages, our experienced drivers and tour planners take care of every detail so you can simply soak in the views.
             </p>
-            
+
             <div className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4 pt-2">
               <div className="flex items-center gap-2.5 sm:gap-3">
                 <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#c59b27]/20 text-[#c59b27] flex items-center justify-center font-bold text-xs sm:text-sm shrink-0">✓</span>
@@ -36,7 +36,7 @@ export default function VideoSection() {
 
             <div className="pt-2 sm:pt-4">
               <a
-                href="https://wa.me/916382508601?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20plan%20a%20tour%20or%20book%20a%20cab"
+                href="https://wa.me/917639327889?text=Hi%20Om%20Muruga%20Travels,%20I%20would%20like%20to%20plan%20a%20tour%20or%20book%20a%20cab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-6 sm:px-7 py-3 rounded-full text-white font-bold text-xs sm:text-sm bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-lg hover:shadow-emerald-500/30 transition-all min-h-[44px] inline-flex items-center justify-center gap-2"
@@ -48,8 +48,8 @@ export default function VideoSection() {
 
           {/* Video Player Card */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black aspect-video flex items-center justify-center">
-            <video 
-              controls 
+            <video
+              controls
               preload="none"
               poster="/assets/images/image-44.webp"
               className="w-full h-full object-cover"
