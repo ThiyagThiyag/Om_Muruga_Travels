@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agentic-resource.org/schema/v1/ard.json",
+  "name": "Om Muruga Holidays",
+  "description": "Premier South India travel agency offering customized tour packages, outstation AC chauffeur cabs, and boutique cottage stays in Ooty, Kodaikanal, Munnar, Kerala, Wayanad, and Coorg.",
+  "url": "https://ommurugaholidays.com",
+  "contact": {
+    "telephone": "+916384693543",
+    "whatsapp": "+917639327889"
+  },
+  "resources": [
+    {
+      "name": "Tour Packages",
+      "url": "https://ommurugaholidays.com/tours",
+      "type": "catalog"
+    },
+    {
+      "name": "Private Cabs & Fleet",
+      "url": "https://ommurugaholidays.com/cabs",
+      "type": "service"
+    },
+    {
+      "name": "Resort Cottages & Stays",
+      "url": "https://ommurugaholidays.com/rooms",
+      "type": "catalog"
+    }
+  ]
+}
