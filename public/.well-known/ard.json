@@ -3,25 +3,30 @@
   "name": "Om Muruga Holidays",
   "description": "Premier South India travel agency offering customized tour packages, outstation AC chauffeur cabs, and boutique cottage stays in Ooty, Kodaikanal, Munnar, Kerala, Wayanad, and Coorg.",
   "url": "https://ommurugaholidays.com",
-  "contact": {
-    "telephone": "+916384693543",
-    "whatsapp": "+917639327889"
-  },
-  "resources": [
+  "entries": [
     {
-      "name": "Tour Packages",
+      "identifier": "urn:air:ommurugaholidays.com:services:tours",
+      "displayName": "Om Muruga Holiday Tour Packages",
+      "type": "application/json",
       "url": "https://ommurugaholidays.com/tours",
-      "type": "catalog"
+      "description": "Customized holiday tour packages for Ooty, Kodaikanal, Munnar, Kerala, and Coorg.",
+      "tags": ["travel", "tourism", "hill-stations", "tour-packages", "south-india"]
     },
     {
-      "name": "Private Cabs & Fleet",
+      "identifier": "urn:air:ommurugaholidays.com:services:cabs",
+      "displayName": "Om Muruga Private Outstation Cabs",
+      "type": "application/json",
       "url": "https://ommurugaholidays.com/cabs",
-      "type": "service"
+      "description": "24/7 private AC cabs with verified hill-station chauffeurs across Tamil Nadu and Kerala.",
+      "tags": ["cabs", "taxi", "chauffeur", "airport-transfer", "outstation"]
     },
     {
-      "name": "Resort Cottages & Stays",
+      "identifier": "urn:air:ommurugaholidays.com:services:rooms",
+      "displayName": "Om Muruga Boutique Stays & Cottages",
+      "type": "application/json",
       "url": "https://ommurugaholidays.com/rooms",
-      "type": "catalog"
+      "description": "Handpicked resort cottages, heritage tea estate bungalows, and homestays.",
+      "tags": ["resorts", "cottages", "stays", "homestays", "hospitality"]
     }
   ]
 }
